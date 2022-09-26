@@ -1,8 +1,0 @@
----
-title: "This is my folder"
-author: "Allison Day"
-date: "2022-09-19"
-categories: [news]
----
-
-BREAKING NEWS: Allison actually made a blog!
