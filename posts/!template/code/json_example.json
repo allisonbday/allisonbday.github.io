@@ -1,0 +1,27 @@
+{
+    "Total": 1,
+    "Page": 1,
+    "Products": [
+        {
+            "ID": 12345,
+            "SKU": "Clownfish",
+            "Name": "Nemo",
+            "Suppliers": [
+                {
+                    "SupplierID": "67891",
+                    "SupplierName": "Little Fish Inc",
+                    "Cost": 5.99
+                },
+                {
+                    "SupplierID": "24601",
+                    "SupplierName": "Large Pond Co",
+                    "Cost": 5.59
+                }
+            ],
+            "PriceTiers": {
+                "Public Retail Price": 24.99,
+                "Employee Price": 6.0
+            }
+        }
+    ]
+}
