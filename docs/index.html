@@ -70,9 +70,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -151,7 +151,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(0)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="APIs">APIs <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JSON">JSON <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -164,7 +164,41 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="APIs,JSON" data-listing-date-sort="1667714400000" data-listing-file-modified-sort="1667859634923" data-listing-reading-time-sort="2.92">
+<div class="body">
+<a href="./posts/nested_jsons/Nested_JSONs.html">
+<h3 class="no-anchor listing-title">
+Working with Nested JSONs
+</h3>
+<div class="listing-subtitle">
 
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('APIs'); return false;">
+APIs
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('JSON'); return false;">
+JSON
+</div>
+</div>
+<a href="./posts/nested_jsons/Nested_JSONs.html">
+<div class="listing-description">
+Lets say pulled an API and it gave you this json:
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./posts/nested_jsons/Nested_JSONs.html">
+<div class="listing-date">
+Nov 6, 2022
+</div>
+<div class="listing-author">
+Allison Day
+</div>
+</a>
+</div>
+</div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items
