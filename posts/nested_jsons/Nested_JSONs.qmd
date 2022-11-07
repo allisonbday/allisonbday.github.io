@@ -1,6 +1,6 @@
 ---
 title: "Working with Nested JSONs"
-description: "Post description"
+# description: "Post description"
 author: "Allison Day"
 date: "11/6/2022"
 categories: [APIs, JSON]
