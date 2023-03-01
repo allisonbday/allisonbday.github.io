@@ -25,7 +25,7 @@
     "href": "posts/colored_text/print_colored_text.html",
     "title": "ANSI Colored Text in Terminal/Outputs",
     "section": "",
-    "text": "needs to be inside the \"\" when printing\nstarts with a \\033[\nends with \\033[0m"
+    "text": "needs to be inside the \"\" when printing\ncustomization starts with a \\033[ split by ; and ends with m\nprint statement ends with \\033[0m"
   },
   {
     "objectID": "posts/colored_text/print_colored_text.html#effects",

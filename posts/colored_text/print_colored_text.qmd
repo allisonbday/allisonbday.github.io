@@ -13,8 +13,8 @@ execute:
 # The Basics
 
 - needs to be inside the `""` when printing
-- starts with a `\033[`
-- ends with `\033[0m`
+- customization starts with a `\033[` split by `;` and ends with `m`
+- print statement ends with `\033[0m`
 
 # Customization
 
