@@ -72,7 +72,7 @@ print(f"\033[4;31;42m; 42 = underlined red text on green background \033[0m")
 
 ```{python}
 
-# creating the font + background table
+# create text + background combo table
 for bg in range(40, 48):
     string = ""
     for txt in range(30, 38):
@@ -128,12 +128,12 @@ I work a lot in jupyter notebooks and running checks with colored text is so muc
 
 ```{python}
 
-def print_red(string: str):
-    print(f"\033[30;41m {string} \033[0m")
+def print_warning(string: str):
+    print(f"\033[30;41m {string} \033[0m") # white text on red background
 
 check_list = ["one", "two", "four"]
 
 if "four" in check_list:
-    print_red("FOUR FOUND IN LIST! EXTERMINATE!!!")
+    print_warning("FOUR FOUND IN LIST! EXTERMINATE!!!")
 
 ```

@@ -265,7 +265,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="combining" class="level3">
 <h3 class="anchored" data-anchor-id="combining">Combining</h3>
 <div class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\033</span><span class="ss">[4;31;42m; 42 = underlined red on green </span><span class="ch">\033</span><span class="ss">[0m"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\033</span><span class="ss">[4;31;42m; 42 = underlined red text on green background </span><span class="ch">\033</span><span class="ss">[0m"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create text + background combo table</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> bg <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">40</span>, <span class="dv">48</span>):</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    string <span class="op">=</span> <span class="st">""</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> txt <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">30</span>, <span class="dv">38</span>):</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>        string <span class="op">+=</span> <span class="ss">f"</span><span class="ch">\033</span><span class="ss">[</span><span class="sc">{</span>txt<span class="sc">}</span><span class="ss">;</span><span class="sc">{</span>bg<span class="sc">}</span><span class="ss">m </span><span class="sc">{</span>txt<span class="sc">}</span><span class="ss">;</span><span class="sc">{</span>bg<span class="sc">}</span><span class="ss"> </span><span class="ch">\033</span><span class="ss">[0m"</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(string)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 </section>
@@ -276,13 +284,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><img src="images\colors_256.png" class="img-fluid"> * <em>Note: only change the last number</em></p>
 <p><strong>Text</strong></p>
 <div class="cell" data-execution_count="6">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># text 1st number is 38 (because that's the 'custom color' number); </span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\033</span><span class="st">[38;5;141m purple text 141, </span><span class="ch">\033</span><span class="st">[0m"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># text 1st number is 38 (because that's the 'custom color' number); </span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\033</span><span class="st">[38;5;141m purple text 141, </span><span class="ch">\033</span><span class="st">[0m"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><strong>Background</strong></p>
 <div class="cell" data-execution_count="7">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># background 1st number is 48 (background 'custom color' number)</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\033</span><span class="st">[48;5;154m green background 154 </span><span class="ch">\033</span><span class="st">[0m"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># background 1st number is 48 (background 'custom color' number)</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\033</span><span class="st">[48;5;154m green background 154 </span><span class="ch">\033</span><span class="st">[0m"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="rgb" class="level3">
@@ -291,19 +299,32 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="text" class="level4">
 <h4 class="anchored" data-anchor-id="text">Text</h4>
 <div class="cell" data-execution_count="8">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># \033[38;2;&lt;r&gt;;&lt;g&gt;;&lt;b&gt;m</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\033</span><span class="st">[38;2;5;42;177m CUSTOM! dark blue background </span><span class="ch">\033</span><span class="st">[0m"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># \033[38;2;&lt;r&gt;;&lt;g&gt;;&lt;b&gt;m</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\033</span><span class="st">[38;2;5;42;177m CUSTOM! dark blue background </span><span class="ch">\033</span><span class="st">[0m"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><strong>Background</strong></p>
 <div class="cell" data-execution_count="9">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># \033[48;2;&lt;r&gt;;&lt;g&gt;;&lt;b&gt;m</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\033</span><span class="st">[48;2;229;242;147m CUSTOM! light yellow/green background </span><span class="ch">\033</span><span class="st">[0m"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># \033[48;2;&lt;r&gt;;&lt;g&gt;;&lt;b&gt;m</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\033</span><span class="st">[48;2;229;242;147m CUSTOM! light yellow/green background </span><span class="ch">\033</span><span class="st">[0m"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+</section>
+</section>
+<section id="use-case" class="level1">
+<h1>Use Case</h1>
+<p>I work a lot in jupyter notebooks and running checks with colored text is so much funner!</p>
+<div class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> print_warning(string: <span class="bu">str</span>):</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\033</span><span class="ss">[30;41m </span><span class="sc">{</span>string<span class="sc">}</span><span class="ss"> </span><span class="ch">\033</span><span class="ss">[0m"</span>) <span class="co"># white text on red background</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>check_list <span class="op">=</span> [<span class="st">"one"</span>, <span class="st">"two"</span>, <span class="st">"four"</span>]</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="st">"four"</span> <span class="kw">in</span> check_list:</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>    print_warning(<span class="st">"FOUR FOUND IN LIST! EXTERMINATE!!!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 
-</section>
-</section>
-</section>
 </section>
 
 </main> <!-- /main -->
