@@ -5,7 +5,6 @@ author: "Allison Day"
 date: "3/4/2023"
 categories: [Python, Pandas, Code Snippets]
 # image: timp.jpg
-draft: False
 
 execute:
   eval: true

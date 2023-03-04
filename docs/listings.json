@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/groupby_snippets/groupby_snippets.html",
       "/posts/colored_text/print_colored_text.html",
       "/posts/nested_jsons/Nested_JSONs.html"
     ]
