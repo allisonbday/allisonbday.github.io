@@ -14,3 +14,5 @@ about:
 ---
 
 <!--- About this blog--> 
+
+Hello! My name is Allison Day and I recently graduated from Brigham Young University - Idaho with a degree in Data Science. I love Python and often make Streamlit apps in my free time.
