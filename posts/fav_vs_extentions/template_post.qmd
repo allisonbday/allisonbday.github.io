@@ -46,10 +46,15 @@ These affect the look of VS Code from colors to icons.
 
 Every time I open VS Code the first thing I do is hit `Ctrl + K` & `Ctrl + T` to change the visual theme to match my mood. I have come to discover that my mood linked to my environment, and that doesn't end at my decor. If I like looking at my code I like coding more.
 
--   [Bearded Theme](https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedtheme)
--   [GitHub Theme](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme)
--   [Noctis](https://marketplace.visualstudio.com/items?itemName=liviuschera.noctis)
--   [Rainglow](https://marketplace.visualstudio.com/items?itemName=daylerees.rainglow)
+-   [Bearded Theme](https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedtheme) -\
+    Favorite:
+    -   
+-   [Noctis](https://marketplace.visualstudio.com/items?itemName=liviuschera.noctis) -\
+    Favorite:
+    -   
+-   [Rainglow](https://marketplace.visualstudio.com/items?itemName=daylerees.rainglow) -\
+    Favorite:
+    -   
 
 ### [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme) & [Material Product Icons](https://marketplace.visualstudio.com/items?itemName=PKief.material-product-icons)
 
@@ -61,19 +66,21 @@ Honestly, I just use Product Icons because for consistency. It's not important b
 
 ## Git & GitHub
 
-### GitHub Pull Requests and Issues
+### [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
 
-### GitHub Copilot *(\*requires subscription)*
+### [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) *(\*requires subscription)*
 
 ::: {.callout-note appearance="simple"}
 Free Alternative: [IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) & [IntelliCode API Usage Examples](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.intellicode-api-usage-examples)
 :::
 
-### GitLense *(\*requires subscription)*
+### [GitLense](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)*(\*requires subscription)*
 
-## Python & Jupyter Notebooks
+## Coding
 
-### Documentation - [autoDocstring](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) & [Python Type Hint](https://marketplace.visualstudio.com/items?itemName=njqdev.vscode-python-typehint)
+### [Python Indent](https://marketplace.visualstudio.com/items?itemName=KevinRose.vsc-python-indent)
+
+### Documentation: [autoDocstring](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) & [Python Type Hint](https://marketplace.visualstudio.com/items?itemName=njqdev.vscode-python-typehint)
 
 This amazing extension auto populates the information of any Python function. Small things like this make documentation so much faster and easier - meaning I'll actually do it. Here's an example
 
@@ -83,28 +90,24 @@ def new_function(attribue):
     pass
 ```
 
-### Black Formatter
+### Formatters: [Black](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter) *(python & jupyter) &* [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
--   Microsoft Python stuff
--   Microsoft Jupyter stuff
+### Markdown: [All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one), [Checkboxes](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-checkbox), & [Lint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
 
-## Markdown
-
--   Markdown All in One
--   Markdown Checkbox
--   Markdown Lint
--   Prettier - Code formatter
+::: {.callout-tip appearance="simple"}
+Install this [Markdown Extension Pack](https://marketplace.visualstudio.com/items?itemName=bat67.markdown-extension-pack) to get all of these extensions and more!
+:::
 
 ## Data Science
 
 ### Excel Viewer
+
+### SandDance for VSCode
 
 ### Quarto
 
 ::: {.callout-tip appearance="simple"}
 Edit your posts in `Visual Mode` - right click in the document and select `Visual Mode`. Turns Visual Studio code into an actual document editor and lets you do fancy things like insert and edit tables, format, add links, and so much more! *(This works with any markdown document, not just Quarto!)*
 :::
-
-### SandDance for VSCode
 
 # Discover More Extensions
