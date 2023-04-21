@@ -80,6 +80,8 @@ Free Alternative: [IntelliCode](https://marketplace.visualstudio.com/items?itemN
 
 ### [Python Indent](https://marketplace.visualstudio.com/items?itemName=KevinRose.vsc-python-indent)
 
+### [Pylint](https://marketplace.visualstudio.com/items?itemName=ms-python.pylint)
+
 ### Documentation: [autoDocstring](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) & [Python Type Hint](https://marketplace.visualstudio.com/items?itemName=njqdev.vscode-python-typehint)
 
 This amazing extension auto populates the information of any Python function. Small things like this make documentation so much faster and easier - meaning I'll actually do it. Here's an example
@@ -100,11 +102,11 @@ Install this [Markdown Extension Pack](https://marketplace.visualstudio.com/item
 
 ## Data Science
 
-### Excel Viewer
+### [Excel Viewer](https://marketplace.visualstudio.com/items?itemName=GrapeCity.gc-excelviewer)
 
-### SandDance for VSCode
+### [SandDance](https://marketplace.visualstudio.com/items?itemName=msrvida.vscode-sanddance) for VSCode
 
-### Quarto
+### [Quarto](https://marketplace.visualstudio.com/items?itemName=quarto.quarto)
 
 ::: {.callout-tip appearance="simple"}
 Edit your posts in `Visual Mode` - right click in the document and select `Visual Mode`. Turns Visual Studio code into an actual document editor and lets you do fancy things like insert and edit tables, format, add links, and so much more! *(This works with any markdown document, not just Quarto!)*
