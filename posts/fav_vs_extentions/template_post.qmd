@@ -74,21 +74,22 @@ Honestly, I just use Product Icons because for consistency. It's not important b
 Free Alternative: [IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) & [IntelliCode API Usage Examples](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.intellicode-api-usage-examples)
 :::
 
-### [GitLense](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)*(\*requires subscription)*
+### [GitLense](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) *(\*requires subscription)*
 
 ## Coding
 
-### [Python Indent](https://marketplace.visualstudio.com/items?itemName=KevinRose.vsc-python-indent)
-
 ### [Pylint](https://marketplace.visualstudio.com/items?itemName=ms-python.pylint)
+
+### [Python Indent](https://marketplace.visualstudio.com/items?itemName=KevinRose.vsc-python-indent)
 
 ### Documentation: [autoDocstring](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) & [Python Type Hint](https://marketplace.visualstudio.com/items?itemName=njqdev.vscode-python-typehint)
 
 This amazing extension auto populates the information of any Python function. Small things like this make documentation so much faster and easier - meaning I'll actually do it. Here's an example
 
 ``` python
-def new_function(attribue):
-    """"""
+def new_function():
+    """
+    """
     pass
 ```
 
