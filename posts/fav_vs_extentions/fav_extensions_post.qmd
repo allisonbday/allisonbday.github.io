@@ -107,7 +107,7 @@ def new_function(arg1: str, arg2: int):
 
 **Lint**, or a **linter**, is a static code analysis tool used to flag programming errors, bugs, stylistic errors and suspicious constructs.[^1] Using a linter like Pylint helps keep code consistent and up to standard.
 
-[^1]: https://en.wikipedia.org/wiki/Lint\_%28software%29
+[^1]: ["Lint" wiki](https://en.wikipedia.org/wiki/Lint_%28software%29)
 
 ### Formatters: [Black](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter) *(python & jupyter) &* [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
