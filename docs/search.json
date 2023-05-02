@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "allisonbday.github.io",
     "section": "",
-    "text": "a title\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\nPandas Groupby & Aggregations\n\n\n\n\n\n\n\nPython\n\n\nPandas\n\n\nCode Snippets\n\n\n\n\n\n\n\n\n\n\n\nMar 4, 2023\n\n\nAllison Day\n\n\n\n\n\n\n  \n\n\n\n\nANSI Colored Text in Terminal/Outputs\n\n\n\n\n\n\n\nPython\n\n\nJupyter Notebooks\n\n\nCode Snippets\n\n\n\n\nCredit goes to this StackOverflow thread\n\n\n\n\n\n\nFeb 28, 2023\n\n\nAllison Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWorking with Nested JSONs\n\n\n\n\n\n\n\nAPIs\n\n\nJSON\n\n\n\n\n\n\n\n\n\n\n\nNov 6, 2022\n\n\nAllison Day\n\n\n\n\n\n\nNo matching items"
+    "text": "a title\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\nVS Code Extensions Everyone Should Have\n\n\n\n\n\n\n\nVS Code\n\n\n\n\n\n\n\n\n\n\n\nMay 2, 2023\n\n\nAllison Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPandas Groupby & Aggregations\n\n\n\n\n\n\n\nPython\n\n\nPandas\n\n\nCode Snippets\n\n\n\n\n\n\n\n\n\n\n\nMar 4, 2023\n\n\nAllison Day\n\n\n\n\n\n\n  \n\n\n\n\nANSI Colored Text in Terminal/Outputs\n\n\n\n\n\n\n\nPython\n\n\nJupyter Notebooks\n\n\nCode Snippets\n\n\n\n\nCredit goes to this StackOverflow thread\n\n\n\n\n\n\nFeb 28, 2023\n\n\nAllison Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWorking with Nested JSONs\n\n\n\n\n\n\n\nAPIs\n\n\nJSON\n\n\n\n\n\n\n\n\n\n\n\nNov 6, 2022\n\n\nAllison Day\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "jobs/doterra.html",
@@ -145,5 +145,47 @@
     "title": "Allison Day",
     "section": "and another heading",
     "text": "and another heading\nmore text\n``python\ndef some_function(): pass\n``"
+  },
+  {
+    "objectID": "posts/fav_vs_extentions/fav_extensions_post.html",
+    "href": "posts/fav_vs_extentions/fav_extensions_post.html",
+    "title": "VS Code Extensions Everyone Should Have",
+    "section": "",
+    "text": "Visual Studio Code was originally written to be web - based. Thus it feel so light. Here are some extensions that took my coding to the next level.\nI’ve been using VS Code my whole coding career, nearly 5 years. I’m by no means a pro but I have picked up a few things along the way."
+  },
+  {
+    "objectID": "posts/fav_vs_extentions/fav_extensions_post.html#general-quality-of-life",
+    "href": "posts/fav_vs_extentions/fav_extensions_post.html#general-quality-of-life",
+    "title": "VS Code Extensions Everyone Should Have",
+    "section": "General Quality of Life",
+    "text": "General Quality of Life\nThese are the extensions that improve VS Code as a whole. These are also the “optional” extensions that I use the most (i.e. not required to function like Python or Git).\n\nBetter Comments\nAs you can see by the whole section dedicated to themes, I’m a visual person. So an extension that can visually differentiate intentions between comments was a game changer. Now I can visually see the difference between warning and todo comments. Cannot recommend enough.\n\n\nBookmarks\nThis lets you put bookmarks throughout your scripts. This really helps with navigation, but I also used it to keep track of what I want to work on next and make a todo list. It also adds a bookmark page on the action bar. However, now that I usually use Jupyter Notebooks I don’t personally use this extension as much as I used to.\n\n\nLive Share\nIf you work with other people, especially remotely like I do, this tool is indispensable. It lets you both edit the same file or files at the same time. Took coding meetings from tedious backseat driving (click here, type this) to fun and productive collaboration sessions and cut the time in half. It even automatically includes their handle as a co-author in any git commits!\n\n\nTabOut\nIf you only get one extension from this article, this is it.\nInstead of using right arrows to get out of parenthesis, brackets, or quotes you just hit tab. You don’t need to lift your hand from the keyboard to hit the arrow keys, you just reach up and tab out. It nearly brought me to tears the first time I used it. Cannot recommend enough."
+  },
+  {
+    "objectID": "posts/fav_vs_extentions/fav_extensions_post.html#themes",
+    "href": "posts/fav_vs_extentions/fav_extensions_post.html#themes",
+    "title": "VS Code Extensions Everyone Should Have",
+    "section": "Themes",
+    "text": "Themes\nThese affect the look of VS Code from colors to icons.\n\nColor Themes\nI am a very visual person, so how my code works is very important to me. Every time I open VS Code the first thing I do is hit Ctrl + K & Ctrl + T to change the visual theme to match my mood. I have come to discover that my mood linked to my environment, and that doesn’t end at my decor. If I like looking at my code I like coding more.\n\nNoctis is the most beginner friendly theme pack with only 11 choices.\nFavorites: Bordos, Sereno\nBearded Theme was my favorite for years and has a good spread of themes with 32 variations. I especially like the high contrast themes.\nFavorites: Surprising Watermelon, Ebony, Milkshake Raspberry\nRainglow is the mother of all theme packs. It has 320 themes, which is a little overwhelming at first. But I really enjoy ruffling through them for the perfect theme for my coding session. The thing I love most is that there are more than one version of each theme, a normal and a high contrast theme.\nFavorites: Earth Song Light, Frontier light, Grunge light, Hyrule Contrast, Mud Contrast\n\n\n\n\n\n\n\nLook out if a theme is high contrast or not. Some people like low contrast because the other code fades into the background and allows them to only focus on what they’re writing. I prefer high contrast themes because I have very sensitive eyes that strain easily.\n\n\n\nHonerable mentions: Github Theme, Dracula Official, & Theme\n\n\nMaterial Icon Theme & Material Product Icons\nThese themes change the look of VS Code interface itself. I never change these themes.\nI love the Material Icon Theme because not only does it change the file icons to differentiate file types but it also changes folder icons depending on its name. I love this extension so much that I have gone back through some repositories and changed folder names to fit with this extension. But if Material Icon Theme is overwhelming or not to your taste I also recommend Bearded Icons from the same developer as Bearded Theme.\nHonestly, I just use Product Icons because for consistency. It’s not important but shows VS Code’s flexibility."
+  },
+  {
+    "objectID": "posts/fav_vs_extentions/fav_extensions_post.html#git-github",
+    "href": "posts/fav_vs_extentions/fav_extensions_post.html#git-github",
+    "title": "VS Code Extensions Everyone Should Have",
+    "section": "Git & GitHub",
+    "text": "Git & GitHub\n\nGitHub Pull Requests and Issues\nThis is a necessity if you use Github, whether you collaborate or not. It allows you to make an issue, create a branch for that issue, edit the code, create a pull request, and merge all within VS Code. In this repository I use issues to keep track of ideas for new blog posts and this is a game changer.\n\n\nGitHub Copilot (*subscription)\nAI is the future and that’s no different with coding. Github Copilot will write code for you and help streamline your flow. It comes with a 30 day free trial and is $10 a month after. I’ve just started copilot and may write a blog post about it in the future but so far it’s amazing! I’m especially curious about it’s ability to write tests.\n\n\n\n\n\n\nFree Alternative: IntelliCode & IntelliCode API Usage Examples"
+  },
+  {
+    "objectID": "posts/fav_vs_extentions/fav_extensions_post.html#coding",
+    "href": "posts/fav_vs_extentions/fav_extensions_post.html#coding",
+    "title": "VS Code Extensions Everyone Should Have",
+    "section": "Coding",
+    "text": "Coding\n\nPython Indent\n\n\nDocumentation: Python Type Hint & autoDocstring\nPython Type Hint helps to add types to your function arguments.\nautoDocstring helps to populate summary info for your functions. This also makes documentation a lot easier (meaning you’ll actually do documentation lol).\ndef new_function(arg1: str, arg2: int):\n    \"\"\"\n    prints the arguments\n\n    Args:\n        arg1 (str): a string that you want to print\n        arg2 (int): an int that you want to print\n    \"\"\"\n    print(f\"arg1: {arg1}, arg2: {arg2}\")\n\n\nPylint\nLint, or a linter, is a static code analysis tool used to flag programming errors, bugs, stylistic errors and suspicious constructs.1 Using a linter like Pylint helps keep code consistent and up to standard.\n\n\nFormatters: Black (python & jupyter) & Prettier\nNot to be dramatic, but I would not still be coding without code formatters. As I mentioned earlier, I am a very visual person so I want my code to be pretty too. Enter: formatters.\nI have been using Black for years, and love the auto formatting on save feature. I was so attached to Black that I almost refused to use Jupyter notebooks until the March 2023 update finally allowed it. It is so satisfying to see your scrappy code instantly turn beautiful, making block-text dictionaries beautiful and messy functions readable.\nFor anything that’s not Python or Jupyter I use Prettier because it’s reliable and has tons of languages. The ones I probably use the most is YAML and markdown.\n\n\nMarkdown: Markdown All in One, Markdown Checkbox, & markdownlint\nBesides Python/Jupyter, Markdown is probably the language I use most. I use markdown to take notes and write documentation, and Github Display pages run on markdown. So I have a few extensions to help streamline the process.\nMarkdown All in One is a heavy hitter. This lets you automatically create a table of contents, Auto completions, print to HTML. My favorite feature is add/update/remove section numbering to remove the headache of manually redoing it.\nMarkdown Checkbox is a really simple extension that just inserts a checkbox.\nMarkdownLint is the same principle as Pylint and helps make markdown formatting more consistent.\n\n\n\n\n\n\nDownload this Markdown Extension Pack to get all of these extensions and more!"
+  },
+  {
+    "objectID": "posts/fav_vs_extentions/fav_extensions_post.html#data-science",
+    "href": "posts/fav_vs_extentions/fav_extensions_post.html#data-science",
+    "title": "VS Code Extensions Everyone Should Have",
+    "section": "Data Science",
+    "text": "Data Science\n\nExcel Viewer\nLets you see previews of both CSV and XLSX files in a side viewer. You can filter and sort columns, manipulate the data, ext. I hate opening Excel and having another program bog down my system’s ram. Chef’s kiss.\n\n\nSandDance for VSCode\nSandDance lets you do some visual analysis on datasets. I like using it to get basic insights without having to manually program the charts myself. But it is a beast to run so use it wisely.\n\n\nQuarto\nQuarto is a great way to make a blog! I use it to make this blog right now. It used to be RMarkdown but you can now use it as it’s own language. Highly recommend!\n\n\n\n\n\n\nEdit your posts in Visual Mode - right click in the document and select Visual Mode. Turns Visual Studio code into an actual document editor and lets you do fancy things like insert and edit tables, format, add links, and so much more! (This works with any markdown document, not just Quarto!)"
   }
 ]
