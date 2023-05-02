@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "allisonbday.github.io",
     "section": "",
-    "text": "Pandas Groupby & Aggregations\n\n\n\n\n\n\n\nPython\n\n\nPandas\n\n\nCode Snippets\n\n\n\n\n\n\n\n\n\n\n\nMar 4, 2023\n\n\nAllison Day\n\n\n\n\n\n\n  \n\n\n\n\nANSI Colored Text in Terminal/Outputs\n\n\n\n\n\n\n\nPython\n\n\nJupyter Notebooks\n\n\nCode Snippets\n\n\n\n\nCredit goes to this StackOverflow thread\n\n\n\n\n\n\nFeb 28, 2023\n\n\nAllison Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWorking with Nested JSONs\n\n\n\n\n\n\n\nAPIs\n\n\nJSON\n\n\n\n\n\n\n\n\n\n\n\nNov 6, 2022\n\n\nAllison Day\n\n\n\n\n\n\nNo matching items"
+    "text": "a title\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\nPandas Groupby & Aggregations\n\n\n\n\n\n\n\nPython\n\n\nPandas\n\n\nCode Snippets\n\n\n\n\n\n\n\n\n\n\n\nMar 4, 2023\n\n\nAllison Day\n\n\n\n\n\n\n  \n\n\n\n\nANSI Colored Text in Terminal/Outputs\n\n\n\n\n\n\n\nPython\n\n\nJupyter Notebooks\n\n\nCode Snippets\n\n\n\n\nCredit goes to this StackOverflow thread\n\n\n\n\n\n\nFeb 28, 2023\n\n\nAllison Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWorking with Nested JSONs\n\n\n\n\n\n\n\nAPIs\n\n\nJSON\n\n\n\n\n\n\n\n\n\n\n\nNov 6, 2022\n\n\nAllison Day\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "jobs/doterra.html",
@@ -103,5 +103,47 @@
     "title": "About",
     "section": "",
     "text": "Hello! My name is Allison Day and I recently graduated from Brigham Young University - Idaho with a degree in Data Science. I love Python and often make Streamlit apps in my free time."
+  },
+  {
+    "objectID": "posts/fav_vs_extentions/code/delete.html",
+    "href": "posts/fav_vs_extentions/code/delete.html",
+    "title": "Allison Day",
+    "section": "",
+    "text": "a title\n\na subtitle\nheading\nanother heading\nyet another heading\nand another heading"
+  },
+  {
+    "objectID": "posts/fav_vs_extentions/code/delete.html#a-subtitle",
+    "href": "posts/fav_vs_extentions/code/delete.html#a-subtitle",
+    "title": "Allison Day",
+    "section": "a subtitle",
+    "text": "a subtitle\nsome text"
+  },
+  {
+    "objectID": "posts/fav_vs_extentions/code/delete.html#heading",
+    "href": "posts/fav_vs_extentions/code/delete.html#heading",
+    "title": "Allison Day",
+    "section": "heading",
+    "text": "heading\nsome more text"
+  },
+  {
+    "objectID": "posts/fav_vs_extentions/code/delete.html#another-heading",
+    "href": "posts/fav_vs_extentions/code/delete.html#another-heading",
+    "title": "Allison Day",
+    "section": "another heading",
+    "text": "another heading\neven more text"
+  },
+  {
+    "objectID": "posts/fav_vs_extentions/code/delete.html#yet-another-heading",
+    "href": "posts/fav_vs_extentions/code/delete.html#yet-another-heading",
+    "title": "Allison Day",
+    "section": "yet another heading",
+    "text": "yet another heading\nmore text"
+  },
+  {
+    "objectID": "posts/fav_vs_extentions/code/delete.html#and-another-heading",
+    "href": "posts/fav_vs_extentions/code/delete.html#and-another-heading",
+    "title": "Allison Day",
+    "section": "and another heading",
+    "text": "and another heading\nmore text\n``python\ndef some_function(): pass\n``"
   }
 ]

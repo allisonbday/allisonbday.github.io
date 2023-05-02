@@ -237,7 +237,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>These affect the look of VS Code from colors to icons.</p>
 <section id="color-themes" class="level3">
 <h3 class="anchored" data-anchor-id="color-themes">Color Themes</h3>
-<p>Every time I open VS Code the first thing I do is hit <code>Ctrl + K</code> &amp; <code>Ctrl + T</code> to change the visual theme to match my mood. I have come to discover that my mood linked to my environment, and that doesn’t end at my decor. If I like looking at my code I like coding more.</p>
+<p>I am a very visual person, so how my code works is very important to me. Every time I open VS Code the first thing I do is hit <code>Ctrl + K</code> &amp; <code>Ctrl + T</code> to change the visual theme to match my mood. I have come to discover that my mood linked to my environment, and that doesn’t end at my decor. If I like looking at my code I like coding more.</p>
 <ul>
 <li><p><a href="https://marketplace.visualstudio.com/items?itemName=liviuschera.noctis">Noctis</a> is the most beginner friendly theme pack with only 11 choices.<br>
 <em>Favorites: Bordos, Sereno</em></p></li>
@@ -288,16 +288,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 <section id="coding" class="level2">
 <h2 class="anchored" data-anchor-id="coding">Coding</h2>
-<section id="pylint" class="level3">
-<h3 class="anchored" data-anchor-id="pylint"><a href="https://marketplace.visualstudio.com/items?itemName=ms-python.pylint">Pylint</a></h3>
-</section>
 <section id="python-indent" class="level3">
 <h3 class="anchored" data-anchor-id="python-indent"><a href="https://marketplace.visualstudio.com/items?itemName=KevinRose.vsc-python-indent">Python Indent</a></h3>
 </section>
 <section id="documentation-python-type-hint-autodocstring" class="level3">
 <h3 class="anchored" data-anchor-id="documentation-python-type-hint-autodocstring">Documentation: <a href="https://marketplace.visualstudio.com/items?itemName=njqdev.vscode-python-typehint">Python Type Hint</a> &amp; <a href="https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring">autoDocstring</a></h3>
 <p>Python Type Hint helps to add types to your function arguments.</p>
-<p>autoDocstring helps to populate summary info for your functions. This also makes documentation a lot easier (meaning you’ll actually do documentation).</p>
+<p>autoDocstring helps to populate summary info for your functions. This also makes documentation a lot easier (meaning you’ll actually do documentation lol).</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> new_function(arg1: <span class="bu">str</span>, arg2: <span class="bu">int</span>):</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">    prints the arguments</span></span>
@@ -308,18 +305,29 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"arg1: </span><span class="sc">{</span>arg1<span class="sc">}</span><span class="ss">, arg2: </span><span class="sc">{</span>arg2<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
+<section id="pylint" class="level3">
+<h3 class="anchored" data-anchor-id="pylint"><a href="https://marketplace.visualstudio.com/items?itemName=ms-python.pylint">Pylint</a></h3>
+<p><strong>Lint</strong>, or a&nbsp;<strong>linter</strong>, is a&nbsp;static code analysis&nbsp;tool used to flag programming errors,&nbsp;bugs, stylistic errors and suspicious constructs.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> Using a linter like Pylint helps keep code consistent and up to standard.</p>
+</section>
 <section id="formatters-black-python-jupyter-prettier" class="level3">
 <h3 class="anchored" data-anchor-id="formatters-black-python-jupyter-prettier">Formatters: <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter">Black</a> <em>(python &amp; jupyter) &amp;</em> <a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode">Prettier</a></h3>
+<p>Not to be dramatic, but I would not still be coding without code formatters. As I mentioned earlier, I am a very visual person so I want my code to be pretty too. Enter: formatters.</p>
+<p>I have been using Black for years, and love the auto formatting on save feature. I was so attached to Black that I almost refused to use Jupyter notebooks until the March 2023 update finally allowed it. It is so satisfying to see your scrappy code instantly turn beautiful, making block-text dictionaries beautiful and messy functions readable.</p>
+<p>For anything that’s not Python or Jupyter I use Prettier because it’s reliable and has tons of languages. The ones I probably use the most is YAML and markdown.</p>
 </section>
-<section id="markdown-all-in-one-checkboxes-lint" class="level3">
-<h3 class="anchored" data-anchor-id="markdown-all-in-one-checkboxes-lint">Markdown: <a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one">All in One</a>, <a href="https://marketplace.visualstudio.com/items?itemName=bierner.markdown-checkbox">Checkboxes</a>, &amp; <a href="https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint">Lint</a></h3>
+<section id="markdown-markdown-all-in-one-markdown-checkbox-markdownlint" class="level3">
+<h3 class="anchored" data-anchor-id="markdown-markdown-all-in-one-markdown-checkbox-markdownlint">Markdown: <a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one">Markdown All in One</a>, <a href="https://marketplace.visualstudio.com/items?itemName=bierner.markdown-checkbox">Markdown Checkbox</a>, &amp; <a href="https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint">markdownlint</a></h3>
+<p>Besides Python/Jupyter, Markdown is probably the language I use most. I use markdown to take notes and write documentation, and Github Display pages run on markdown. So I have a few extensions to help streamline the process.</p>
+<p>Markdown All in One is a heavy hitter. This lets you automatically create a table of contents, Auto completions, print to HTML. My favorite feature is add/update/remove section numbering to remove the headache of manually redoing it.</p>
+<p>Markdown Checkbox is a really simple extension that just inserts a checkbox.</p>
+<p>MarkdownLint is the same principle as Pylint and helps make markdown formatting more consistent.</p>
 <div class="callout-tip callout callout-style-simple">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>Install this <a href="https://marketplace.visualstudio.com/items?itemName=bat67.markdown-extension-pack">Markdown Extension Pack</a> to get all of these extensions and more!</p>
+<p>Download this <a href="https://marketplace.visualstudio.com/items?itemName=bat67.markdown-extension-pack">Markdown Extension Pack</a> to get all of these extensions and more!</p>
 </div>
 </div>
 </div>
@@ -329,12 +337,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2 class="anchored" data-anchor-id="data-science">Data Science</h2>
 <section id="excel-viewer" class="level3">
 <h3 class="anchored" data-anchor-id="excel-viewer"><a href="https://marketplace.visualstudio.com/items?itemName=GrapeCity.gc-excelviewer">Excel Viewer</a></h3>
+<p>Lets you see previews of both CSV and XLSX files in a side viewer. You can filter and sort columns, manipulate the data, ext. I hate opening Excel and having another program bog down my system’s ram. Chef’s kiss.</p>
 </section>
 <section id="sanddance-for-vscode" class="level3">
 <h3 class="anchored" data-anchor-id="sanddance-for-vscode"><a href="https://marketplace.visualstudio.com/items?itemName=msrvida.vscode-sanddance">SandDance</a> for VSCode</h3>
+<p>SandDance lets you do some visual analysis on datasets. I like using it to get basic insights without having to manually program the charts myself. But it is a beast to run so use it wisely.</p>
 </section>
 <section id="quarto" class="level3">
 <h3 class="anchored" data-anchor-id="quarto"><a href="https://marketplace.visualstudio.com/items?itemName=quarto.quarto">Quarto</a></h3>
+<p>Quarto is a great way to make a blog! I use it to make this blog right now. It used to be RMarkdown but you can now use it as it’s own language. Highly recommend!</p>
 <div class="callout-tip callout callout-style-simple">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
@@ -350,11 +361,24 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 <section id="discover-more-extensions" class="level1">
 <h1>Discover More Extensions</h1>
+<p>If you want to discover more extensions yourself, you can easily do it inside VS Code! Just go to the extensions page and go up to the filter at the top. You can filter and sort by many options! And if you can’t find the perfect extensions, it’s easy to create your own!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/category_search.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Showing the Search Options</figcaption><p></p>
+</figure>
+</div>
 
 
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>https://en.wikipedia.org/wiki/Lint_%28software%29<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
