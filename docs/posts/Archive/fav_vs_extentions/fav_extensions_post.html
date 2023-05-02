@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Allison Day">
+<meta name="dcterms.date" content="2023-05-02">
+<meta name="description" content="VS Extensions that I need to survive">
+
+<title>Allison Day - VS Code Extensions Everyone Should Have</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">Allison Day</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/allison-b-day/"><i class="bi bi-linkedin" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">VS Code Extensions Everyone Should Have</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">VS Code</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    VS Extensions that I need to survive
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Allison Day </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">May 2, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="why-vs-code" class="level1">
+<h1>Why VS Code?</h1>
+<p>Visual Studio Code was originally written to be web - based. Thus it feel so light. Here are some extensions that took my coding to the next level.</p>
+</section>
+<section id="my-extensions" class="level1">
+<h1>My Extensions</h1>
+<section id="general-quality-of-life" class="level2">
+<h2 class="anchored" data-anchor-id="general-quality-of-life">General Quality of Life</h2>
+<p>These are the extensions that improve VS Code as a whole. These are also the “optional” extensions that I use the most <em>(i.e.&nbsp;not required to function like Python or Git)</em>.</p>
+<section id="better-comments" class="level3">
+<h3 class="anchored" data-anchor-id="better-comments"><a href="https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments">Better Comments</a></h3>
+<p>As you can see by the whole section dedicated to themes, I’m a visual person. So an extension that can visually differentiate intentions between comments was a game changer. Now I can visually see the difference between warning and todo comments. Cannot recommend enough.</p>
+</section>
+<section id="bookmarks" class="level3">
+<h3 class="anchored" data-anchor-id="bookmarks"><a href="https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks">Bookmarks</a></h3>
+<p>This lets you put bookmarks throughout your scripts. This really helps with navigation, but I also used it to keep track of what I want to work on next and make a todo list. It also adds a bookmark page on the action bar. However, now that I usually use Jupyter Notebooks I don’t personally use this extension as much as I used to.</p>
+</section>
+<section id="live-share" class="level3">
+<h3 class="anchored" data-anchor-id="live-share"><a href="https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare">Live Share</a></h3>
+<p>If you work with other people, especially remotely like I do, this tool is indispensable. It lets you both edit the same file or files at the same time. Took coding meetings from tedious backseat driving (click here, type this) to fun and productive collaboration sessions and cut the time in half. It even automatically includes their handle as a co-author in any git commits!</p>
+</section>
+<section id="tabout" class="level3">
+<h3 class="anchored" data-anchor-id="tabout"><a href="https://marketplace.visualstudio.com/items?itemName=albert.TabOut">TabOut</a></h3>
+<p>If you only get one extension from this article, this is it.</p>
+<p>Instead of using right arrows to get out of parenthesis, brackets, or quotes you just hit tab. You don’t need to lift your hand from the keyboard to hit the arrow keys, you just reach up and tab out. It nearly brought me to tears the first time I used it. Cannot recommend enough.</p>
+</section>
+</section>
+<section id="themes" class="level2">
+<h2 class="anchored" data-anchor-id="themes">Themes</h2>
+<p>These affect the look of VS Code from colors to icons.</p>
+<section id="color-themes" class="level3">
+<h3 class="anchored" data-anchor-id="color-themes">Color Themes</h3>
+<p>I am a very visual person, so how my code works is very important to me. Every time I open VS Code the first thing I do is hit <code>Ctrl + K</code> &amp; <code>Ctrl + T</code> to change the visual theme to match my mood. I have come to discover that my mood linked to my environment, and that doesn’t end at my decor. If I like looking at my code I like coding more.</p>
+<ul>
+<li><p><a href="https://marketplace.visualstudio.com/items?itemName=liviuschera.noctis">Noctis</a> is the most beginner friendly theme pack with only 11 choices.<br>
+<em>Favorites: Bordos, Sereno</em></p></li>
+<li><p><a href="https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedtheme">Bearded Theme</a> was my favorite for years and has a good spread of themes with 32 variations. I especially like the high contrast themes.<br>
+<em>Favorites: Surprising Watermelon, Ebony, Milkshake Raspberry</em></p></li>
+<li><p><a href="https://marketplace.visualstudio.com/items?itemName=daylerees.rainglow">Rainglow</a> is the mother of all theme packs. It has 320 themes, which is a little overwhelming at first. But I really enjoy ruffling through them for the perfect theme for my coding session. The thing I love most is that there are more than one version of each theme, a normal and a high contrast theme.<br>
+<em>Favorites: Earth Song Light, Frontier light, Grunge light, Hyrule Contrast, Mud Contrast</em></p></li>
+</ul>
+<div class="callout-tip callout callout-style-simple">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Look out if a theme is high contrast or not. Some people like low contrast because the other code fades into the background and allows them to only focus on what they’re writing. I prefer high contrast themes because I have very sensitive eyes that strain easily.</p>
+</div>
+</div>
+</div>
+<p><em>Honerable mentions: <a href="https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme">Github Theme</a>, <a href="https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula">Dracula Official</a>, &amp; <a href="https://marketplace.visualstudio.com/items?itemName=tal7aouy.theme">Theme</a></em></p>
+</section>
+<section id="material-icon-theme-material-product-icons" class="level3">
+<h3 class="anchored" data-anchor-id="material-icon-theme-material-product-icons"><a href="https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme">Material Icon Theme</a> &amp; <a href="https://marketplace.visualstudio.com/items?itemName=PKief.material-product-icons">Material Product Icons</a></h3>
+<p>These themes change the look of VS Code interface itself. I never change these themes.</p>
+<p>I love the Material Icon Theme because not only does it change the file icons to differentiate file types but it also changes folder icons depending on its name. I love this extension so much that I have gone back through some repositories and changed folder names to fit with this extension. But if Material Icon Theme is overwhelming or not to your taste I also recommend <a href="https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedicons">Bearded Icons</a> from the same developer as Bearded Theme.</p>
+<p>Honestly, I just use Product Icons because for consistency. It’s not important but shows VS Code’s flexibility.</p>
+</section>
+</section>
+<section id="git-github" class="level2">
+<h2 class="anchored" data-anchor-id="git-github">Git &amp; GitHub</h2>
+<section id="github-pull-requests-and-issues" class="level3">
+<h3 class="anchored" data-anchor-id="github-pull-requests-and-issues"><a href="https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github">GitHub Pull Requests and Issues</a></h3>
+<p>This is a necessity if you use Github, whether you collaborate or not. It allows you to make an issue, create a branch for that issue, edit the code, create a pull request, and merge all within VS Code. In this repository I use issues to keep track of ideas for new blog posts and this is a game changer.</p>
+</section>
+<section id="github-copilot-subscription" class="level3">
+<h3 class="anchored" data-anchor-id="github-copilot-subscription"><a href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot">GitHub Copilot</a> <em>(*subscription)</em></h3>
+<p>AI is the future and that’s no different with coding. Github Copilot will write code for you and help streamline your flow. It comes with a 30 day free trial and is $10 a month after. I’ve just started copilot and may write a blog post about it in the future but so far it’s amazing! I’m especially curious about it’s ability to write tests.</p>
+<div class="callout-note callout callout-style-simple">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Free Alternative: <a href="https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode">IntelliCode</a> &amp; <a href="https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.intellicode-api-usage-examples">IntelliCode API Usage Examples</a></p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="coding" class="level2">
+<h2 class="anchored" data-anchor-id="coding">Coding</h2>
+<section id="python-indent" class="level3">
+<h3 class="anchored" data-anchor-id="python-indent"><a href="https://marketplace.visualstudio.com/items?itemName=KevinRose.vsc-python-indent">Python Indent</a></h3>
+</section>
+<section id="documentation-python-type-hint-autodocstring" class="level3">
+<h3 class="anchored" data-anchor-id="documentation-python-type-hint-autodocstring">Documentation: <a href="https://marketplace.visualstudio.com/items?itemName=njqdev.vscode-python-typehint">Python Type Hint</a> &amp; <a href="https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring">autoDocstring</a></h3>
+<p>Python Type Hint helps to add types to your function arguments.</p>
+<p>autoDocstring helps to populate summary info for your functions. This also makes documentation a lot easier (meaning you’ll actually do documentation lol).</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> new_function(arg1: <span class="bu">str</span>, arg2: <span class="bu">int</span>):</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">    prints the arguments</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">    Args:</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">        arg1 (str): a string that you want to print</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">        arg2 (int): an int that you want to print</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"arg1: </span><span class="sc">{</span>arg1<span class="sc">}</span><span class="ss">, arg2: </span><span class="sc">{</span>arg2<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="pylint" class="level3">
+<h3 class="anchored" data-anchor-id="pylint"><a href="https://marketplace.visualstudio.com/items?itemName=ms-python.pylint">Pylint</a></h3>
+<p><strong>Lint</strong>, or a&nbsp;<strong>linter</strong>, is a&nbsp;static code analysis&nbsp;tool used to flag programming errors,&nbsp;bugs, stylistic errors and suspicious constructs.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> Using a linter like Pylint helps keep code consistent and up to standard.</p>
+</section>
+<section id="formatters-black-python-jupyter-prettier" class="level3">
+<h3 class="anchored" data-anchor-id="formatters-black-python-jupyter-prettier">Formatters: <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter">Black</a> <em>(python &amp; jupyter) &amp;</em> <a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode">Prettier</a></h3>
+<p>Not to be dramatic, but I would not still be coding without code formatters. As I mentioned earlier, I am a very visual person so I want my code to be pretty too. Enter: formatters.</p>
+<p>I have been using Black for years, and love the auto formatting on save feature. I was so attached to Black that I almost refused to use Jupyter notebooks until the March 2023 update finally allowed it. It is so satisfying to see your scrappy code instantly turn beautiful, making block-text dictionaries beautiful and messy functions readable.</p>
+<p>For anything that’s not Python or Jupyter I use Prettier because it’s reliable and has tons of languages. The ones I probably use the most is YAML and markdown.</p>
+</section>
+<section id="markdown-markdown-all-in-one-markdown-checkbox-markdownlint" class="level3">
+<h3 class="anchored" data-anchor-id="markdown-markdown-all-in-one-markdown-checkbox-markdownlint">Markdown: <a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one">Markdown All in One</a>, <a href="https://marketplace.visualstudio.com/items?itemName=bierner.markdown-checkbox">Markdown Checkbox</a>, &amp; <a href="https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint">markdownlint</a></h3>
+<p>Besides Python/Jupyter, Markdown is probably the language I use most. I use markdown to take notes and write documentation, and Github Display pages run on markdown. So I have a few extensions to help streamline the process.</p>
+<p>Markdown All in One is a heavy hitter. This lets you automatically create a table of contents, Auto completions, print to HTML. My favorite feature is add/update/remove section numbering to remove the headache of manually redoing it.</p>
+<p>Markdown Checkbox is a really simple extension that just inserts a checkbox.</p>
+<p>MarkdownLint is the same principle as Pylint and helps make markdown formatting more consistent.</p>
+<div class="callout-tip callout callout-style-simple">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Download this <a href="https://marketplace.visualstudio.com/items?itemName=bat67.markdown-extension-pack">Markdown Extension Pack</a> to get all of these extensions and more!</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="data-science" class="level2">
+<h2 class="anchored" data-anchor-id="data-science">Data Science</h2>
+<section id="excel-viewer" class="level3">
+<h3 class="anchored" data-anchor-id="excel-viewer"><a href="https://marketplace.visualstudio.com/items?itemName=GrapeCity.gc-excelviewer">Excel Viewer</a></h3>
+<p>Lets you see previews of both CSV and XLSX files in a side viewer. You can filter and sort columns, manipulate the data, ext. I hate opening Excel and having another program bog down my system’s ram. Chef’s kiss.</p>
+</section>
+<section id="sanddance-for-vscode" class="level3">
+<h3 class="anchored" data-anchor-id="sanddance-for-vscode"><a href="https://marketplace.visualstudio.com/items?itemName=msrvida.vscode-sanddance">SandDance</a> for VSCode</h3>
+<p>SandDance lets you do some visual analysis on datasets. I like using it to get basic insights without having to manually program the charts myself. But it is a beast to run so use it wisely.</p>
+</section>
+<section id="quarto" class="level3">
+<h3 class="anchored" data-anchor-id="quarto"><a href="https://marketplace.visualstudio.com/items?itemName=quarto.quarto">Quarto</a></h3>
+<p>Quarto is a great way to make a blog! I use it to make this blog right now. It used to be RMarkdown but you can now use it as it’s own language. Highly recommend!</p>
+<div class="callout-tip callout callout-style-simple">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Edit your posts in <code>Visual Mode</code> - right click in the document and select <code>Visual Mode</code>. Turns Visual Studio code into an actual document editor and lets you do fancy things like insert and edit tables, format, add links, and so much more! <em>(This works with any markdown document, not just Quarto!)</em></p>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="discover-more-extensions" class="level1">
+<h1>Discover More Extensions</h1>
+<p>If you want to discover more extensions yourself, you can easily do it inside VS Code! Just go to the extensions page and go up to the filter at the top. You can filter and sort by many options! And if you can’t find the perfect extensions, it’s easy to create your own!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/category_search.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Showing the Search Options</figcaption><p></p>
+</figure>
+</div>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p><a href="https://en.wikipedia.org/wiki/Lint_%28software%29">“Lint” wiki</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

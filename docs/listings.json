@@ -2,10 +2,10 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/finished posts/fav_vs_extentions/fav_extensions_post.html",
-      "/posts/finished posts/groupby_snippets/groupby_snippets.html",
-      "/posts/finished posts/colored_text/print_colored_text.html",
-      "/posts/finished posts/nested_jsons/Nested_JSONs.html"
+      "/posts/Archive/fav_vs_extentions/fav_extensions_post.html",
+      "/posts/Archive/groupby_snippets/groupby_snippets.html",
+      "/posts/Archive/colored_text/print_colored_text.html",
+      "/posts/Archive/nested_jsons/Nested_JSONs.html"
     ]
   }
 ]
