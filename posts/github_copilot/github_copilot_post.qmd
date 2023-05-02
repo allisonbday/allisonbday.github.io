@@ -2,7 +2,7 @@
 title: "Testing Github Copilot"
 # description: "Post description"
 author: "Allison Day"
-date: "11/6/2022" #! UPDATE!!!
+date: "11/6/2022"
 categories: [Python, VS Code, Github]
 # image: timp.jpg
 draft: true

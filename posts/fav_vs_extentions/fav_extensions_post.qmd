@@ -2,10 +2,10 @@
 title: "VS Code Extensions Everyone Should Have"
 
 author: "Allison Day"
-date: "4/20/2023"
+date: "5/2/2023"
 categories: [VS Code]
 
-draft: true
+draft: false
 ---
 
 # Why VS Code?
@@ -123,22 +123,36 @@ For anything that's not Python or Jupyter I use Prettier because it's reliable a
 
 Besides Python/Jupyter, Markdown is probably the language I use most. I use markdown to take notes and write documentation, and Github Display pages run on markdown. So I have a few extensions to help streamline the process.
 
-Markdown All in One is a heavy hitter
+Markdown All in One is a heavy hitter. This lets you automatically create a table of contents, Auto completions, print to HTML. My favorite feature is add/update/remove section numbering to remove the headache of manually redoing it.
+
+Markdown Checkbox is a really simple extension that just inserts a checkbox.
+
+MarkdownLint is the same principle as Pylint and helps make markdown formatting more consistent.
 
 ::: {.callout-tip appearance="simple"}
-Install this [Markdown Extension Pack](https://marketplace.visualstudio.com/items?itemName=bat67.markdown-extension-pack) to get all of these extensions and more!
+Download this [Markdown Extension Pack](https://marketplace.visualstudio.com/items?itemName=bat67.markdown-extension-pack) to get all of these extensions and more!
 :::
 
 ## Data Science
 
 ### [Excel Viewer](https://marketplace.visualstudio.com/items?itemName=GrapeCity.gc-excelviewer)
 
+Lets you see previews of both CSV and XLSX files in a side viewer. You can filter and sort columns, manipulate the data, ext. I hate opening Excel and having another program bog down my system's ram. Chef's kiss.
+
 ### [SandDance](https://marketplace.visualstudio.com/items?itemName=msrvida.vscode-sanddance) for VSCode
 
+SandDance lets you do some visual analysis on datasets. I like using it to get basic insights without having to manually program the charts myself. But it is a beast to run so use it wisely.
+
 ### [Quarto](https://marketplace.visualstudio.com/items?itemName=quarto.quarto)
+
+Quarto is a great way to make a blog! I use it to make this blog right now. It used to be RMarkdown but you can now use it as it's own language. Highly recommend!
 
 ::: {.callout-tip appearance="simple"}
 Edit your posts in `Visual Mode` - right click in the document and select `Visual Mode`. Turns Visual Studio code into an actual document editor and lets you do fancy things like insert and edit tables, format, add links, and so much more! *(This works with any markdown document, not just Quarto!)*
 :::
 
 # Discover More Extensions
+
+If you want to discover more extensions yourself, you can easily do it inside VS Code! Just go to the extensions page and go up to the filter at the top. You can filter and sort by many options! And if you can't find the perfect extensions, it's easy to create your own!
+
+![Showing the Search Options](images/category_search.png)
