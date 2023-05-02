@@ -10,7 +10,7 @@ draft: false
 
 # Why VS Code?
 
-I've been using VS Code my whole coding career, nearly 5 years. I'm by no means a pro but I have picked up a few things along the way.
+Visual Studio Code was originally written to be web - based. Thus it feel so light. Here are some extensions that took my coding to the next level.
 
 # My Extensions
 
