@@ -1,0 +1,13 @@
+---
+title: "Testing Github Copilot"
+# description: "Post description"
+author: "Allison Day"
+date: "11/6/2022" #! UPDATE!!!
+categories: [Python, VS Code, Github]
+# image: timp.jpg
+draft: true
+---
+
+The day has finally come - predetor has become prey and programmers have created the vehicle of their own doom. AI will take over all of our jobs and resistance is futile.
+
+Just kidding. Like any new advancement, we can use this amazing AI tool for our benefit! One of the most popular AI pair programmers is Github Copilot. According to the website, "Trained on billions of lines of code, GitHub Copilot turns natural language prompts into coding suggestions across dozens of languages."

@@ -46,21 +46,26 @@ These affect the look of VS Code from colors to icons.
 
 Every time I open VS Code the first thing I do is hit `Ctrl + K` & `Ctrl + T` to change the visual theme to match my mood. I have come to discover that my mood linked to my environment, and that doesn't end at my decor. If I like looking at my code I like coding more.
 
--   [Bearded Theme](https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedtheme) -\
-    Favorite:
-    -   
--   [Noctis](https://marketplace.visualstudio.com/items?itemName=liviuschera.noctis) -\
-    Favorite:
-    -   
--   [Rainglow](https://marketplace.visualstudio.com/items?itemName=daylerees.rainglow) -\
-    Favorite:
-    -   
+-   [Noctis](https://marketplace.visualstudio.com/items?itemName=liviuschera.noctis) is the most beginner friendly theme pack with only 11 choices.\
+    *Favorites: Bordos, Sereno*
+
+-   [Bearded Theme](https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedtheme) was my favorite for years and has a good spread of themes with 32 variations. I especially like the high contrast themes.\
+    *Favorites: Surprising Watermelon, Ebony, Milkshake Raspberry*
+
+-   [Rainglow](https://marketplace.visualstudio.com/items?itemName=daylerees.rainglow) is the mother of all theme packs. It has 320 themes, which is a little overwhelming at first. But I really enjoy ruffling through them for the perfect theme for my coding session. The thing I love most is that there are more than one version of each theme, a normal and a high contrast theme.\
+    *Favorites: Earth Song Light, Frontier light, Grunge light, Hyrule Contrast, Mud Contrast*
+
+::: {.callout-tip appearance="simple"}
+Look out if a theme is high contrast or not. Some people like low contrast because the other code fades into the background and allows them to only focus on what they're writing. I prefer high contrast themes because I have very sensitive eyes that strain easily.
+:::
+
+*Honerable mentions: [Github Theme](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme), [Dracula Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula), & [Theme](https://marketplace.visualstudio.com/items?itemName=tal7aouy.theme)*
 
 ### [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme) & [Material Product Icons](https://marketplace.visualstudio.com/items?itemName=PKief.material-product-icons)
 
-These themes change the look of VS Code interface itself. These themes never change.
+These themes change the look of VS Code interface itself. I never change these themes.
 
-I love the Material Icon Theme because not only does it change the icons to differentiate file types but it also changes folder icons depending on its name. I love this extension so much that I have gone back through all of my repos and changed folder names to fit with this extension. But if Material Icon Theme is overwhelming or not to your taste I also recommend the [Bearded Icons](https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedicons) from the same developer as Bearded Theme.
+I love the Material Icon Theme because not only does it change the file icons to differentiate file types but it also changes folder icons depending on its name. I love this extension so much that I have gone back through some repositories and changed folder names to fit with this extension. But if Material Icon Theme is overwhelming or not to your taste I also recommend [Bearded Icons](https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedicons) from the same developer as Bearded Theme.
 
 Honestly, I just use Product Icons because for consistency. It's not important but shows VS Code's flexibility.
 
@@ -68,13 +73,15 @@ Honestly, I just use Product Icons because for consistency. It's not important b
 
 ### [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
 
-### [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) *(\*requires subscription)*
+This is a necessity if you use Github, whether you collaborate or not. It allows you to make an issue, create a branch for that issue, edit the code, create a pull request, and merge all within VS Code. In this repository I use issues to keep track of ideas for new blog posts and this is a game changer.
+
+### [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) *(\*subscription)*
+
+AI is the future and that's no different with coding. Github Copilot will write code for you and help streamline your flow. It comes with a 30 day free trial and is \$10 a month after. I've just started copilot and may write a blog post about it in the future but so far it's amazing! I'm especially curious about it's ability to write tests.
 
 ::: {.callout-note appearance="simple"}
 Free Alternative: [IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) & [IntelliCode API Usage Examples](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.intellicode-api-usage-examples)
 :::
-
-### [GitLense](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) *(\*requires subscription)*
 
 ## Coding
 
@@ -82,15 +89,22 @@ Free Alternative: [IntelliCode](https://marketplace.visualstudio.com/items?itemN
 
 ### [Python Indent](https://marketplace.visualstudio.com/items?itemName=KevinRose.vsc-python-indent)
 
-### Documentation: [autoDocstring](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) & [Python Type Hint](https://marketplace.visualstudio.com/items?itemName=njqdev.vscode-python-typehint)
+### Documentation: [Python Type Hint](https://marketplace.visualstudio.com/items?itemName=njqdev.vscode-python-typehint) & [autoDocstring](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring)
 
-This amazing extension auto populates the information of any Python function. Small things like this make documentation so much faster and easier - meaning I'll actually do it. Here's an example
+Python Type Hint helps to add types to your function arguments.
+
+autoDocstring helps to populate summary info for your functions. This also makes documentation a lot easier (meaning you'll actually do documentation).
 
 ``` python
-def new_function():
+def new_function(arg1: str, arg2: int):
     """
+    prints the arguments
+
+    Args:
+        arg1 (str): a string that you want to print
+        arg2 (int): an int that you want to print
     """
-    pass
+    print(f"arg1: {arg1}, arg2: {arg2}")
 ```
 
 ### Formatters: [Black](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter) *(python & jupyter) &* [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
