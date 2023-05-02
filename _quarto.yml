@@ -9,11 +9,12 @@ website:
       - about.qmd
       - icon: github
         href: https://github.com/
-      - icon: twitter
-        href: https://twitter.com
+      - icon: linkedin
+        href: https://www.linkedin.com/in/allison-b-day/
+
 format:
   html:
-    theme: flatly
+    theme: pulse
     css: styles.css
 
 
