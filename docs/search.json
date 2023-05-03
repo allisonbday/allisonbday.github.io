@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Allison Day’s Posts",
+    "title": "Posts",
     "section": "",
-    "text": "Series\n\nseries\nThis series contains a great deal of tips, tricks and packages that you can use to level up your ggplot game.\n\n\n\nAll Posts\n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nVS Code Extensions Everyone Should Have\n\n\n\n\n\n\n\nVS Code\n\n\n\n\nVS Extensions that I need to survive\n\n\n\n\n\n\nMay 2, 2023\n\n\nAllison Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPandas Groupby & Aggregations\n\n\n\n\n\n\n\nPython\n\n\nPandas\n\n\nCode Snippets\n\n\n\n\n\n\n\n\n\n\n\nMar 4, 2023\n\n\nAllison Day\n\n\n\n\n\n\n  \n\n\n\n\nANSI Colored Text in Terminal/Outputs\n\n\n\n\n\n\n\nPython\n\n\nJupyter Notebooks\n\n\nCode Snippets\n\n\n\n\nCredit goes to this StackOverflow thread\n\n\n\n\n\n\nFeb 28, 2023\n\n\nAllison Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWorking with Nested JSONs\n\n\n\n\n\n\n\nAPIs\n\n\nJSON\n\n\n\n\n\n\n\n\n\n\n\nNov 6, 2022\n\n\nAllison Day\n\n\n\n\n\n\nNo matching items"
+    "text": "VS Code Extensions Everyone Should Have\n\n\n\n\n\n\n\nVS Code\n\n\n\n\nVS Extensions that I need to survive\n\n\n\n\n\n\nMay 2, 2023\n\n\nAllison Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPandas Groupby & Aggregations\n\n\n\n\n\n\n\nPython\n\n\nPandas\n\n\nCode Snippets\n\n\n\n\n\n\n\n\n\n\n\nMar 4, 2023\n\n\nAllison Day\n\n\n\n\n\n\n  \n\n\n\n\nANSI Colored Text in Terminal/Outputs\n\n\n\n\n\n\n\nPython\n\n\nJupyter Notebooks\n\n\nCode Snippets\n\n\n\n\nCredit goes to this StackOverflow thread\n\n\n\n\n\n\nFeb 28, 2023\n\n\nAllison Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWorking with Nested JSONs\n\n\n\n\n\n\n\nAPIs\n\n\nJSON\n\n\n\n\n\n\n\n\n\n\n\nNov 6, 2022\n\n\nAllison Day\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "jobs/doterra.html",
@@ -102,7 +102,7 @@
     "href": "about.html",
     "title": "Allison Day",
     "section": "",
-    "text": "Hello! My name is Allison Day and I love data! I recently got my Bachelor’s at Brigham Young University - Idaho studying Data Science. I am also an Associate Consultant/Associate Data Scientist at the Human Capital Management Institute. I am passionate about data visualization and data engineering. I am also a huge fan of Streamlit. I am excited to share my journey with you!\n\n\n\n\n\n\n\n\n\n\n\nExperience\nHuman Capital Management Institute | Associate Consultant/Associate Data Scientist | 2023 - Present\n\n\nEducation\nBrigham Young University - Idaho | Rexburg, ID Bachelors in Data Science | 2020 - 2022\n\n\n \n    \n  \n    \n     LinkedIn\n  \n  \n    \n     Github"
+    "text": "Hello! My name is Allison Day and I love data! I recently got my Bachelor’s at Brigham Young University - Idaho studying Data Science. I am also an Associate Consultant/Associate Data Scientist at the Human Capital Management Institute. I am passionate about data visualization and data engineering. I am also a huge fan of Streamlit. I am excited to share my journey with you!\n\n\n\n\n\n\n\n\n\n\n\nExperience\nHuman Capital Management Institute | Associate Consultant/Associate Data Scientist | 2023 - Present\n\n\nEducation\nBrigham Young University - Idaho | Rexburg, ID Bachelors in Data Science | 2020 - 2022\n\n\n \n  \n   \n  \n    \n     LinkedIn\n  \n  \n    \n     Github"
   },
   {
     "objectID": "posts/fav_vs_extentions/code/delete.html",
@@ -373,15 +373,15 @@
   {
     "objectID": "series.html",
     "href": "series.html",
-    "title": "Series: OUTSIDE",
+    "title": "Series: My Series of Everything OUTSIDE projects folder",
     "section": "",
     "text": "VS Code Extensions Everyone Should Have\n\n\n\n\n\nVS Extensions that I need to survive\n\n\n\n\n\n\nMay 2, 2023\n\n\n7 min\n\n\n\n\n\n\n\n\nPandas Groupby & Aggregations\n\n\n\n\n\n\n\n\n\n\n\n\nMar 4, 2023\n\n\n5 min\n\n\n\n\n\n\n\n\nANSI Colored Text in Terminal/Outputs\n\n\n\n\n\nCredit goes to this StackOverflow thread\n\n\n\n\n\n\nFeb 28, 2023\n\n\n1 min\n\n\n\n\n\n\n\n\nWorking with Nested JSONs\n\n\n\n\n\n\n\n\n\n\n\n\nNov 6, 2022\n\n\n2 min\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/series.html",
     "href": "projects/series.html",
-    "title": "Series: My Series of Everything",
+    "title": "Series: My Series of Everything INSIDE projects folder",
     "section": "",
-    "text": "No matching items"
+    "text": "This is a series of everything inside my projects folder. I will be writing about my projects, what I learned, and what I am planning to do next.\n\nPosts\n\n\n\n\n\n\n\n\n\n\n\nVS Code Extensions Everyone Should Have\n\n\n\n\n\nVS Extensions that I need to survive\n\n\n\n\n\n\nMay 2, 2023\n\n\n7 min\n\n\n\n\n\n\n\n\nPandas Groupby & Aggregations\n\n\n\n\n\n\n\n\n\n\n\n\nMar 4, 2023\n\n\n5 min\n\n\n\n\n\n\n\n\nANSI Colored Text in Terminal/Outputs\n\n\n\n\n\nCredit goes to this StackOverflow thread\n\n\n\n\n\n\nFeb 28, 2023\n\n\n1 min\n\n\n\n\n\n\n\n\nWorking with Nested JSONs\n\n\n\n\n\n\n\n\n\n\n\n\nNov 6, 2022\n\n\n2 min\n\n\n\n\n\n\nNo matching items"
   }
 ]

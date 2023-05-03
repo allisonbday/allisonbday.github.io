@@ -2,8 +2,10 @@
 # https://quarto.org/docs/websites/website-about.html
 title: "Allison Day"
 about:
-  template: marquee
+  template: jolla
   image: profile.jpg
+  # image-shape: rectangle
+  # image-width: 10em
   id: hero-heading
   links:
     - icon: linkedin
