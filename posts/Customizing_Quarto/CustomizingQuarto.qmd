@@ -9,46 +9,16 @@ draft: true
 bibliography: references.bib
 ---
 
-# H1
+Your blog should show your personality. When I started to take blogging seriously, I wanted to customize my blog to make it more personal. I wanted to add a logo, change the colors, and add a favicon. I also wanted to add a footer to my blog. I will show you how to do all of these things in this post.
 
-this is normal text. *this is italicized text* **this is bold text** ***this is bold and italicized text*** ~~this is strikethrough text~~
+# Theme
 
-## H2
+## Colors
 
-::: callout-note
-thjis is a note QQQQ
-:::
+## Fonts
 
-::: callout-tip
-this is a tip
-:::
+# Favicon
 
-::: callout-important
-## this is important
-:::
+# About Page
 
-::: callout-caution
-## this is a caution
-:::
-
-::: callout-warning
-## this is a warning
-:::
-
-### H3
-
-this is `inline code`
-
-``` python
-print("Hello World")
-```
-
-```{python}
-print("Hello World!")
-```
-
-#### H4
-
-this is normal text. [this is a link](https://learn.microsoft.com/en-us/azure/developer/python/tutorial-deploy-azure-cloud-python-etl-01-overview?tabs=cmd%2Cazure-portal). normal agina.
-
-this is a citation.[@Green2004]
+# Series
