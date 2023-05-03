@@ -19,6 +19,11 @@
   },
   {
     "listing": "/projects/series.html",
-    "items": []
+    "items": [
+      "/posts/Archive/fav_vs_extentions/fav_extensions_post.html",
+      "/posts/Archive/groupby_snippets/groupby_snippets.html",
+      "/posts/Archive/colored_text/print_colored_text.html",
+      "/posts/Archive/nested_jsons/Nested_JSONs.html"
+    ]
   }
 ]
