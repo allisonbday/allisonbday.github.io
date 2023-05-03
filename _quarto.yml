@@ -3,7 +3,7 @@ project:
   output-dir: docs
   
 website:
-  title: "Allison Day"
+  title: "allisonbday.github.io"
   navbar:
     right:
       - about.qmd

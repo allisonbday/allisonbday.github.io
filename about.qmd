@@ -1,8 +1,10 @@
 ---
-title: "About"
-image: profile.jpg
+# https://quarto.org/docs/websites/website-about.html
+title: "Allison Day"
 about:
-  template: jolla
+  template: marquee
+  image: profile.jpg
+  id: hero-heading
   links:
     - icon: linkedin
       text: LinkedIn
@@ -10,9 +12,45 @@ about:
     - icon: github
       text: Github
       href: https://github.com/allisonbday
-
+layout-ncol: 2
+column: page
 ---
 
 <!--- About this blog--> 
 
-Hello! My name is Allison Day and I recently graduated from Brigham Young University - Idaho with a degree in Data Science. I love Python and often make Streamlit apps in my free time.
+
+:::{#hero-heading}
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=py,r,md,github,vscode" />
+  </a>
+</p>
+
+
+Hello! My name is Allison Day and I love data! I recently got my Bachelor's at Brigham Young University - Idaho studying Data Science. I am also an Associate Consultant/Associate Data Scientist at the Human Capital Management Institute. I am passionate about [data visualization](https://www.tableau.com/) and [data engineering](https://www.snowflake.com/). I am also a huge fan of [Streamlit](https://streamlit.io/).<!-- I am currently learning [](). -->  I am excited to share my journey with you!
+
+<!-- generate thh start of my about me section -->
+<!--- About me section-->
+<!--- Ask me about []() -->
+<!--- How to reach me: []() -->
+<!--- ⚡ Fun fact: []() -->
+<!--- 📫 How to reach me: []() -->
+<!--- 🤔 I’m looking for help with []() -->
+<!--- 💬 Ask me about []() -->
+<!--- 👯 I’m looking to collaborate on []() -->
+<!--- 🌱 I’m currently learning []() -->
+
+
+
+# Experience
+**Human Capital Management Institute** | Associate Consultant/Associate Data Scientist | 2023 - Present
+
+# Education
+**Brigham Young University - Idaho** | Rexburg, ID 
+Bachelors in Data Science | 2020 - 2022
+
+
+![Allison's GitHub stats](https://github-readme-stats.vercel.app/api?username=allisonbday&show_icons=true)![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=allisonbday&layout=compact)
+
+:::
