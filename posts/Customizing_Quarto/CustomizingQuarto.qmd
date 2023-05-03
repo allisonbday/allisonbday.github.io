@@ -1,0 +1,54 @@
+---
+title: "Cusomizing Quarto Themes"
+description: "How to customize Quarto themes"
+author: "Allison Day"
+date: "05/05/2023"
+categories: [Quarto]
+# image: timp.jpg
+draft: true
+bibliography: references.bib
+---
+
+# H1
+
+this is normal text. *this is italicized text* **this is bold text** ***this is bold and italicized text*** ~~this is strikethrough text~~
+
+## H2
+
+::: callout-note
+thjis is a note QQQQ
+:::
+
+::: callout-tip
+this is a tip
+:::
+
+::: callout-important
+## this is important
+:::
+
+::: callout-caution
+## this is a caution
+:::
+
+::: callout-warning
+## this is a warning
+:::
+
+### H3
+
+this is `inline code`
+
+``` python
+print("Hello World")
+```
+
+```{python}
+print("Hello World!")
+```
+
+#### H4
+
+this is normal text. [this is a link](https://learn.microsoft.com/en-us/azure/developer/python/tutorial-deploy-azure-cloud-python-etl-01-overview?tabs=cmd%2Cazure-portal). normal agina.
+
+this is a citation.[@Green2004]

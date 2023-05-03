@@ -1,7 +1,7 @@
 ---
-title: "Series: My Series of Everything"
+title: "Series: My Series of Everything INSIDE projects folder"
 listing:
-  contents: posts
+  contents: ../posts/Archive/**/*.qmd
   sort: "date desc"
   type: default
   categories: false
@@ -11,3 +11,7 @@ listing:
 page-layout: full
 title-block-banner: true
 ---
+
+This is a series of everything inside my projects folder. I will be writing about my projects, what I learned, and what I am planning to do next.
+
+# Posts

@@ -1,5 +1,5 @@
 ---
-title: "Allison Day's Posts"
+title: "Posts"
 listing:
   contents: posts
   sort: "date desc"
@@ -8,16 +8,16 @@ listing:
   sort-ui: false
   filter-ui: true
 page-layout: full
-title-block-banner: true
+title-block-banner: false
 ---
 
 
 
-# Series
+<!-- # Series
 
 ##### [series](projects\series.html)
 This series contains a great deal of tips, tricks and packages 
 that you can use to level up your ggplot game.
 
 
-# All Posts
+# All Posts -->

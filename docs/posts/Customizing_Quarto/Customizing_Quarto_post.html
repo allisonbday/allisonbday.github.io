@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Allison Day">
+<meta name="dcterms.date" content="2023-05-03">
+<meta name="description" content="A guide to customizing Quarto themes, templates, and styles.">
 
-<title>allisonbday.github.io - Series: My Series of Everything INSIDE projects folder</title>
+<title>allisonbday.github.io - Customizing Quarto</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +26,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -60,49 +61,19 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-reading-time','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">allisonbday.github.io</span>
     </a>
   </div>
@@ -112,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../about.html">
+    <a class="nav-link" href="../../about.html">
  <span class="menu-text">Allison Day</span></a>
   </li>  
   <li class="nav-item compact">
@@ -132,147 +103,71 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
-      <h1 class="title">Series: My Series of Everything INSIDE projects folder</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Customizing Quarto</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Github</div>
+    <div class="quarto-category">Quarto</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    A guide to customizing Quarto themes, templates, and styles.
+  </div>
+</div>
 
 
+<div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Allison Day </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">May 3, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
 
-<p>This is a series of everything inside my projects folder. I will be writing about my projects, what I learned, and what I am planning to do next.</p>
-<section id="posts" class="level1">
-<h1>Posts</h1>
+</header>
 
+<section id="h1-italics-bold-both" class="level1">
+<h1>H1 <em>Italics</em> <strong>Bold</strong> <strong><em>Both</em></strong></h1>
+<p>this is text in the body <em>this is italics</em> normal <strong>this is bold</strong> normal <strong><em>this is both</em></strong></p>
+<section id="h2-italics-bold-both" class="level2">
+<h2 class="anchored" data-anchor-id="h2-italics-bold-both">H2 <em>Italics</em> <strong>Bold</strong> <strong><em>Both</em></strong></h2>
+<section id="h3-italics-bold-both" class="level3">
+<h3 class="anchored" data-anchor-id="h3-italics-bold-both">H3 <em>Italics</em> <strong>Bold</strong> <strong><em>Both</em></strong></h3>
+<section id="h4-italics-bold-both" class="level4">
+<h4 class="anchored" data-anchor-id="h4-italics-bold-both">H4 <em>Italics</em> <strong>Bold</strong> <strong><em>Both</em></strong></h4>
+<section id="h5-italics-bold-both" class="level5">
+<h5 class="anchored" data-anchor-id="h5-italics-bold-both">H5 <em>Italics</em> <strong>Bold</strong> <strong><em>Both</em></strong></h5>
 
 
 </section>
+</section>
+</section>
+</section>
+</section>
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="VS Code" data-listing-date-sort="1683007200000" data-listing-file-modified-sort="1683067389753" data-listing-reading-time-sort="7.17">
-<div class="body">
-<a href="../posts/Archive/fav_vs_extentions/fav_extensions_post.html">
-<h3 class="no-anchor listing-title">
-VS Code Extensions Everyone Should Have
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-<p>VS Extensions that I need to survive</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="../posts/Archive/fav_vs_extentions/fav_extensions_post.html">
-<div class="listing-date">
-May 2, 2023
-</div>
-<div class="listing-reading-time">
-7 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="Python,Pandas,Code Snippets" data-listing-date-sort="1677913200000" data-listing-file-modified-sort="1683067389757" data-listing-reading-time-sort="5.16">
-<div class="body">
-<a href="../posts/Archive/groupby_snippets/groupby_snippets.html">
-<h3 class="no-anchor listing-title">
-Pandas Groupby &amp; Aggregations
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-144 rows × 3 columns
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="../posts/Archive/groupby_snippets/groupby_snippets.html">
-<div class="listing-date">
-Mar 4, 2023
-</div>
-<div class="listing-reading-time">
-5 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="Python,Jupyter Notebooks,Code Snippets" data-listing-date-sort="1677567600000" data-listing-file-modified-sort="1683067389752" data-listing-reading-time-sort="1.47">
-<div class="body">
-<a href="../posts/Archive/colored_text/print_colored_text.html">
-<h3 class="no-anchor listing-title">
-ANSI Colored Text in Terminal/Outputs
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-<p>Credit goes to this <span>StackOverflow thread</span></p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="../posts/Archive/colored_text/print_colored_text.html">
-<div class="listing-date">
-Feb 28, 2023
-</div>
-<div class="listing-reading-time">
-1 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="APIs,JSON" data-listing-date-sort="1667714400000" data-listing-file-modified-sort="1683067389758" data-listing-reading-time-sort="2.92">
-<div class="body">
-<a href="../posts/Archive/nested_jsons/Nested_JSONs.html">
-<h3 class="no-anchor listing-title">
-Working with Nested JSONs
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-Lets say pulled an API and it gave you this json:
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="../posts/Archive/nested_jsons/Nested_JSONs.html">
-<div class="listing-date">
-Nov 6, 2022
-</div>
-<div class="listing-reading-time">
-2 min
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
