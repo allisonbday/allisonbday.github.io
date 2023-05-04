@@ -1,0 +1,22 @@
+---
+title: "🎨 The Paradox of Choice"
+subtitle: "How to choose fonts and colors in 100 hours or less!"
+description: "A guide to choosing fonts and colors for your website"
+author: "Allison Day"
+date: "5/5/2023"
+categories: [Quarto]
+# image: timp.jpg
+draft: false
+custom: 3
+---
+
+# todo: split off the "paradox of choice" part into a separate article
+
+
+Add image
+
+Change image shape
+
+Add text
+
+<!-- generate a ton of text -->

@@ -1,0 +1,37 @@
+---
+# https://quarto.org/docs/websites/website-listings.html
+title: Rock Paper Scissors Simulator
+date: 05-01-2023
+description: Rock Paper Scissors Simulator is a web app that allows you to play rock paper scissors against a computer. It also allows you to simulate a game of rock paper scissors with a computer playing against itself. The app is built using Python and Streamlit.
+category: Streamlit
+
+listing: 
+    id: project-posts
+    contents: \*.qmd
+    fields: [date, title, reading-time, description]
+
+draft: false
+---
+
+<!-- generate the outline of a report about this project -->
+
+# Introduction
+
+# The Process
+
+::: {#project-posts}
+:::
+
+# Data
+
+# Analysis
+
+# Results
+
+# What I Learned
+
+# What I Would Do Differently
+
+# References
+
+# Acknowledgements

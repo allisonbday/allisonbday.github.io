@@ -1,0 +1,38 @@
+---
+# https://quarto.org/docs/websites/website-listings.html
+title: Speedrunning
+date: 05-01-2023
+description: Speedrunning is the art of completing a video game as quickly as possible. This project is an analysis of the speedrunning community and the games they play.
+category: Streamlit
+custom: "Under Construction"
+
+listing: 
+    id: project-posts
+    contents: \*.qmd
+    fields: [date, title, reading-time, description]
+
+draft: false
+---
+
+<!-- generate the outline of a report about this project -->
+
+# Introduction
+
+# The Process
+
+::: {#project-posts}
+:::
+
+# Data
+
+# Analysis
+
+# Results
+
+# What I Learned
+
+# What I Would Do Differently
+
+# References
+
+# Acknowledgements

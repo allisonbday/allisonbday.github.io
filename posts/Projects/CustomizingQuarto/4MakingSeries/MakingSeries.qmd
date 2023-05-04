@@ -1,0 +1,16 @@
+---
+title: "🛠️ Making a Series"
+subtitle: ""
+description: ""
+author: "Allison Day"
+date: "5/7/2023"
+categories: [Quarto]
+# image: timp.jpg
+draft: false
+custom: 50
+---
+
+# SHERIES
+
+
+<!-- generate a ton of text -->

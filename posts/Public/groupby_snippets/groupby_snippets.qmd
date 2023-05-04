@@ -1,0 +1,129 @@
+---
+title: "Pandas Groupby & Aggregations"
+# description: "Credit goes to this [StackOverflow thread](https://stackoverflow.com/questions/4842424/list-of-ansi-color-escape-sequences)"
+author: "Allison Day"
+date: "3/4/2023"
+categories: [Python, Pandas, Code Snippets]
+# image: timp.jpg
+
+execute:
+  eval: true
+---
+
+```{python}
+# IMPORTS
+import pandas as pd
+import numpy as np
+import seaborn as sns # get dataset
+
+# Create Random DF
+df = sns.load_dataset('flights')
+df
+
+```
+
+
+
+# My Most Used 
+
+Basic Aggregations
+*all computations [🔗link](https://pandas.pydata.org/docs/reference/groupby.html#computations-descriptive-stats)*
+
+| **basic**       | **.agg**          | **dtypes** | **notes**                                                                      |
+|-----------------|-------------------|------------|--------------------------------------------------------------------------------|
+| `.mean()`       | "mean", `np.mean` | nums       |                                                                                |
+| `.min()`        | "min", `np.min`   | nums       |                                                                                |
+| `.max()`        | "max", `np.max`   | nums       |                                                                                |
+| `.count()`      | "count"           | nums, str  | doesn't include nan                                                            |
+| `.size()`       | "size"            | nums, str  | includes nan values; default name is '0',  use `.reset_index(name=<new_name>)` |
+|                 | `pd.Series.mode`  | nums, str  | basically 'mode';  returns most common value(s)                                |
+| `.first()`      |                   | nums, str  |                                                                                |
+| `.rank()`       | "rank"            | nums       | returns as a series,  assign to (new) column                                   |
+| `.pct_change()` |                   | nums       | % change since last entry                                                      |
+
+```{python}
+
+df.groupby("year")["passengers"].mean()
+df.groupby("year")["passengers"].min()
+df.groupby("year")["passengers"].max()
+df.groupby("year").count()
+df.groupby("year").size().reset_index(name="size")
+# mode can only be used in .agg
+df.groupby("year").first()
+
+```
+
+`.rank()` and `.pct_change()` both return series that need to be made into their own columns.
+
+```{python}
+
+df["rank"] = df.groupby("year")["passengers"].rank()
+df["pct_change"] = df.groupby("year")["passengers"].pct_change()
+df
+
+```
+
+Also the best function to start with is **`.describe()`**, because it returns a multiindex table with the functions: *`count`, `mean`, `std`, `min`, `25%`, `50%`, `75%`, `max`*.
+
+```{python}
+# echo: False
+# output: False
+
+df.drop(["rank", "pct_change"], axis=1, inplace=True)
+
+```
+
+
+```{python}
+
+df.groupby("year").describe()
+
+```
+
+
+## `.agg` function
+
+```{python}
+
+df.groupby('year')["passengers"].agg("mean")
+
+```
+
+lets you pass in a list of functions
+
+```{python}
+
+df.groupby('year')["passengers"].agg(["mean", "max", "rank"])
+
+```
+
+and assign functions to specific columns 
+
+```{python}
+
+df.groupby('year').agg({"passengers": ["mean", "max", "rank"], "month": "first"})
+
+```
+
+##  dealing with multiindex headers
+*this article is the best at explaining [🔗link](https://towardsdatascience.com/how-to-flatten-multiindex-columns-and-rows-in-pandas-f5406c50e569)*
+
+```{python}
+
+# multi index header
+multi = df.groupby("year").agg({"passengers": [np.min, np.mean, np.max]})
+
+print(multi.columns)
+display(multi)
+
+```
+
+Notice how they columns seem to be layered, and the `multi.columns` is giving a list of tuples instead of the normal list of strings. To get rid of this there are a few ways - including the function `.to_flat_index()`. But my favorite way is to join the names with a underscore (_).
+
+```{python}
+
+multi.columns = ['_'.join(col) for col in multi.columns.values]
+print(multi.columns)
+display(multi)
+
+```

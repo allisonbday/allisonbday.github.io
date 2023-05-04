@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Posts",
     "section": "",
-    "text": "VS Code Extensions Everyone Should Have\n\n\n\n\n\n\n\nVS Code\n\n\n\n\nVS Extensions that I need to survive\n\n\n\n\n\n\nMay 2, 2023\n\n\nAllison Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPandas Groupby & Aggregations\n\n\n\n\n\n\n\nPython\n\n\nPandas\n\n\nCode Snippets\n\n\n\n\n\n\n\n\n\n\n\nMar 4, 2023\n\n\nAllison Day\n\n\n\n\n\n\n  \n\n\n\n\nANSI Colored Text in Terminal/Outputs\n\n\n\n\n\n\n\nPython\n\n\nJupyter Notebooks\n\n\nCode Snippets\n\n\n\n\nCredit goes to this StackOverflow thread\n\n\n\n\n\n\nFeb 28, 2023\n\n\nAllison Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWorking with Nested JSONs\n\n\n\n\n\n\n\nAPIs\n\n\nJSON\n\n\n\n\n\n\n\n\n\n\n\nNov 6, 2022\n\n\nAllison Day\n\n\n\n\n\n\nNo matching items"
+    "text": "Adding some ✨ pizzazz ✨ to your Quarto blog\n\n\n\n\n\n\n\n\n\nMay 5, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nRock Paper Scissors Simulator is a web app that allows you to play rock paper scissors against a computer. It also allows you to simulate a game of rock paper scissors with a computer playing against itself. The app is built using Python and Streamlit.\n\n\n\n\n\n\nMay 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nSpeedrunning is the art of completing a video game as quickly as possible. This project is an analysis of the speedrunning community and the games they play.\n\n\n\n\n\n\nMay 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nThis is my Temperature Blanket Project! A temperature blanket is a blanket that you knit or crochet one row a day for a year. The color of the row is determined by the temperature of that day.\n\n\n\n\n\n\nMay 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nThis is my Temperature Blanket Project! A temperature blanket is a blanket that you knit or crochet one row a day for a year. The color of the row is determined by the temperature of that day.\n\n\n\n\n\n\nMay 3, 2021\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "jobs/doterra.html",
@@ -383,5 +383,33 @@
     "title": "Series: My Series of Everything INSIDE projects folder",
     "section": "",
     "text": "This is a series of everything inside my projects folder. I will be writing about my projects, what I learned, and what I am planning to do next.\n\nPosts\n\n\n\n\n\n\n\n\n\n\n\nVS Code Extensions Everyone Should Have\n\n\n\n\n\nVS Extensions that I need to survive\n\n\n\n\n\n\nMay 2, 2023\n\n\n7 min\n\n\n\n\n\n\n\n\nPandas Groupby & Aggregations\n\n\n\n\n\n\n\n\n\n\n\n\nMar 4, 2023\n\n\n5 min\n\n\n\n\n\n\n\n\nANSI Colored Text in Terminal/Outputs\n\n\n\n\n\nCredit goes to this StackOverflow thread\n\n\n\n\n\n\nFeb 28, 2023\n\n\n1 min\n\n\n\n\n\n\n\n\nWorking with Nested JSONs\n\n\n\n\n\n\n\n\n\n\n\n\nNov 6, 2022\n\n\n2 min\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/Projects/CustomizingQuarto/5Appendices/Appendices.html",
+    "href": "posts/Projects/CustomizingQuarto/5Appendices/Appendices.html",
+    "title": "📚 Quarto Customization Appendices",
+    "section": "",
+    "text": "SHERIES"
+  },
+  {
+    "objectID": "posts/Projects/CustomizingQuarto/CustomizingQuarto_project.html",
+    "href": "posts/Projects/CustomizingQuarto/CustomizingQuarto_project.html",
+    "title": "Customizing Your Quarto Blog",
+    "section": "",
+    "text": "Introduction\n\n\nThe Process / Todos\n\nAbout Page\nTemplates\nApps\n\nThemes\nPre-made Themes\nMaking a theme (SCSS)\n\nCustomizing the Listing/Index\nHow to customize the index\n\ngrid, default, list\nfilters & such\n\n\nMaking Series\nedit & create listing pages\n\nAdding a favicon??? (I think this is a bit more complicated than I thought)\n\n\n\n\nPosts\n\n\n\n\n\n\n🫵 Customizing the About Page\n\n\nMake your About Page more YOU 🫵\n\n\n\n\n\n\n\n\n\nMay 5, 2023\n\n\n0 min\n\n\n1\n\n\n\n\n\n\n\n\n📃 A Lot of Listings\n\n\nMake your Index page spark joy 🌟\n\n\n\n\n\n\n\n\n\nMay 5, 2023\n\n\n0 min\n\n\n2\n\n\n\n\n\n\n\n\n🎨 The Paradox of Choice\n\n\nHow to choose fonts and colors in 100 hours or less!\n\n\nA guide to choosing fonts and colors for your website\n\n\n\n\n\n\nMay 5, 2023\n\n\n0 min\n\n\n3\n\n\n\n\n\n\n\n\n🛠️ Making a Series\n\n\n\n\n\n\n\n\n\n\n\n\nMay 7, 2023\n\n\n0 min\n\n\n50\n\n\n\n\n\n\n\n\n📚 Quarto Customization Appendices\n\n\nEmptying my junk drawer of knowledge\n\n\nRandom notes and code snippets that I’ve found useful in my Quarto projects.\n\n\n\n\n\n\nMay 19, 2023\n\n\n0 min\n\n\n100\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#meeting-notes",
+    "href": "index.html#meeting-notes",
+    "title": "Posts",
+    "section": "Meeting Notes",
+    "text": "Meeting Notes"
+  },
+  {
+    "objectID": "index.html#all-posts",
+    "href": "index.html#all-posts",
+    "title": "Posts",
+    "section": "All Posts",
+    "text": "All Posts\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n♾️ Quarto Customization Appendices\n\n\nEmptying my junk drawer of knowledge\n\n\n\n\nQuarto\n\n\n\n\nRandom notes and code snippets that I’ve found useful in my Quarto projects.\n\n\n\n\n\n\nMay 19, 2023\n\n\nAllison Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n📚 Quarto Customization Appendices\n\n\nEmptying my junk drawer of knowledge\n\n\n\n\nQuarto\n\n\n\n\nRandom notes and code snippets that I’ve found useful in my Quarto projects.\n\n\n\n\n\n\nMay 19, 2023\n\n\nAllison Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n🛠️ Making a Series\n\n\n\n\n\n\n\nQuarto\n\n\n\n\n\n\n\n\n\n\n\nMay 7, 2023\n\n\nAllison Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n🫵 Customizing the About Page\n\n\nMake your About Page more YOU 🫵\n\n\n\n\nQuarto\n\n\n\n\n\n\n\n\n\n\n\nMay 5, 2023\n\n\nAllison Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n📃 A Lot of Listings\n\n\nMake your Index page spark joy 🌟\n\n\n\n\nQuarto\n\n\n\n\n\n\n\n\n\n\n\nMay 5, 2023\n\n\nAllison Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n🎨 The Paradox of Choice\n\n\nHow to choose fonts and colors in 100 hours or less!\n\n\n\n\nQuarto\n\n\n\n\nA guide to choosing fonts and colors for your website\n\n\n\n\n\n\nMay 5, 2023\n\n\nAllison Day\n\n\n\n\n\n\n  \n\n\n\n\nVS Code Extensions Everyone Should Have\n\n\n\n\n\n\n\nVS Code\n\n\n\n\nVS Extensions that I need to survive\n\n\n\n\n\n\nMay 2, 2023\n\n\nAllison Day\n\n\n\n\n\n\n  \n\n\n\n\nVS Code Extensions Everyone Should Have\n\n\n\n\n\n\n\nVS Code\n\n\n\n\nVS Extensions that I need to survive\n\n\n\n\n\n\nMay 2, 2023\n\n\nAllison Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPandas Groupby & Aggregations\n\n\n\n\n\n\n\nPython\n\n\nPandas\n\n\nCode Snippets\n\n\n\n\n\n\n\n\n\n\n\nMar 4, 2023\n\n\nAllison Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPandas Groupby & Aggregations\n\n\n\n\n\n\n\nPython\n\n\nPandas\n\n\nCode Snippets\n\n\n\n\n\n\n\n\n\n\n\nMar 4, 2023\n\n\nAllison Day\n\n\n\n\n\n\n  \n\n\n\n\nANSI Colored Text in Terminal/Outputs\n\n\n\n\n\n\n\nPython\n\n\nJupyter Notebooks\n\n\nCode Snippets\n\n\n\n\nCredit goes to this StackOverflow thread\n\n\n\n\n\n\nFeb 28, 2023\n\n\nAllison Day\n\n\n\n\n\n\n  \n\n\n\n\nANSI Colored Text in Terminal/Outputs\n\n\n\n\n\n\n\nPython\n\n\nJupyter Notebooks\n\n\nCode Snippets\n\n\n\n\nCredit goes to this StackOverflow thread\n\n\n\n\n\n\nFeb 28, 2023\n\n\nAllison Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWorking with Nested JSONs\n\n\n\n\n\n\n\nAPIs\n\n\nJSON\n\n\n\n\n\n\n\n\n\n\n\nNov 6, 2022\n\n\nAllison Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRPC sim\n\n\n\n\n\n\n\nPython\n\n\nJupyter Notebooks\n\n\nCode Snippets\n\n\nPandas\n\n\nAPIs\n\n\nJSON\n\n\nVS Code\n\n\nGithub\n\n\nQuarto\n\n\n\n\n\n\n\n\n\n\n\nNov 6, 2022\n\n\nAllison Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRPC sim\n\n\n\n\n\n\n\nPython\n\n\nJupyter Notebooks\n\n\nCode Snippets\n\n\nPandas\n\n\nAPIs\n\n\nJSON\n\n\nVS Code\n\n\nGithub\n\n\nQuarto\n\n\n\n\n\n\n\n\n\n\n\nNov 6, 2022\n\n\nAllison Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTitle Here\n\n\n\n\n\n\n\nPython\n\n\nJupyter Notebooks\n\n\nCode Snippets\n\n\nPandas\n\n\nAPIs\n\n\nJSON\n\n\nVS Code\n\n\nGithub\n\n\nQuarto\n\n\n\n\n\n\n\n\n\n\n\nNov 6, 2022\n\n\nAllison Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTitle Here\n\n\n\n\n\n\n\nPython\n\n\nJupyter Notebooks\n\n\nCode Snippets\n\n\nPandas\n\n\nAPIs\n\n\nJSON\n\n\nVS Code\n\n\nGithub\n\n\nQuarto\n\n\n\n\n\n\n\n\n\n\n\nNov 6, 2022\n\n\nAllison Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWorking with Nested JSONs\n\n\n\n\n\n\n\nAPIs\n\n\nJSON\n\n\n\n\n\n\n\n\n\n\n\nNov 6, 2022\n\n\nAllison Day\n\n\n\n\n\n\nNo matching items"
   }
 ]

@@ -1,0 +1,139 @@
+---
+title: "ANSI Colored Text in Terminal/Outputs"
+description: "Credit goes to this [StackOverflow thread](https://stackoverflow.com/questions/4842424/list-of-ansi-color-escape-sequences)"
+author: "Allison Day"
+date: "2/28/2023"
+categories: [Python, Jupyter Notebooks, Code Snippets]
+# image: timp.jpg
+draft: false
+
+execute:
+  eval: false
+---
+# The Basics
+
+- needs to be inside the `""` when printing
+- customization starts with a `\033[` split by `;` and ends with `m`
+- print statement ends with `\033[0m`
+
+# Customization
+
+## Simple - *8 colors*
+
+### Effects
+
+```{python}
+
+print(f"\033[0m 0 = normal \033[0m")
+print(f"\033[1m 1 = bold \033[0m")
+print(f"\033[3m 3 = italic \033[0m")
+print(f"\033[4m 4 = underline \033[0m")
+print(f"\033[9m 9 = crossed-out \033[0m")
+
+```
+
+
+### Text Color
+
+```{python}
+
+print(f"\033[0m 0 = normal \033[0m")
+print(f"\033[30m 30 = white \033[0m")
+print(f"\033[31m 31 = red \033[0m")
+print(f"\033[32m 32 = green \033[0m")
+print(f"\033[33m 33 = yellow \033[0m")
+print(f"\033[34m 34 = blue \033[0m")
+print(f"\033[35m 35 = pink \033[0m")
+print(f"\033[36m 36 = teal \033[0m")
+print(f"\033[37m 37 = gray \033[0m")
+
+```
+
+### Background Color
+
+```{python}
+
+print(f"\033[49m 49 = normal \033[0m")
+print(f"\033[40m 40 = white \033[0m")
+print(f"\033[41m 41 = red \033[0m")
+print(f"\033[42m 42 = green \033[0m")
+print(f"\033[43m 43 = yellow \033[0m")
+print(f"\033[44m 44 = blue \033[0m")
+print(f"\033[45m 45 = pink \033[0m")
+print(f"\033[46m 46 = teal \033[0m")
+print(f"\033[47m 47 = gray \033[0m")
+
+```
+
+### Combining
+```{python}
+print(f"\033[4;31;42m; 42 = underlined red text on green background \033[0m")
+```
+
+```{python}
+
+# create text + background combo table
+for bg in range(40, 48):
+    string = ""
+    for txt in range(30, 38):
+        string += f"\033[{txt};{bg}m {txt};{bg} \033[0m"
+    print(string)
+
+```
+
+
+## More Advanced - *256 Colors & RGB!*
+
+### 256 colors
+![](images\colors_256.png)
+* *Note: only change the last number*
+
+**Text**
+```{python}
+
+# text 1st number is 38 (because that's the 'custom color' number); 
+print("\033[38;5;141m purple text 141, \033[0m")
+```
+
+**Background**
+```{python}
+
+# background 1st number is 48 (background 'custom color' number)
+print("\033[48;5;154m green background 154 \033[0m")
+
+```
+
+
+### RGB
+
+Or you can use rgb values to create your own custom colors!
+
+#### Text
+```{python}
+# \033[38;2;<r>;<g>;<b>m
+print("\033[38;2;5;42;177m CUSTOM! dark blue background \033[0m")
+```
+
+**Background**
+```{python}
+
+# \033[48;2;<r>;<g>;<b>m
+print("\033[48;2;229;242;147m CUSTOM! light yellow/green background \033[0m")
+
+```
+
+# Use Case
+
+I work a lot in jupyter notebooks and running checks with colored text is so much funner!
+
+```{python}
+
+def print_warning(string: str):
+    print(f"\033[30;41m {string} \033[0m") # white text on red background
+
+check_list = ["one", "two", "four"]
+
+if "four" in check_list:
+    print_warning("FOUR FOUND IN LIST! EXTERMINATE!!!")
+
+```

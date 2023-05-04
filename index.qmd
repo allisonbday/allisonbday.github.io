@@ -1,29 +1,31 @@
 ---
 title: "Posts"
 listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: true
+  - id: projects
+    contents: "posts/Projects/*/*.qmd"
+    page-size: 1
+    sort: date desc
+
+  - id: posts
+    contents: 
+    - posts
+    - "!posts/Projects/*/*.qmd"
+    sort: "date desc"
+    type: default
+    categories: true
+    sort-ui: false
+    filter-ui: true
+
 page-layout: full
 title-block-banner: false
 ---
 
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
+## Projects
 
-<!-- # Series
+:::{#projects}
+:::
 
-##### [series](projects\series.html)
-This series contains a great deal of tips, tricks and packages 
-that you can use to level up your ggplot game.
+## All Posts
 
-
-# All Posts -->
+:::{#posts}
+:::

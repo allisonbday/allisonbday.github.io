@@ -1,0 +1,18 @@
+---
+title: "🫵 Customizing the About Page"
+subtitle: "Make your About Page more YOU 🫵"
+author: "Allison Day"
+date: "5/5/2023"
+categories: [Quarto]
+# image: timp.jpg
+draft: false
+custom: 1
+---
+
+Add image
+
+Change image shape
+
+Add text
+
+<!-- generate a ton of text -->
