@@ -70,10 +70,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      page: 1,
-    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-title","listing-author","listing-date","listing-description","listing-categories"],
+      valueNames: ['listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -99,9 +98,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -166,7 +165,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(14)</span></div><div class="category" data-category="APIs">APIs <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Code Snippets">Code Snippets <span class="quarto-category-count">(2)</span></div><div class="category" data-category="JSON">JSON <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Jupyter Notebooks">Jupyter Notebooks <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Pandas">Pandas <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Python">Python <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Quarto">Quarto <span class="quarto-category-count">(5)</span></div><div class="category" data-category="VS Code">VS Code <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="APIs">APIs <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Code Snippets">Code Snippets <span class="quarto-category-count">(2)</span></div><div class="category" data-category="JSON">JSON <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Jupyter Notebooks">Jupyter Notebooks <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Pandas">Pandas <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Python">Python <span class="quarto-category-count">(2)</span></div><div class="category" data-category="VS Code">VS Code <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -176,57 +175,11 @@ ul.task-list li input[type="checkbox"] {
 <h1>Projects</h1>
 <div id="listing-projects" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-1">
-<div class="g-col-1" data-index="0" data-listing-date-sort="1683266400000" data-listing-file-modified-sort="1683215036295" data-listing-reading-time-sort="0.645">
-<a href="./posts/Projects/CustomizingQuarto/CustomizingQuarto_project.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left borderless">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title" data-anchor-id="projects">
-Customizing Your Quarto Blog
-</h5>
-<div class="card-text listing-description">
-A guide to choosing fonts and colors for your website
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
 
-</div>
-<div class="listing-date">
-May 5, 2023
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-date-sort="1620021600000" data-listing-file-modified-sort="1683166846527" data-listing-reading-time-sort="0.135">
-<a href="./posts/Projects/TemperatureBlanket/TemperatureBlanket_project.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left borderless">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Temperature Blanket Project
-</h5>
-<div class="card-text listing-description">
-This is my Temperature Blanket Project! A temperature blanket is a blanket that you knit or crochet one row a day for a year. The color of the row is determined by the temperature of that day.
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-May 3, 2021
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-<nav id="projects-pagination" class="listing-pagination" aria-label="Page Navigation">
-  <ul class="pagination"></ul>
-</nav>
 </div>
 </section>
 <section id="all-posts" class="level1">
@@ -239,282 +192,13 @@ No matching items
     </div>
 </div>
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Python,Pandas,APIs" data-listing-date-sort="1730876400000" data-listing-file-modified-sort="1683215284581" data-listing-reading-time-sort="0.055">
-<div class="thumbnail">
-<a href="./posts/Projects/TemperatureBlanket/Template copy/template_post.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/Projects/TemperatureBlanket/Template copy/template_post.html"></a></p>
-</div>
-<div class="body">
-<a href="./posts/Projects/TemperatureBlanket/Template copy/template_post.html">
-<h3 class="no-anchor listing-title" data-anchor-id="all-posts">
-Temperature Blanket Subpost
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Python'); return false;">
-Python
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Pandas'); return false;">
-Pandas
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('APIs'); return false;">
-APIs
-</div>
-</div>
-<a href="./posts/Projects/TemperatureBlanket/Template copy/template_post.html">
-<div class="listing-description">
-this is a draft post
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/Projects/TemperatureBlanket/Template copy/template_post.html">
-<div class="listing-date">
-Nov 6, 2024
-</div>
-<div class="listing-author">
-Allison Day
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="Quarto" data-listing-date-sort="1684476000000" data-listing-file-modified-sort="1683212530657" data-listing-reading-time-sort="0.035">
-<div class="thumbnail">
-<a href="./posts/Projects/CustomizingQuarto/5Appendices/Appendices.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/Projects/CustomizingQuarto/5Appendices/Appendices.html"></a></p>
-</div>
-<div class="body">
-<a href="./posts/Projects/CustomizingQuarto/5Appendices/Appendices.html">
-<h3 class="no-anchor listing-title">
-📚 Quarto Customization Appendices
-</h3>
-<div class="listing-subtitle">
-Emptying my junk drawer of knowledge
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Quarto'); return false;">
-Quarto
-</div>
-</div>
-<a href="./posts/Projects/CustomizingQuarto/5Appendices/Appendices.html">
-<div class="listing-description">
-<p>Random notes and code snippets that I’ve found useful in my Quarto projects.</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/Projects/CustomizingQuarto/5Appendices/Appendices.html">
-<div class="listing-date">
-May 19, 2023
-</div>
-<div class="listing-author">
-Allison Day
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="Quarto" data-listing-date-sort="1683439200000" data-listing-file-modified-sort="1683212314609" data-listing-reading-time-sort="0.035">
-<div class="thumbnail">
-<a href="./posts/Projects/CustomizingQuarto/4MakingSeries/MakingSeries.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/Projects/CustomizingQuarto/4MakingSeries/MakingSeries.html"></a></p>
-</div>
-<div class="body">
-<a href="./posts/Projects/CustomizingQuarto/4MakingSeries/MakingSeries.html">
-<h3 class="no-anchor listing-title">
-🛠️ Making a Series
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Quarto'); return false;">
-Quarto
-</div>
-</div>
-<a href="./posts/Projects/CustomizingQuarto/4MakingSeries/MakingSeries.html">
-<div class="listing-description">
-
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/Projects/CustomizingQuarto/4MakingSeries/MakingSeries.html">
-<div class="listing-date">
-May 7, 2023
-</div>
-<div class="listing-author">
-Allison Day
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="Quarto" data-listing-date-sort="1683266400000" data-listing-file-modified-sort="1683212370134" data-listing-reading-time-sort="0.055">
-<div class="thumbnail">
-<a href="./posts/Projects/CustomizingQuarto/1AboutPage/AboutPage.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/Projects/CustomizingQuarto/1AboutPage/AboutPage.html"></a></p>
-</div>
-<div class="body">
-<a href="./posts/Projects/CustomizingQuarto/1AboutPage/AboutPage.html">
-<h3 class="no-anchor listing-title">
-🫵 Customizing the About Page
-</h3>
-<div class="listing-subtitle">
-Make your About Page more YOU 🫵
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Quarto'); return false;">
-Quarto
-</div>
-</div>
-<a href="./posts/Projects/CustomizingQuarto/1AboutPage/AboutPage.html">
-<div class="listing-description">
-Add image
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/Projects/CustomizingQuarto/1AboutPage/AboutPage.html">
-<div class="listing-date">
-May 5, 2023
-</div>
-<div class="listing-author">
-Allison Day
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="Quarto" data-listing-date-sort="1683266400000" data-listing-file-modified-sort="1683212353599" data-listing-reading-time-sort="0.055">
-<div class="thumbnail">
-<a href="./posts/Projects/CustomizingQuarto/2Listings/Listings.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/Projects/CustomizingQuarto/2Listings/Listings.html"></a></p>
-</div>
-<div class="body">
-<a href="./posts/Projects/CustomizingQuarto/2Listings/Listings.html">
-<h3 class="no-anchor listing-title">
-📃 A Lot of Listings
-</h3>
-<div class="listing-subtitle">
-Make your Index page spark joy 🌟
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Quarto'); return false;">
-Quarto
-</div>
-</div>
-<a href="./posts/Projects/CustomizingQuarto/2Listings/Listings.html">
-<div class="listing-description">
-Add image
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/Projects/CustomizingQuarto/2Listings/Listings.html">
-<div class="listing-date">
-May 5, 2023
-</div>
-<div class="listing-author">
-Allison Day
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="Quarto" data-listing-date-sort="1683266400000" data-listing-file-modified-sort="1683212433846" data-listing-reading-time-sort="0.055">
-<div class="thumbnail">
-<a href="./posts/Projects/CustomizingQuarto/3CustomThemes/CustomThemes.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/Projects/CustomizingQuarto/3CustomThemes/CustomThemes.html"></a></p>
-</div>
-<div class="body">
-<a href="./posts/Projects/CustomizingQuarto/3CustomThemes/CustomThemes.html">
-<h3 class="no-anchor listing-title">
-🎨 The Paradox of Choice
-</h3>
-<div class="listing-subtitle">
-How to choose fonts and colors in 100 hours or less!
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Quarto'); return false;">
-Quarto
-</div>
-</div>
-<a href="./posts/Projects/CustomizingQuarto/3CustomThemes/CustomThemes.html">
-<div class="listing-description">
-<p>A guide to choosing fonts and colors for your website</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/Projects/CustomizingQuarto/3CustomThemes/CustomThemes.html">
-<div class="listing-date">
-May 5, 2023
-</div>
-<div class="listing-author">
-Allison Day
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-listing-date-sort="1683266400000" data-listing-file-modified-sort="1683215036295" data-listing-reading-time-sort="0.645">
-<div class="thumbnail">
-<a href="./posts/Projects/CustomizingQuarto/CustomizingQuarto_project.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/Projects/CustomizingQuarto/CustomizingQuarto_project.html"></a></p>
-</div>
-<div class="body">
-<a href="./posts/Projects/CustomizingQuarto/CustomizingQuarto_project.html">
-<h3 class="no-anchor listing-title">
-Customizing Your Quarto Blog
-</h3>
-<div class="listing-subtitle">
-Adding some ✨ pizzazz ✨ to your Quarto blog
-</div>
-<div class="listing-description">
-A guide to choosing fonts and colors for your website
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/Projects/CustomizingQuarto/CustomizingQuarto_project.html">
-<div class="listing-date">
-May 5, 2023
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-categories="VS Code" data-listing-date-sort="1683007200000" data-listing-file-modified-sort="1683067389753" data-listing-reading-time-sort="7.17">
+<div class="quarto-post image-right" data-index="0" data-categories="VS Code" data-listing-date-sort="1683007200000" data-listing-file-modified-sort="1683217987604" data-listing-reading-time-sort="7.17">
 <div class="thumbnail">
 <p><a href="./posts/Public/fav_vs_extentions/fav_extensions_post.html"> <img src="./posts/Public/fav_vs_extentions/images/category_search.png" class="thumnail-image"> </a></p>
 </div>
 <div class="body">
 <a href="./posts/Public/fav_vs_extentions/fav_extensions_post.html">
-<h3 class="no-anchor listing-title">
+<h3 class="no-anchor listing-title" data-anchor-id="all-posts">
 VS Code Extensions Everyone Should Have
 </h3>
 <div class="listing-subtitle">
@@ -543,7 +227,7 @@ Allison Day
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-categories="Python,Pandas,Code Snippets" data-listing-date-sort="1677913200000" data-listing-file-modified-sort="1683067389757" data-listing-reading-time-sort="5.16">
+<div class="quarto-post image-right" data-index="1" data-categories="Python,Pandas,Code Snippets" data-listing-date-sort="1677913200000" data-listing-file-modified-sort="1683217987607" data-listing-reading-time-sort="5.16">
 <div class="thumbnail">
 <a href="./posts/Public/groupby_snippets/groupby_snippets.html">
 <div class="thumbnail-image">
@@ -588,7 +272,7 @@ Allison Day
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="9" data-categories="Python,Jupyter Notebooks,Code Snippets" data-listing-date-sort="1677567600000" data-listing-file-modified-sort="1683067389752" data-listing-reading-time-sort="1.47">
+<div class="quarto-post image-right" data-index="2" data-categories="Python,Jupyter Notebooks,Code Snippets" data-listing-date-sort="1677567600000" data-listing-file-modified-sort="1683217987603" data-listing-reading-time-sort="1.47">
 <div class="thumbnail">
 <p><a href="./posts/Public/colored_text/print_colored_text.html"> <img src="./posts/Public/colored_text/images/colors_256.png" class="thumnail-image"> </a></p>
 </div>
@@ -629,7 +313,7 @@ Allison Day
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="10" data-categories="APIs,JSON" data-listing-date-sort="1667714400000" data-listing-file-modified-sort="1683067389758" data-listing-reading-time-sort="2.92">
+<div class="quarto-post image-right" data-index="3" data-categories="APIs,JSON" data-listing-date-sort="1667714400000" data-listing-file-modified-sort="1683217987610" data-listing-reading-time-sort="2.92">
 <div class="thumbnail">
 <a href="./posts/Public/nested_jsons/Nested_JSONs.html">
 <div class="thumbnail-image">
@@ -667,35 +351,6 @@ Nov 6, 2022
 </div>
 <div class="listing-author">
 Allison Day
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="11" data-listing-date-sort="1620021600000" data-listing-file-modified-sort="1683166846527" data-listing-reading-time-sort="0.135">
-<div class="thumbnail">
-<a href="./posts/Projects/TemperatureBlanket/TemperatureBlanket_project.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/Projects/TemperatureBlanket/TemperatureBlanket_project.html"></a></p>
-</div>
-<div class="body">
-<a href="./posts/Projects/TemperatureBlanket/TemperatureBlanket_project.html">
-<h3 class="no-anchor listing-title">
-Temperature Blanket Project
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-<p>This is my Temperature Blanket Project! A temperature blanket is a blanket that you knit or crochet one row a day for a year. The color of the row is determined by the temperature of that day.</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/Projects/TemperatureBlanket/TemperatureBlanket_project.html">
-<div class="listing-date">
-May 3, 2021
 </div>
 </a>
 </div>
