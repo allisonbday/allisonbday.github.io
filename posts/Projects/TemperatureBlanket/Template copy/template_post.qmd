@@ -1,9 +1,9 @@
 ---
-title: "Title Here"
+title: "Temperature Blanket Subpost"
 # description: "Post description"
 author: "Allison Day"
-date: "11/6/2022"
-categories: [Python, Jupyter Notebooks, Code Snippets, Pandas, APIs, JSON, VS Code, Github, Quarto]
+date: "11/6/2024"
+categories: [Python, Pandas, APIs]
 # image: timp.jpg
 draft: false
 ---

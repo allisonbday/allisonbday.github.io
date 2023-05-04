@@ -5,6 +5,7 @@ title: Customizing Your Quarto Blog
 date: 05-05-2023
 subtitle: Adding some ✨ pizzazz ✨ to your Quarto blog
 category: Quarto
+# image: 
 
 listing: 
     id: project-posts

@@ -1,15 +1,21 @@
 ---
-title: "Posts"
+# title: "Posts"
 listing:
   - id: projects
     contents: "posts/Projects/*/*.qmd"
     page-size: 1
     sort: date desc
+    type: grid
+    grid-columns: 1
+    image-placeholder: https://cdn.dribbble.com/users/53712/screenshots/2415798/media/870a4b819013969d84b6ae5d0b5c4f86.gif
+    image-height: 250px
+    grid-item-border: false
+    max-description-length: 250
 
   - id: posts
     contents: 
     - posts
-    - "!posts/Projects/*/*.qmd"
+    # - "!posts/Projects/*/*.qmd"
     sort: "date desc"
     type: default
     categories: true
@@ -20,12 +26,12 @@ page-layout: full
 title-block-banner: false
 ---
 
-## Projects
+# Projects
 
 :::{#projects}
 :::
 
-## All Posts
+# All Posts
 
 :::{#posts}
 :::

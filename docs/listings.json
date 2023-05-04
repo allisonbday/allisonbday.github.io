@@ -3,27 +3,16 @@
     "listing": "/index.html",
     "items": [
       "/posts/Projects/CustomizingQuarto/CustomizingQuarto_project.html",
-      "/posts/Projects/RockPaperScissors/speedrunning.html",
-      "/posts/Projects/Speedrunning API/speedrunning.html",
-      "/posts/Projects/Supernatural/Supernatural_project.html",
       "/posts/Projects/TemperatureBlanket/TemperatureBlanket_project.html",
-      "/docs/posts/Projects/CustomizingQuarto/5Appendices/Appendices.html",
+      "/posts/Projects/TemperatureBlanket/Template copy/template_post.html",
       "/posts/Projects/CustomizingQuarto/5Appendices/Appendices.html",
       "/posts/Projects/CustomizingQuarto/4MakingSeries/MakingSeries.html",
       "/posts/Projects/CustomizingQuarto/1AboutPage/AboutPage.html",
       "/posts/Projects/CustomizingQuarto/2Listings/Listings.html",
       "/posts/Projects/CustomizingQuarto/3CustomThemes/CustomThemes.html",
-      "/posts/Archive/fav_vs_extentions/fav_extensions_post.html",
       "/posts/Public/fav_vs_extentions/fav_extensions_post.html",
-      "/posts/Archive/groupby_snippets/groupby_snippets.html",
       "/posts/Public/groupby_snippets/groupby_snippets.html",
-      "/posts/Archive/colored_text/print_colored_text.html",
       "/posts/Public/colored_text/print_colored_text.html",
-      "/posts/Archive/nested_jsons/Nested_JSONs.html",
-      "/posts/Projects/RockPaperScissors/RockPaperScissors_simulation/sim2.html",
-      "/posts/Projects/Speedrunning API/SpeedrunAPI_app/speedrun_app.html",
-      "/posts/Projects/Supernatural/Template copy 2/template_post2.html",
-      "/posts/Projects/TemperatureBlanket/Template copy/template_post.html",
       "/posts/Public/nested_jsons/Nested_JSONs.html"
     ]
   },
@@ -53,6 +42,30 @@
       "/posts/Projects/CustomizingQuarto/3CustomThemes/CustomThemes.html",
       "/posts/Projects/CustomizingQuarto/4MakingSeries/MakingSeries.html",
       "/posts/Projects/CustomizingQuarto/5Appendices/Appendices.html"
+    ]
+  },
+  {
+    "listing": "/posts/Projects/RockPaperScissors/speedrunning.html",
+    "items": [
+      "/posts/Projects/RockPaperScissors/RockPaperScissors_simulation/sim2.html"
+    ]
+  },
+  {
+    "listing": "/posts/Projects/Speedrunning API/speedrunning.html",
+    "items": [
+      "/posts/Projects/Speedrunning API/SpeedrunAPI_app/speedrun_app.html"
+    ]
+  },
+  {
+    "listing": "/posts/Projects/Supernatural/Supernatural_project.html",
+    "items": [
+      "/posts/Projects/Supernatural/Template copy 2/template_post2.html"
+    ]
+  },
+  {
+    "listing": "/posts/Projects/TemperatureBlanket/TemperatureBlanket_project.html",
+    "items": [
+      "/posts/Projects/TemperatureBlanket/Template copy/template_post.html"
     ]
   }
 ]
