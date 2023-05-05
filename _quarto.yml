@@ -4,6 +4,7 @@ project:
   
 website:
   title: "allisonbday.github.io"
+  favicon: 💗
   navbar:
     right:
       - about.qmd

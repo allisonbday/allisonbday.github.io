@@ -61,3 +61,11 @@ https://quarto.org/docs/authoring/title-blocks.html#custom-title-pages
 ## Table of Contents
 
 https://www.reddit.com/r/RStudio/comments/zhrwg3/add_on_this_page_section_to_my_quarto_blog_posts/
+
+## Article Layout
+
+https://quarto.org/docs/authoring/article-layout.htm
+
+## All fields
+
+https://quarto.org/docs/reference/projects/websites.html
