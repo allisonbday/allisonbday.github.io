@@ -4,7 +4,7 @@ project:
   
 website:
   title: "allisonbday.github.io"
-  favicon: "https://em-content.zobj.net/source/animated-noto-color-emoji/356/dizzy_1f4ab.gif"
+  favicon: Favicon.png
   navbar:
     right:
       - about.qmd
