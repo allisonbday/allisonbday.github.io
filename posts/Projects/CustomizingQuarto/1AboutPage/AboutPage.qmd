@@ -1,13 +1,14 @@
 ---
 title: "🫵 Make your `About` page about YOU"
-# subtitle: "Customizing the Quarto about page with text, embeds, and more!"
-description: "Customizing the Quarto about page with text, embeds, and more!"
+subtitle: "Customizing the Quarto about page with text, embeds, and more!"
+description: "*Part 1 in the [Customizing Quarto](../CustomizingQuarto_project.qmd) series*"
 author: "Allison Day"
 date: "5/4/2023"
 categories: [Quarto]
 # image: timp.jpg
 draft: false
-custom: 1
+custom-num: 1
+custom-series: "[Customizing Quarto](../CustomizingQuarto_project.qmd)"
 ---
 
 When I first made my Quarto blog, the first thing I wanted to do was claim it! So here's a detailed guide on how to make your `About` page ABOUT YOU!
@@ -19,7 +20,6 @@ Here's a link to the [Quarto About Page](https://quarto.org/docs/websites/websit
 Fill in the YAML at the top. Add your name, your picture, and anything you want to highlight. I have LinkedIn and GitHub, but you can add any [Bootstrap 5](https://icons.getbootstrap.com/) icon!
 
 ``` yaml
----
 title: <name here>
 about:
     image: profile.jpg
@@ -31,21 +31,20 @@ about:
     - icon: github
       text: Github
       href: <link to GitHub account page here>
----
 ```
 
 You should also describe yourself! Avoid big blocks of text - use bullet points, lists, and unique formatting to make it easy to read (and don't forget to use emojis!)
 
--   👀 I'm interested in
--   💗 I'm passionate about
--   🔭 I'm currently working on ...
--   🌱 I'm currently learning ...
--   💞️ I'm looking to collaborate on
--   👯 I'm looking to collaborate on ...
--   🤔 I'm looking for help with ...
--   💬 Ask me about ...
--   📫 How to reach me: ...
--   ⚡ Fun fact: ...
+    -   👀 I'm interested in
+    -   💗 I'm passionate about
+    -   🔭 I'm currently working on ...
+    -   🌱 I'm currently learning ...
+    -   💞️ I'm looking to collaborate on
+    -   👯 I'm looking to collaborate on ...
+    -   🤔 I'm looking for help with ...
+    -   💬 Ask me about ...
+    -   📫 How to reach me: ...
+    -   ⚡ Fun fact: ...
 
 ::: callout-tip
 If you don't want to have bullet points, have two empty spaces at the end of each line to force a line break!

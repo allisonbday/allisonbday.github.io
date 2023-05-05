@@ -1,0 +1,165 @@
+---
+title: "🛠️ Making a Series"
+subtitle: "How to completely redo your Quarto Posts directory to enable series"
+description: "*Part 3 in the [Customizing Quarto](../CustomizingQuarto_project.qmd) series*"
+author: "Allison Day"
+date: "5/5/2023"
+categories: [Quarto]
+code-annotations: hover
+# image: timp.jpg
+draft: false
+custom-num: 3
+custom-series: "[Customizing Quarto](posts/Projects/CustomizingQuarto/CustomizingQuarto_project.qmd)"
+---
+*Inspired by [this post](https://albert-rapp.de/posts/13_quarto_blog_writing_guide/13_quarto_blog_writing_guide.html#create-your-own-series) by Albert Rapp*
+
+
+```
+
+# Why Make a Series?
+
+Series let you group related posts. I use them to group posts that are part of a larger project.
+
+# Directory Structure
+
+To enable series, I had to rearrange my Quarto posts folder. I added some comments to explain what each change is for.
+
+```BASH
+├───.quarto
+├───index.qmd  # <1>
+├───docs
+└───posts  # <2>
+    ├───Projects  # <3>
+    |   ├───all_projects.qmd  # <4>
+    │   ├───Series1  # <5>
+    │   |   ├───S1_project.qmd  # <6>
+    │   │   ├───S1_Post1 # <7>
+    |   |   |   └───S1_Post1.qmd
+    │   │   └───S1_Post2
+    |   |       └───S1_Post2.qmd
+    │   └───Series2
+    |       ├───S2_project.qmd
+    │       └───S2_Post1
+    └───Public # <8>
+        ├───Post1
+        │   └───Post1.qmd
+        └───Post2
+            └───Post2.qmd
+```
+1. `index.qmd` file is the first file that Quarto looks for when building your site. It is the page that will contain links to all of your posts.
+2. `posts` folder is where all of your posts are stored. I added two subfolders: `Projects` and `Public`.
+3. `Projects` is where I store all of my posts that belong to a series.
+4. an `all_projects.qmd` file. This file is used to generate the listing page exclusively for the `Projects` folder. 
+5. `Series1` is a series folder. Inside each series folder are the posts that belong to that series.
+6. `S1_project.qmd` is the master post for the series. It is the post that will contain links to all of the posts in the series and explain what the series is about. It will be the post that is linked to from the `all_projects.qmd` file.
+7. `S1_Post1` is a post folder. Is a normal post folder. Inside each post folder is a `.qmd` file. This is the file that contains the content of the post.
+8. `Public` is where I store all of my completed stand-alone posts.
+
+# Index Page
+
+<!-- 
+https://quarto.org/docs/websites/website-listings.html
+https://quarto.org/docs/websites/website-listings-custom.html#metadata-file-listings 
+https://quarto.org/docs/reference/globs.html
+-->
+
+You can add [multiple listings](https://quarto.org/docs/websites/website-listings.html#multiple-listings) to your index page. To add a new listing to the index page, you will need to create ids for each one so we can reference them later. 
+
+```YAML
+---
+listing:
+  - id: projects
+    contents: 
+    - "posts/Projects/*/*.qmd" # <1>
+
+  - id: posts
+    contents: 
+    - posts # <2>
+    - "!posts/Projects/all_projects.qmd" # <3>
+    - "!posts/Projects/*/*.qmd" # <4>
+---
+
+# Projects
+
+:::{#projects} # <5>
+:::
+
+# Posts
+
+:::{#posts}
+:::
+```
+1. Only grabs the master post for each series
+2. Grabs all `.qmd` files in the posts folder
+3. excludes `all_projects.qmd` file
+4. excludes the master posts
+5. This code will be replaced with the listing
+
+You can customize both of these as you would any normal listing. I prefer my projects to be listed in a grid (like a carousel), so I added the following code to the `index.qmd` file.
+
+```YAML
+listing:
+  - id: projects
+    contents: "posts/Projects/*/*.qmd"
+    sort: date desc
+    type: grid
+    grid-item-border: false
+    grid-columns: 1
+    page-size: 1
+    max-items: 5
+    image-height: 250px
+    image-placeholder: placeholder.gif
+    max-description-length: 250
+    categories: unnumbered
+```
+
+*If you want to learn how to customize listings, check out my [last article](../2Listings/Listings.qmd).*
+
+# All Projects Listing
+
+The `all_projects.qmd` file is the file that will be used to generate the listing page for the `Projects` folder. This is the page that will contain links to all of the series master posts. 
+
+```YAML
+title: "All Projects"
+listing:
+  - id: all_projects
+    contents:   
+    - "*/*.qmd" # <1>
+    - "!*/*/*.qmd" # <2>
+```
+1. Grabs all `.qmd` files in the `Projects` folder
+2. Excludes any posts OTHER than master posts
+
+
+# Master Post Listing
+
+The master post is the post that will contain links to all of the posts in the series and explain what the series is about. It will be the post that is linked to from the `all_projects.qmd` file and be featured in the index projects listing. 
+
+Because it's also on the index page, you will need to add a `title`, `date`, `subtitle`, `description`, and `categories` to the metadata. 
+
+The listing will also need an `id` so we can reference it later and place it where we want on the page.
+
+
+```YAML
+---
+title: Master Post
+date: 05-05-2023
+subtitle: Subtitle to the Master Post
+description: This is a master post
+categories: [Quarto]
+
+listing: 
+    id: project-posts
+    contents: \*.qmd
+---
+
+# Project Overview
+
+Explain your project, thought process, and results.
+
+
+# All Posts
+
+:::{#project-posts}
+:::
+```

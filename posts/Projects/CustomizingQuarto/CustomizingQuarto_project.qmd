@@ -11,14 +11,15 @@ categories: [Quarto]
 listing: 
     id: project-posts
     contents: \*.qmd
-    fields: [custom, date, title, reading-time, subtitle, description]
-    sort: custom
+    fields: [custom-num, date, title, reading-time, subtitle, description]
+    sort: custom-num
     field-display-names: 
-        custom: "Series Number"
+        custom-num: "Series Number"
         date: "Date"
         title: "Title"
         reading-time: "Reading Time"
         subtitle: "Subtitle"
+        categories: "Categories"
 draft: false
 ---
 
@@ -42,7 +43,7 @@ draft: false
 
 
 
-------------------------------------------------------------------------
+
 
 # Posts
 
