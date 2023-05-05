@@ -1,15 +1,25 @@
 ---
 title: "📃 The Lot about Listings"
-subtitle: "A list of ways to make your index and listings look good"
-description: "*Part 2 in the [Customizing Quarto](../CustomizingQuarto_project.qmd) series*"
+# subtitle: "*Part 2 in the [Customizing Quarto](../CustomizingQuarto_project.qmd) series*"
+description: Make your index page look 🔥
 author: "Allison Day"
 date: "5/5/2023"
 categories: [Quarto]
 code-annotations: hover
 # image: timp.jpg
 draft: false
-custom-num: Part 2
-custom-series: "***Customizing Quarto*** *Series*"
+
+# Series info - used in `index.qmd`
+custom-blank: "---"
+custom-series: "***[Customizing Quarto Series](posts/Projects/CustomizingQuarto/CustomizingQuarto_project.qmd)***"
+custom-num: "*Part 2*"
+
+# Outline
+format: 
+  html: 
+    toc: true 
+    toc-location: left 
+    toc-title: "**On this page**" 
 ---
 
 # Editing the Index Page

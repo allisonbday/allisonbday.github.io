@@ -14,6 +14,7 @@ listing:
     image-placeholder: placeholder_1.gif
     max-description-length: 250
     categories: unnumbered
+    fields: [title, subtitle, description, date, categories, image]
 
   - id: posts
     contents: 
@@ -28,7 +29,7 @@ listing:
     sort-ui: true
     filter-ui: true
     categories: unnumbered
-    fields: [title, subtitile, description, date, custom-series, custom-num, reading-time, categories]
+    fields: [title, description, date, custom-blank,  custom-series, custom-num, reading-time, categories]
 
 page-layout: full
 

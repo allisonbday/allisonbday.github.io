@@ -1,14 +1,24 @@
 ---
 title: "🫵 Make your `About` page about YOU"
-subtitle: "Customizing the Quarto about page with text, embeds, and more!"
-description: "*Part 1 in the [Customizing Quarto](../CustomizingQuarto_project.qmd) series*"
+# subtitle: "Customizing the Quarto about page with text, embeds, and more!"
+description: "Customizing the Quarto about page with text, embeds, and more!"
 author: "Allison Day"
 date: "5/4/2023"
 categories: [Quarto]
 # image: timp.jpg
 draft: false
-custom-num: 1
-custom-series: "[Customizing Quarto](../CustomizingQuarto_project.qmd)"
+
+# Series info - used in `index.qmd`
+custom-blank: "---"
+custom-series: "***[Customizing Quarto Series](posts/Projects/CustomizingQuarto/CustomizingQuarto_project.qmd)***"
+custom-num: "*Part 1*"
+
+# Outline
+format: 
+  html: 
+    toc: true 
+    toc-location: left 
+    toc-title: "**On this page**" 
 ---
 
 When I first made my Quarto blog, the first thing I wanted to do was claim it! So here's a detailed guide on how to make your `About` page ABOUT YOU!

@@ -72,9 +72,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-custom-num','listing-date','listing-title','listing-reading-time','listing-subtitle','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-custom-num','listing-date','listing-title','listing-reading-time','listing-subtitle','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -195,17 +195,24 @@ ul.task-list li input[type="checkbox"] {
 <h1>Posts</h1>
 <div id="listing-project-posts" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Quarto" data-listing-date-sort="1683180000000" data-listing-file-modified-sort="1683320362825" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="0" data-categories="Quarto" data-listing-date-sort="1683180000000" data-listing-file-modified-sort="1683327351670" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
 <div class="body">
 <a href="../../../posts/Projects/CustomizingQuarto/1AboutPage/AboutPage.html">
 <h3 class="no-anchor listing-title" data-anchor-id="posts">
 🫵 Make your <code>About</code> page about YOU
 </h3>
 <div class="listing-subtitle">
-Customizing the Quarto about page with text, embeds, and more!
+
 </div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Quarto'); return false;">
+Quarto
+</div>
+</div>
+<a href="../../../posts/Projects/CustomizingQuarto/1AboutPage/AboutPage.html">
 <div class="listing-description">
-<p><em>Part 1 in the <span>Customizing Quarto</span> series</em></p>
+<p>Customizing the Quarto about page with text, embeds, and more!</p>
 </div>
 </a>
 </div>
@@ -218,22 +225,29 @@ May 4, 2023
 3 min
 </div>
 <div class="metadata-value listing-custom-num">
-1
+<em>Part 1</em>
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="Quarto" data-listing-date-sort="1683266400000" data-listing-file-modified-sort="1683320760743" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="1" data-categories="Quarto" data-listing-date-sort="1683266400000" data-listing-file-modified-sort="1683327573813" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <div class="body">
 <a href="../../../posts/Projects/CustomizingQuarto/2Listings/Listings.html">
 <h3 class="no-anchor listing-title">
 📃 The Lot about Listings
 </h3>
 <div class="listing-subtitle">
-A list of ways to make your index and listings look good
+
 </div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Quarto'); return false;">
+Quarto
+</div>
+</div>
+<a href="../../../posts/Projects/CustomizingQuarto/2Listings/Listings.html">
 <div class="listing-description">
-<p><em>Part 2 in the <span>Customizing Quarto</span> series</em></p>
+<p>Make your index page look 🔥</p>
 </div>
 </a>
 </div>
@@ -246,22 +260,29 @@ May 5, 2023
 1 min
 </div>
 <div class="metadata-value listing-custom-num">
-Part 2
+<em>Part 2</em>
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="Quarto" data-listing-date-sort="1683266400000" data-listing-file-modified-sort="1683321942823" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
+<div class="quarto-post image-right" data-index="2" data-categories="Quarto" data-listing-date-sort="1683266400000" data-listing-file-modified-sort="1683327629571" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
 <div class="body">
 <a href="../../../posts/Projects/CustomizingQuarto/3MakingSeries/MakingSeries.html">
 <h3 class="no-anchor listing-title">
 🛠️ Making a Series
 </h3>
 <div class="listing-subtitle">
-How to completely redo your Quarto Posts directory to enable series
+
 </div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Quarto'); return false;">
+Quarto
+</div>
+</div>
+<a href="../../../posts/Projects/CustomizingQuarto/3MakingSeries/MakingSeries.html">
 <div class="listing-description">
-<p><em>Part 3 in the <span>Customizing Quarto</span> series</em></p>
+<p>How to completely redo your Quarto Posts directory to enable series! (<em>Inspired by <span>this post</span> by Albert Rapp</em>)</p>
 </div>
 </a>
 </div>
@@ -274,22 +295,29 @@ May 5, 2023
 5 min
 </div>
 <div class="metadata-value listing-custom-num">
-3
+<em>Part 3</em>
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="Quarto" data-listing-date-sort="1683439200000" data-listing-file-modified-sort="1683320346586" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="3" data-categories="Quarto" data-listing-date-sort="1683439200000" data-listing-file-modified-sort="1683327667235" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <div class="body">
 <a href="../../../posts/Projects/CustomizingQuarto/4CustomThemes/CustomThemes.html">
 <h3 class="no-anchor listing-title">
 🎨 Colors and Fonts and Themes OH MY!
 </h3>
 <div class="listing-subtitle">
-Make your website spark joy 🌟
+
 </div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Quarto'); return false;">
+Quarto
+</div>
+</div>
+<a href="../../../posts/Projects/CustomizingQuarto/4CustomThemes/CustomThemes.html">
 <div class="listing-description">
-<p><em>Part 4 in the <span>Customizing Quarto</span> series</em></p>
+<p>Make your website spark joy 🌟</p>
 </div>
 </a>
 </div>
@@ -302,7 +330,42 @@ May 7, 2023
 1 min
 </div>
 <div class="metadata-value listing-custom-num">
-4
+<em>Part 4</em>
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="Quarto" data-listing-date-sort="1684476000000" data-listing-file-modified-sort="1683327365191" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="body">
+<a href="../../../posts/Projects/CustomizingQuarto/999RandomQuarto/Appendices.html">
+<h3 class="no-anchor listing-title">
+📚 Quarto Customization Appendices
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Quarto'); return false;">
+Quarto
+</div>
+</div>
+<a href="../../../posts/Projects/CustomizingQuarto/999RandomQuarto/Appendices.html">
+<div class="listing-description">
+<p>Emptying my junk drawer of knowledge: Random notes and code snippets that I’ve found useful in my Quarto projects.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../../../posts/Projects/CustomizingQuarto/999RandomQuarto/Appendices.html">
+<div class="listing-date">
+May 19, 2023
+</div>
+<div class="listing-reading-time">
+1 min
+</div>
+<div class="metadata-value listing-custom-num">
+<em>Part 9999</em>
 </div>
 </a>
 </div>

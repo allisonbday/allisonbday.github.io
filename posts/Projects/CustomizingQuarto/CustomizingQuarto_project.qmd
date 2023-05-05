@@ -11,7 +11,7 @@ categories: [Quarto]
 listing: 
     id: project-posts
     contents: \*.qmd
-    fields: [custom-num, date, title, reading-time, subtitle, description]
+    fields: [custom-num, date, title, reading-time, subtitle, description, categories]
     sort: custom-num
     field-display-names: 
         custom-num: "Series Number"

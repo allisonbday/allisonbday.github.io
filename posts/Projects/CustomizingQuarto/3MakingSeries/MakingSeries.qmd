@@ -1,20 +1,26 @@
 ---
 title: "🛠️ Making a Series"
-subtitle: "How to completely redo your Quarto Posts directory to enable series"
-description: "*Part 3 in the [Customizing Quarto](../CustomizingQuarto_project.qmd) series*"
+# subtitle: "Part 3 in the [Customizing Quarto](../CustomizingQuarto_project.qmd) series"
+description: " How to completely redo your Quarto Posts directory to enable series! (*Inspired by [this post](https://albert-rapp.de/posts/13_quarto_blog_writing_guide/13_quarto_blog_writing_guide.html#create-your-own-series) by Albert Rapp*)"
 author: "Allison Day"
 date: "5/5/2023"
 categories: [Quarto]
 code-annotations: hover
 # image: timp.jpg
 draft: false
-custom-num: 3
-custom-series: "[Customizing Quarto](posts/Projects/CustomizingQuarto/CustomizingQuarto_project.qmd)"
+
+# Series info - used in `index.qmd`
+custom-blank: "---"
+custom-series: "***[Customizing Quarto Series](posts/Projects/CustomizingQuarto/CustomizingQuarto_project.qmd)***"
+custom-num: "*Part 3*"
+
+# Outline
+format: 
+  html: 
+    toc: true 
+    toc-location: left 
+    toc-title: "**On this page**" 
 ---
-*Inspired by [this post](https://albert-rapp.de/posts/13_quarto_blog_writing_guide/13_quarto_blog_writing_guide.html#create-your-own-series) by Albert Rapp*
-
-
-```
 
 # Why Make a Series?
 
@@ -24,7 +30,7 @@ Series let you group related posts. I use them to group posts that are part of a
 
 To enable series, I had to rearrange my Quarto posts folder. I added some comments to explain what each change is for.
 
-```BASH
+```bash
 ├───.quarto
 ├───index.qmd  # <1>
 ├───docs

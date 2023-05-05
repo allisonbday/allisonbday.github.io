@@ -1,15 +1,24 @@
 ---
 title: "🎨 Colors and Fonts and Themes OH MY!"
-subtitle: "Make your website spark joy 🌟"
-description: "*Part 4 in the [Customizing Quarto](../CustomizingQuarto_project.qmd) series*"
+# subtitle: "Make your website spark joy 🌟"
+description: "Make your website spark joy 🌟"
 author: "Allison Day"
 date: "5/7/2023"
 categories: [Quarto]
 # image: timp.jpg
 draft: false
-custom-num: 4
-custom-series: "[Customizing Quarto](../CustomizingQuarto_project.qmd)"
-series: (Customizing Quarto)[../CustomizingQuarto_project]
+
+# Series info - used in `index.qmd`
+custom-blank: "---"
+custom-series: "***[Customizing Quarto Series](posts/Projects/CustomizingQuarto/CustomizingQuarto_project.qmd)***"
+custom-num: "*Part 4*"
+
+# Outline
+format: 
+  html: 
+    toc: true 
+    toc-location: left 
+    toc-title: "**On this page**" 
 ---
 
 *Inspired by [this post](https://albert-rapp.de/posts/13_quarto_blog_writing_guide/13_quarto_blog_writing_guide.html#style-your-blog) by Albert Rapp*
