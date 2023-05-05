@@ -13,14 +13,14 @@ $sans-serif-heading: 'Nunito', sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;1,6..12,400;1,6..12,600&family=Nunito:ital,wght@0,1000;1,1000&display=swap');
 $san-serif-body: 'Nunito Sans', sans-serif;
 
-$primary-color: #283618;
-$secondary-color: #606c38;
-$light-gray: #f6f6f6;
+$primary: #283618;
+$secondary: #606c38;
+$gray: #f6f6f6;
 
 
 // COLORS
 $body-color: #000000;
-$link-color: $secondary-color;
+$link-color: $secondary;
 
 
 // FONTS
@@ -28,24 +28,24 @@ $font-family-sans-serif: $san-serif-body;
 
 
 // CODE BLOCKS
-$code-block-bg: $light-gray;
+$code-block-bg: $gray;
 $code-block-color: #000000;
 
 
 //  INLINE CODE
-$code-bg: $light-gray;
+$code-bg: $gray;
 $code-color : #bc6c25;
 
 
 // NAVIGATION BAR
 
-$navbar-bg: $primary-color;
+$navbar-bg: $primary;
 
 
 // CALLOUTS
 // https://coolors.co/palette/264653-2a9d8f-e9c46a-f4a261-e76f51
-$callout-color-note: #bc6c25; 
-$callout-color-tip: #bc6c25; 
+$callout-color-note: $primary; 
+$callout-color-tip: $secondary; 
 $callout-color-important: #fcbf49; // yellow
 $callout-color-caution: #f77f00;  // red
 $callout-color-warning: #d62828;  // orange
@@ -55,6 +55,6 @@ $callout-color-warning: #d62828;  // orange
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $sans-serif-heading;
-    color: $primary-color;
+    color: $primary;
     // text-shadow: -1px -1px 0 rgba(0, 0, 0, .3);
   }
