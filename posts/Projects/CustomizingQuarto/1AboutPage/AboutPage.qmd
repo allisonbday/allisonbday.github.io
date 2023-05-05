@@ -1,18 +1,111 @@
 ---
-title: "🫵 Customizing the About Page"
-subtitle: "Make your About Page more YOU 🫵"
+title: "🫵 Make your About page about YOU"
+# subtitle: "Customizing the Quarto about page with text, embeds, and more!"
+description: "Customizing the Quarto about page with text, embeds, and more!"
 author: "Allison Day"
 date: "5/5/2023"
 categories: [Quarto]
 # image: timp.jpg
-draft: true
+draft: false
 custom: 1
 ---
 
-Add image
+When I first made my Quarto blog, the first thing I wanted to do was claim it! So here's a detailed guide on how to make your `About` page ABOUT YOU!
 
-Change image shape
+Here's a link to the [Quarto About Page](https://quarto.org/docs/websites/website-about.html) docs.
 
-Add text
+# 1️⃣ Claim it
 
-<!-- generate a ton of text -->
+Fill in the YAML at the top. Add your name, your picture, and anything you want to highlight. I have LinkedIn and GitHub, but you can add any [Bootstrap 5](https://icons.getbootstrap.com/) icon!
+
+``` yaml
+---
+title: <name here>
+about:
+    image: profile.jpg
+    template: jolla
+    links:
+    - icon: linkedin
+      text: LinkedIn
+      href: <link to LinkedIn profile here
+    - icon: github
+      text: Github
+      href: <link to GitHub account page here>
+---
+```
+
+You should also describe yourself! Avoid big blocks of text - use bullet points, lists, and unique formatting to make it easy to read (and don't forget to use emojis!)
+
+-   👀 I'm interested in
+-   💗 I'm passionate about
+-   🔭 I'm currently working on ...
+-   🌱 I'm currently learning ...
+-   💞️ I'm looking to collaborate on
+-   👯 I'm looking to collaborate on ...
+-   🤔 I'm looking for help with ...
+-   💬 Ask me about ...
+-   📫 How to reach me: ...
+-   ⚡ Fun fact: ...
+
+::: callout-tip
+If you don't want to have bullet points, have two empty spaces at the end of each line to force a line break!
+:::
+
+# 2️⃣ Embeds
+
+Quarto is the next evolution of R Markdown, meaning it's a markdown file! Anything that can be embedded in markdown (HTML, iframes, etc.) can be embedded in Quarto.
+
+A non-exhaustive list:  
+
+- Maps
+- Videos
+- Tweets
+- Instagram Posts
+- Spotify Playlists
+- GitHub Gists
+
+I decided on 2 Github stats apps, but you can add anything you want!
+
+```markdown
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=<username>&show_icons=true)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=<username>&layout=compact)
+```
+
+![Allison\'s GitHub stats](https://github-readme-stats.vercel.app/api?username=allisonbday&show_icons=true)![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=allisonbday&layout=compact)
+
+I also included the icons of my favorite languages and tools using [Simple Icons](https://simpleicons.dev/), and some HTML to center it
+
+```HTML
+<p align="center">
+  <a href="https://skillicons.dev"> 
+    <img src="https://skillicons.dev/icons?i=py,r,md,github,vscode"/> 
+  </a>
+</p>
+```
+
+<p align="center">
+  <a href="https://skillicons.dev"> 
+    <img src="https://skillicons.dev/icons?i=py,r,md,github,vscode"/> 
+  </a>
+</p>
+
+
+# 3️⃣ Templates
+
+Quarto has five templates you can use to make your About page look even better: `jolla`, `trestles`, `solana`, `marquee`, and `broadside`. You can see them all [here](https://quarto.org/docs/websites/website-about.html#templates).
+
+I chose `jolla` because I liked how it was centered like my GitHub stats. To use a template, add the following to your YAML:
+
+```yaml
+about:
+  template: solana
+```
+
+If you don't like your image being a circle or you don't like the size, you can change it to a rectangle by adding the following to your YAML:
+
+```yaml
+about:
+  template: marquee
+  image-width: 10em
+  image-shape: rectangle
+```

@@ -4,8 +4,8 @@ title: "Allison Day"
 about:
   template: jolla
   image: profile.jpg
-  # image-shape: rectangle
-  # image-width: 10em
+  image-shape: rectangle
+  image-width: 25em
   id: hero-heading
   links:
     - icon: linkedin
@@ -18,41 +18,35 @@ layout-ncol: 2
 column: page
 ---
 
-<!--- About this blog--> 
+<!--- About this blog-->
 
-
-:::{#hero-heading}
-
+::: {#hero-heading}
 <p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=py,r,md,github,vscode" />
-  </a>
+<a href="https://skillicons.dev"> <img src="https://skillicons.dev/icons?i=py,r,md,github,vscode"/> </a>
 </p>
 
+<!-- <p align="center">👋 Hi, I'm @allisonbday</p> -->
 
-Hello! My name is Allison Day and I love data! I recently got my Bachelor's at Brigham Young University - Idaho studying Data Science. I am also an Associate Consultant/Associate Data Scientist at the Human Capital Management Institute. I am passionate about [data visualization](https://www.tableau.com/) and [data engineering](https://www.snowflake.com/). I am also a huge fan of [Streamlit](https://streamlit.io/).<!-- I am currently learning [](). -->  I am excited to share my journey with you!
+<!-- Hello! My name is Allison Day and I love data! I recently got my Bachelor's at Brigham Young University - Idaho studying Data Science. I am also an Associate Consultant/Associate Data Scientist at the Human Capital Management Institute. I am passionate about [data visualization](https://www.tableau.com/) and [data engineering](https://www.snowflake.com/). I am also a huge fan of [Streamlit](https://streamlit.io/).<!-- I am currently learning [](). I am excited to share my journey with you! -->
 
-<!-- generate thh start of my about me section -->
-<!--- About me section-->
-<!--- Ask me about []() -->
-<!--- How to reach me: []() -->
-<!--- ⚡ Fun fact: []() -->
-<!--- 📫 How to reach me: []() -->
-<!--- 🤔 I’m looking for help with []() -->
-<!--- 💬 Ask me about []() -->
-<!--- 👯 I’m looking to collaborate on []() -->
-<!--- 🌱 I’m currently learning []() -->
-
-
+<!-- add 2 spaces after ever item to force a line break --> 
+👀 I'm interested in data science, data engineering, and data visualization!\
+💗 I'm passionate about [Streamlit](https://streamlit.io/)!\
+🌱 I'm currently learning how to integrate APIs to make custom visualizations\
+<!-- - 🔭 I’m currently working on making streamlit apps! --> <!-- - 💬 Ask me about ... --> 
+📫 How to reach me: allisonbeverlyday\@gmail.com\
+💞️ I'm looking to collaborate on data science projects!\
+⚡ Fun fact: I have over 200 hours in Skyrim!
 
 # Experience
-**Human Capital Management Institute** | Associate Consultant/Associate Data Scientist | 2023 - Present
+
+**Human Capital Management Institute** \| Associate Consultant/Associate Data Scientist \| 2023 - Present
 
 # Education
-**Brigham Young University - Idaho** | Rexburg, ID 
-Bachelors in Data Science | 2020 - 2022
 
+**Brigham Young University - Idaho** \| Rexburg, ID Bachelors in Data Science \| 2020 - 2022
 
-![Allison's GitHub stats](https://github-readme-stats.vercel.app/api?username=allisonbday&show_icons=true)![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=allisonbday&layout=compact)
-
+<p align="center">
+![Allison\'s GitHub stats](https://github-readme-stats.vercel.app/api?username=allisonbday&show_icons=true)![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=allisonbday&layout=compact)
+</p>
 :::

@@ -4,6 +4,11 @@
       "language": "quarto",
       "scheme": "file",
       "pattern": "posts/Customizing_Quarto/CustomizingQuarto.qmd"
+    },
+    {
+      "language": "quarto",
+      "scheme": "file",
+      "pattern": "posts/Projects/CustomizingQuarto/1AboutPage/AboutPage.qmd"
     }
   ]
 }
