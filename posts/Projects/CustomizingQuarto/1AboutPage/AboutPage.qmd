@@ -1,9 +1,9 @@
 ---
-title: "🫵 Make your About page about YOU"
+title: "🫵 Make your `About` page about YOU"
 # subtitle: "Customizing the Quarto about page with text, embeds, and more!"
 description: "Customizing the Quarto about page with text, embeds, and more!"
 author: "Allison Day"
-date: "5/5/2023"
+date: "5/4/2023"
 categories: [Quarto]
 # image: timp.jpg
 draft: false
@@ -50,6 +50,8 @@ You should also describe yourself! Avoid big blocks of text - use bullet points,
 ::: callout-tip
 If you don't want to have bullet points, have two empty spaces at the end of each line to force a line break!
 :::
+
+And don't forget to add your education and work experience!
 
 # 2️⃣ Embeds
 
