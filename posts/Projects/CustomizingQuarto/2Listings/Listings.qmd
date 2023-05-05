@@ -1,18 +1,45 @@
 ---
 title: "📃 A Lot of Listings"
 subtitle: "Make your Index page spark joy 🌟"
+description: ""
 author: "Allison Day"
 date: "5/5/2023"
 categories: [Quarto]
 # image: timp.jpg
-draft: true
+draft: false
 custom: 2
 ---
 
-Add image
+# Editing the Index Page
 
-Change image shape
+The `index.qmd` file is the first file that Quarto looks for when building your site. It is the file that will be used to generate your index page. The index page is the first page that your readers will see when they visit your site. It is the page that will contain links to all of your posts.
 
-Add text
+# Making Series
 
-<!-- generate a ton of text -->
+## Directory Structure
+
+Your posts are stored in the `posts` folder. I added two subfolders: `Projects` and `Public`.
+
+`Public` is where I store all of my completed stand-alone posts. I have two posts in this folder: `Post1` and `Post2`. Each post has its own folder. Inside each post folder is a `.qmd` file. This is the file that contains the content of the post.
+
+`Projects` is where I store all of my posts that belong to a series. I have two series in this folder: `Series1` and `Series2`. Each series has its own folder. Inside each series folder are the posts that belong to that series. Each post has its own folder. Inside each post folder is a `.qmd` file. This is the file that contains the content of the post.
+
+```
+├───.quarto
+├───index.qmd
+├───docs
+└───posts
+    ├───Projects
+    │   ├───Series1
+    │   │   ├───S1_Post1
+    |   |   |   ├───S1_Post1.qmd
+    │   │   ├───S1_Post2
+    |   |   |   ├───S1_Post2.qmd
+    │   └───Series2
+    │       └───S2_Post1
+    └───Public
+        ├───Post1
+        │   └───Post1.qmd
+        └───Post2
+            └───Post2.qmd
+```
