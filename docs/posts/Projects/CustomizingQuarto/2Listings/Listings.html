@@ -142,12 +142,38 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Add image</p>
-<p>Change image shape</p>
-<p>Add text</p>
-<!-- generate a ton of text -->
+<section id="editing-the-index-page" class="level1">
+<h1>Editing the Index Page</h1>
+<p>The <code>index.qmd</code> file is the first file that Quarto looks for when building your site. It is the file that will be used to generate your index page. The index page is the first page that your readers will see when they visit your site. It is the page that will contain links to all of your posts.</p>
+</section>
+<section id="making-series" class="level1">
+<h1>Making Series</h1>
+<section id="directory-structure" class="level2">
+<h2 class="anchored" data-anchor-id="directory-structure">Directory Structure</h2>
+<p>Your posts are stored in the <code>posts</code> folder. I added two subfolders: <code>Projects</code> and <code>Public</code>.</p>
+<p><code>Public</code> is where I store all of my completed stand-alone posts. I have two posts in this folder: <code>Post1</code> and <code>Post2</code>. Each post has its own folder. Inside each post folder is a <code>.qmd</code> file. This is the file that contains the content of the post.</p>
+<p><code>Projects</code> is where I store all of my posts that belong to a series. I have two series in this folder: <code>Series1</code> and <code>Series2</code>. Each series has its own folder. Inside each series folder are the posts that belong to that series. Each post has its own folder. Inside each post folder is a <code>.qmd</code> file. This is the file that contains the content of the post.</p>
+<pre><code>├───.quarto
+├───index.qmd
+├───docs
+└───posts
+    ├───Projects
+    │   ├───Series1
+    │   │   ├───S1_Post1
+    |   |   |   ├───S1_Post1.qmd
+    │   │   ├───S1_Post2
+    |   |   |   ├───S1_Post2.qmd
+    │   └───Series2
+    │       └───S2_Post1
+    └───Public
+        ├───Post1
+        │   └───Post1.qmd
+        └───Post2
+            └───Post2.qmd</code></pre>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

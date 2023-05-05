@@ -1,0 +1,17 @@
+---
+title: "All Projects"
+listing:
+  - id: all_projects
+    contents:   
+    - "*/*.qmd"
+    - "!*/*/*.qmd"
+    sort: "date desc"
+    type: default
+    categories: true
+    sort-ui: false
+    filter-ui: true
+
+page-layout: full
+title-block-banner: false
+---
+

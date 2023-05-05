@@ -1,10 +1,11 @@
 ---
 # https://quarto.org/docs/websites/website-listings.html
 # https://quarto.org/docs/websites/website-listings-custom.html#metadata-file-listings
-title: Customizing Your Quarto Blog
+title: 😎 Customizing Your Quarto Blog
 date: 05-05-2023
 subtitle: Adding some ✨ pizzazz ✨ to your Quarto blog
-category: Quarto
+description: "A series covering how to customize your Quarto blog."
+categories: [Quarto]
 # image: 
 
 listing: 
@@ -18,13 +19,11 @@ listing:
         title: "Title"
         reading-time: "Reading Time"
         subtitle: "Subtitle"
-draft: true
+draft: false
 ---
 
-# Introduction
 
-# The Process / Todos
-
+<!--
 -   [ ] About Page
     -  Templates
     -  Apps
@@ -38,7 +37,7 @@ draft: true
 -   [ ] Making Series
     -   edit & create listing pages
 -   [ ] Adding a favicon??? (I think this is a bit more complicated than I thought)
-
+-->
 
 
 

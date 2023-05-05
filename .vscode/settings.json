@@ -9,6 +9,11 @@
       "language": "quarto",
       "scheme": "file",
       "pattern": "posts/Projects/CustomizingQuarto/1AboutPage/AboutPage.qmd"
+    },
+    {
+      "language": "quarto",
+      "scheme": "file",
+      "pattern": "posts/Projects/CustomizingQuarto/2Listings/Listings.qmd"
     }
   ]
 }

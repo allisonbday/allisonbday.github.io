@@ -1,4 +1,5 @@
 ---
+# https://quarto.org/docs/reference/globs.html
 # title: "Posts"
 listing:
   - id: projects
@@ -11,16 +12,20 @@ listing:
     image-height: 250px
     grid-item-border: false
     max-description-length: 250
+    categories: unnumbered
+    max-items: 5
 
   - id: posts
     contents: 
     - posts
-    # - "!posts/Projects/*/*.qmd"
+    - "!posts/Projects/all_projects.qmd" # removes the projects listing page
+    # - "!posts/Projects/*/*.qmd" # removes the big project pages
     sort: "date desc"
     type: default
-    categories: true
     sort-ui: false
     filter-ui: true
+    categories: unnumbered
+    
 
 page-layout: full
 title-block-banner: false
@@ -28,10 +33,12 @@ title-block-banner: false
 
 # Projects
 
-:::{#projects}
+::: {#projects}
 :::
+
+~[*All\ Projects*](posts/Projects/all_projects.qmd)~
 
 # All Posts
 
-:::{#posts}
+::: {#posts}
 :::

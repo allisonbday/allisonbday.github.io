@@ -75,7 +75,7 @@ I decided on 2 Github stats apps, but you can add anything you want!
 
 ![Allison\'s GitHub stats](https://github-readme-stats.vercel.app/api?username=allisonbday&show_icons=true)![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=allisonbday&layout=compact)
 
-I also included the icons of my favorite languages and tools using [Simple Icons](https://simpleicons.dev/), and some HTML to center it
+I also included the icons of my favorite languages and tools using [Skill Icons](https://skillicons.dev), and some HTML to center it
 
 ```HTML
 <p align="center">

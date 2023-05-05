@@ -10,7 +10,7 @@ listing:
     contents: \*.qmd
     fields: [date, title, reading-time, description]
 
-draft: true
+draft: false
 ---
 
 <!-- generate the outline of a report about this project -->

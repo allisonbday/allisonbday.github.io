@@ -30,8 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -60,70 +58,12 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-projects .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-projects'] = new List('listing-projects', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-posts .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-posts'] = new List('listing-posts', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -160,242 +100,27 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="APIs">APIs <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Code Snippets">Code Snippets <span class="quarto-category-count">(2)</span></div><div class="category" data-category="JSON">JSON <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Jupyter Notebooks">Jupyter Notebooks <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Pandas">Pandas <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Python">Python <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Quarto">Quarto <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VS Code">VS Code <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 
 
 <section id="projects" class="level1">
 <h1>Projects</h1>
-<div id="listing-projects" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-1">
+<div id="projects">
 
 </div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
+<p><sub><a href="./posts/Projects/all_projects.html"><em>All&nbsp;Projects</em></a></sub></p>
 </section>
 <section id="all-posts" class="level1">
 <h1>All Posts</h1>
-<div id="listing-posts" class="quarto-listing quarto-listing-container-default">
-<div class="listing-actions-group">
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Quarto" data-listing-date-sort="1683180000000" data-listing-file-modified-sort="1683249066971" data-listing-reading-time-sort="2.33">
-<div class="thumbnail">
-<p><a href="./posts/Projects/CustomizingQuarto/1AboutPage/AboutPage.html"> <img src="https://github-readme-stats.vercel.app/api?username=<username>&amp;show_icons=true" class="thumnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/Projects/CustomizingQuarto/1AboutPage/AboutPage.html">
-<h3 class="no-anchor listing-title" data-anchor-id="all-posts">
-🫵 Make your <code>About</code> page about YOU
-</h3>
-<div class="listing-subtitle">
+<div id="posts">
 
 </div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Quarto'); return false;">
-Quarto
-</div>
-</div>
-<a href="./posts/Projects/CustomizingQuarto/1AboutPage/AboutPage.html">
-<div class="listing-description">
-<p>Customizing the Quarto about page with text, embeds, and more!</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/Projects/CustomizingQuarto/1AboutPage/AboutPage.html">
-<div class="listing-date">
-May 4, 2023
-</div>
-<div class="listing-author">
-Allison Day
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="VS Code" data-listing-date-sort="1683007200000" data-listing-file-modified-sort="1683217987604" data-listing-reading-time-sort="7.17">
-<div class="thumbnail">
-<p><a href="./posts/Public/fav_vs_extentions/fav_extensions_post.html"> <img src="./posts/Public/fav_vs_extentions/images/category_search.png" class="thumnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/Public/fav_vs_extentions/fav_extensions_post.html">
-<h3 class="no-anchor listing-title">
-VS Code Extensions Everyone Should Have
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('VS Code'); return false;">
-VS Code
-</div>
-</div>
-<a href="./posts/Public/fav_vs_extentions/fav_extensions_post.html">
-<div class="listing-description">
-<p>VS Extensions that I need to survive</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/Public/fav_vs_extentions/fav_extensions_post.html">
-<div class="listing-date">
-May 2, 2023
-</div>
-<div class="listing-author">
-Allison Day
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="Python,Pandas,Code Snippets" data-listing-date-sort="1677913200000" data-listing-file-modified-sort="1683217987607" data-listing-reading-time-sort="5.16">
-<div class="thumbnail">
-<a href="./posts/Public/groupby_snippets/groupby_snippets.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/Public/groupby_snippets/groupby_snippets.html"></a></p>
-</div>
-<div class="body">
-<a href="./posts/Public/groupby_snippets/groupby_snippets.html">
-<h3 class="no-anchor listing-title">
-Pandas Groupby &amp; Aggregations
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Python'); return false;">
-Python
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Pandas'); return false;">
-Pandas
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Code Snippets'); return false;">
-Code Snippets
-</div>
-</div>
-<a href="./posts/Public/groupby_snippets/groupby_snippets.html">
-<div class="listing-description">
-144 rows × 3 columns
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/Public/groupby_snippets/groupby_snippets.html">
-<div class="listing-date">
-Mar 4, 2023
-</div>
-<div class="listing-author">
-Allison Day
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="Python,Jupyter Notebooks,Code Snippets" data-listing-date-sort="1677567600000" data-listing-file-modified-sort="1683217987603" data-listing-reading-time-sort="1.47">
-<div class="thumbnail">
-<p><a href="./posts/Public/colored_text/print_colored_text.html"> <img src="./posts/Public/colored_text/images/colors_256.png" class="thumnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/Public/colored_text/print_colored_text.html">
-<h3 class="no-anchor listing-title">
-ANSI Colored Text in Terminal/Outputs
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Python'); return false;">
-Python
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Jupyter Notebooks'); return false;">
-Jupyter Notebooks
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Code Snippets'); return false;">
-Code Snippets
-</div>
-</div>
-<a href="./posts/Public/colored_text/print_colored_text.html">
-<div class="listing-description">
-<p>Credit goes to this <span>StackOverflow thread</span></p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/Public/colored_text/print_colored_text.html">
-<div class="listing-date">
-Feb 28, 2023
-</div>
-<div class="listing-author">
-Allison Day
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="APIs,JSON" data-listing-date-sort="1667714400000" data-listing-file-modified-sort="1683217987610" data-listing-reading-time-sort="2.92">
-<div class="thumbnail">
-<a href="./posts/Public/nested_jsons/Nested_JSONs.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/Public/nested_jsons/Nested_JSONs.html"></a></p>
-</div>
-<div class="body">
-<a href="./posts/Public/nested_jsons/Nested_JSONs.html">
-<h3 class="no-anchor listing-title">
-Working with Nested JSONs
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('APIs'); return false;">
-APIs
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('JSON'); return false;">
-JSON
-</div>
-</div>
-<a href="./posts/Public/nested_jsons/Nested_JSONs.html">
-<div class="listing-description">
-Lets say pulled an API and it gave you this json:
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/Public/nested_jsons/Nested_JSONs.html">
-<div class="listing-date">
-Nov 6, 2022
-</div>
-<div class="listing-author">
-Allison Day
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-
 
 
 </section>
