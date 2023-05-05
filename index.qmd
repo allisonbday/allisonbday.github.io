@@ -18,14 +18,14 @@ listing:
   - id: posts
     contents: 
     - posts
-    - "!posts/Projects/all_projects.qmd" # removes the projects listing page
-    # - "!posts/Projects/*/*.qmd" # removes the big project pages
+    - "!posts/Projects/all_projects.qmd"
+    # - "!posts/Projects/*/*.qmd"
     sort: "date desc"
     type: default
-    sort-ui: false
+    #  categories: true
+    sort-ui: true
     filter-ui: true
     categories: unnumbered
-    
 
 page-layout: full
 title-block-banner: false
@@ -36,7 +36,7 @@ title-block-banner: false
 ::: {#projects}
 :::
 
-~[*All\ Projects*](posts/Projects/all_projects.qmd)~
+~[*All Projects*](posts/Projects/all_projects.qmd)~
 
 # All Posts
 
