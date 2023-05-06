@@ -11,7 +11,7 @@ listing:
     page-size: 1
     max-items: 5
     image-height: 250px
-    image-placeholder: placeholder_1.gif
+    image-placeholder: style/images/placeholder_1.gif
     max-description-length: 250
     categories: unnumbered
     fields: [title, subtitle, description, date, categories, image]
@@ -25,7 +25,6 @@ listing:
     - "date desc"
     - custom-num desc
     type: default
-    #  categories: true
     sort-ui: true
     filter-ui: true
     categories: unnumbered
