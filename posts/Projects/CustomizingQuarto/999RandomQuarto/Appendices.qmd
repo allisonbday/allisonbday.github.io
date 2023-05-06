@@ -27,6 +27,8 @@ format:
 
 & linking to other posts in the series
 
+& custom-blank has to have a character in it. It can't be spaces or `<hr>` or it will break the listing page.
+
 # MISC
 
 ## Code Annotation
@@ -69,3 +71,8 @@ https://quarto.org/docs/authoring/article-layout.htm
 ## All fields
 
 https://quarto.org/docs/reference/projects/websites.html
+
+
+# _quarto.yml
+
+favicon - needs to be `.ico`

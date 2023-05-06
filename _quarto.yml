@@ -17,8 +17,8 @@ format:
   html:
     theme: 
     # - pulse
-    - custom.scss
-    css: styles.css
+    - style/custom.scss
+    css: style/styles.css
     # toc: true
     # toc-location: left
 

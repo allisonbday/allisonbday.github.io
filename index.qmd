@@ -37,6 +37,8 @@ title-block-banner: false
 title-block-banner-color: "#e28743"
 ---
 
+# 🪴 FAVICON SHOULD WORK RIGHT NOW
+
 # Projects
 
 ::: {#projects}
