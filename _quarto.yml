@@ -4,7 +4,9 @@ project:
   
 website:
   title: "allisonbday.github.io"
-  favicon: favicon.ico
+  favicon: "favicon.ico"
+  reader-mode: true
+  page-footer: "© 2023 Allison Day"
   navbar:
     right:
       - about.qmd
