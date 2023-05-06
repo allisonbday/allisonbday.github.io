@@ -36,8 +36,6 @@ title-block-banner: false
 title-block-banner-color: "#e28743"
 ---
 
-# 🪴 I am oe annce again I am asking the Favicon to work
-
 # Projects
 
 ::: {#projects}
