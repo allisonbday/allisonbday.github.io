@@ -75,4 +75,4 @@ https://quarto.org/docs/reference/projects/websites.html
 
 # _quarto.yml
 
-favicon - needs to be `.ico`. Doesn't work on the Brave browser 😞 (the browser I use).
+favicon - needs to be `.ico`. Doesn't seem to work on the Brave browser (the browser I use 😞).

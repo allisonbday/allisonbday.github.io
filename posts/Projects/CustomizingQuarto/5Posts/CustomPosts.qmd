@@ -1,0 +1,9 @@
+---
+title: "🗞️ Posts"
+# description: "Post description"
+author: "Allison Day"
+date: "11/6/2022"
+categories: [Python, Jupyter Notebooks, Code Snippets, Pandas, APIs, JSON, VS Code, Github, Quarto]
+# image: timp.jpg
+draft: true
+---
