@@ -12,7 +12,7 @@ draft: false
 # Series info - used in `index.qmd`
 custom-blank: "---"
 custom-series: "***[Customizing Quarto Series](posts/Projects/CustomizingQuarto/CustomizingQuarto_project.qmd)***"
-custom-num: "*Part 3*"
+custom-num: "*Part 2*"
 
 # Outline
 format: 
@@ -119,7 +119,7 @@ listing:
     categories: unnumbered
 ```
 
-*If you want to learn how to customize listings, check out my [last article](../2Listings/Listings.qmd).*
+*If you want to learn how to customize listings, check out the [listing documentation](https://quarto.org/docs/websites/website-listings.html).*
 
 # All Projects Listing
 

@@ -1,17 +1,17 @@
 ---
-title: "📚 Quarto Customization Appendices"
-# subtitle: "Emptying my junk drawer of knowledge"
-description: "Emptying my junk drawer of knowledge: Random notes and code snippets that I've found useful in my Quarto projects."
+title: "📚 Quarto Customization Appendices 2"
+# subtitle: "Make your website spark joy 🌟"
+description: "Emptying my junk drawer of knowledge: Random notes and code snippets that I've found useful in my Quarto projects"
 author: "Allison Day"
-date: "5/19/2023"
+date: "5/7/2023"
 categories: [Quarto]
 # image: timp.jpg
-draft: false
+draft: true
 
 # Series info - used in `index.qmd`
 custom-blank: "---"
 custom-series: "***[Customizing Quarto Series](posts/Projects/CustomizingQuarto/CustomizingQuarto_project.qmd)***"
-custom-num: "*Part 9999*"
+custom-num: "*Part 999*"
 
 # Outline
 format: 
@@ -20,6 +20,9 @@ format:
     toc-location: left 
     toc-title: "**On this page**" 
 ---
+
+Just tips and tricks that I've found useful in my Quarto projects.
+
 
 # SERIES
 
@@ -76,3 +79,5 @@ https://quarto.org/docs/reference/projects/websites.html
 # _quarto.yml
 
 favicon - needs to be `.ico`. Doesn't seem to work on the Brave browser (the browser I use 😞).
+
+<!-- generate a ton of text -->

@@ -17,7 +17,6 @@ $primary: #283618;
 $secondary: #606c38;
 $gray: #f6f6f6;
 
-
 // COLORS
 $body-color: #000000;
 $link-color: $secondary;
@@ -51,7 +50,9 @@ $callout-color-caution: #f77f00;  // red
 $callout-color-warning: #d62828;  // orange
 
 
-// CUSTOM STYLES
+
+
+/*-- scss:rules --*/
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $sans-serif-heading;

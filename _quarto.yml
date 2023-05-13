@@ -5,7 +5,7 @@ project:
 website:
   title: "allisonbday.github.io"
   favicon: "favicon.ico"
-  reader-mode: true
+  # reader-mode: true
   page-footer: "© 2023 Allison Day"
   navbar:
     right:
@@ -19,7 +19,8 @@ format:
   html:
     theme: 
     # - pulse
-    - style/custom.scss
+      light: style/custom_light.scss
+      # dark: style/custom_dark.scss
     css: style/styles.css
     # toc: true
     # toc-location: left
