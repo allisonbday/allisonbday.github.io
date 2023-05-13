@@ -1,0 +1,83 @@
+---
+title: "📚 Quarto Customization Appendices 2"
+# subtitle: "Make your website spark joy 🌟"
+description: "Emptying my junk drawer of knowledge: Random notes and code snippets that I've found useful in my Quarto projects"
+author: "Allison Day"
+date: "5/7/2023"
+categories: [Quarto]
+# image: timp.jpg
+draft: true
+
+# Series info - used in `index.qmd`
+custom-blank: "---"
+custom-series: "***[Customizing Quarto Series](posts/Projects/CustomizingQuarto/CustomizingQuarto_project.qmd)***"
+custom-num: "*Part 999*"
+
+# Outline
+format: 
+  html: 
+    toc: true 
+    toc-location: left 
+    toc-title: "**On this page**" 
+---
+
+Just tips and tricks that I've found useful in my Quarto projects.
+
+
+# SERIES
+
+## Custom Fields
+
+& linking to other posts in the series
+
+& custom-blank has to have a character in it. It can't be spaces or `<hr>` or it will break the listing page.
+
+# MISC
+
+## Code Annotation
+
+https://quarto.org/docs/authoring/code-annotation.html
+
+``` python
+def hello(name:str): # <1>
+    greeting = f"👋 hello {name}!" # <2>
+    return greeting
+```
+1. This is a function that says hello
+2. This is the greeting
+
+## Includes
+
+https://quarto.org/docs/authoring/includes.html
+
+## Dark Mode
+
+https://quarto.org/docs/websites/website-tools.html#dark-mode
+
+## Page Layout
+
+https://quarto.org/docs/output-formats/page-layout.html#grid-customization
+
+## Title Blocks
+
+https://quarto.org/docs/authoring/title-blocks.html#custom-title-pages
+
+
+## Table of Contents
+
+https://www.reddit.com/r/RStudio/comments/zhrwg3/add_on_this_page_section_to_my_quarto_blog_posts/
+
+## Article Layout
+
+https://quarto.org/docs/authoring/article-layout.htm
+
+## All fields
+
+https://quarto.org/docs/reference/projects/websites.html
+
+
+# _quarto.yml
+
+favicon - needs to be `.ico`. Doesn't seem to work on the Brave browser (the browser I use 😞).
+
+<!-- generate a ton of text -->

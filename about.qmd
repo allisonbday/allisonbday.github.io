@@ -3,7 +3,7 @@
 title: "Allison Day"
 about:
   template: jolla
-  image: profile.jpg
+  image: style/images/profile.jpg
   image-shape: rectangle
   image-width: 25em
   id: hero-heading

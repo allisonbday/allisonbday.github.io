@@ -1,37 +1,49 @@
 ---
+# https://quarto.org/docs/reference/globs.html
 # title: "Posts"
 listing:
   - id: projects
     contents: "posts/Projects/*/*.qmd"
-    page-size: 1
     sort: date desc
     type: grid
-    grid-columns: 1
-    image-placeholder: https://cdn.dribbble.com/users/53712/screenshots/2415798/media/870a4b819013969d84b6ae5d0b5c4f86.gif
-    image-height: 250px
     grid-item-border: false
+    grid-columns: 1
+    page-size: 1
+    max-items: 5
+    image-height: 250px
+    image-placeholder: style/images/placeholder_1.gif
     max-description-length: 250
+    categories: unnumbered
+    fields: [title, subtitle, description, date, categories, image]
 
   - id: posts
     contents: 
     - posts
-    # - "!posts/Projects/*/*.qmd"
-    sort: "date desc"
+    - "!posts/Projects/all_projects.qmd" # removes the project listing page from posts
+    - "!posts/Projects/*/*.qmd" # removes the big post page from posts (highlighted at top)
+    sort: 
+    - "date desc"
+    - custom-num desc
     type: default
-    categories: true
-    sort-ui: false
+    sort-ui: true
     filter-ui: true
+    categories: unnumbered
+    fields: [title, description, date, custom-blank,  custom-series, custom-num, reading-time, categories]
 
 page-layout: full
+
 title-block-banner: false
+title-block-banner-color: "#e28743"
 ---
 
 # Projects
 
-:::{#projects}
+::: {#projects}
 :::
+
+~[*All Projects*](posts/Projects/all_projects.qmd)~
 
 # All Posts
 
-:::{#posts}
+::: {#posts}
 :::

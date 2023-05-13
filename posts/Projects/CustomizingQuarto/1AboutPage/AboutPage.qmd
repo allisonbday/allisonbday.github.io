@@ -7,7 +7,18 @@ date: "5/4/2023"
 categories: [Quarto]
 # image: timp.jpg
 draft: false
-custom: 1
+
+# Series info - used in `index.qmd`
+custom-blank: "---"
+custom-series: "***[Customizing Quarto Series](posts/Projects/CustomizingQuarto/CustomizingQuarto_project.qmd)***"
+custom-num: "*Part 1*"
+
+# Outline
+format: 
+  html: 
+    toc: true 
+    toc-location: left 
+    toc-title: "**On this page**" 
 ---
 
 When I first made my Quarto blog, the first thing I wanted to do was claim it! So here's a detailed guide on how to make your `About` page ABOUT YOU!
@@ -19,7 +30,6 @@ Here's a link to the [Quarto About Page](https://quarto.org/docs/websites/websit
 Fill in the YAML at the top. Add your name, your picture, and anything you want to highlight. I have LinkedIn and GitHub, but you can add any [Bootstrap 5](https://icons.getbootstrap.com/) icon!
 
 ``` yaml
----
 title: <name here>
 about:
     image: profile.jpg
@@ -31,21 +41,20 @@ about:
     - icon: github
       text: Github
       href: <link to GitHub account page here>
----
 ```
 
 You should also describe yourself! Avoid big blocks of text - use bullet points, lists, and unique formatting to make it easy to read (and don't forget to use emojis!)
 
--   👀 I'm interested in
--   💗 I'm passionate about
--   🔭 I'm currently working on ...
--   🌱 I'm currently learning ...
--   💞️ I'm looking to collaborate on
--   👯 I'm looking to collaborate on ...
--   🤔 I'm looking for help with ...
--   💬 Ask me about ...
--   📫 How to reach me: ...
--   ⚡ Fun fact: ...
+    -   👀 I'm interested in
+    -   💗 I'm passionate about
+    -   🔭 I'm currently working on ...
+    -   🌱 I'm currently learning ...
+    -   💞️ I'm looking to collaborate on
+    -   👯 I'm looking to collaborate on ...
+    -   🤔 I'm looking for help with ...
+    -   💬 Ask me about ...
+    -   📫 How to reach me: ...
+    -   ⚡ Fun fact: ...
 
 ::: callout-tip
 If you don't want to have bullet points, have two empty spaces at the end of each line to force a line break!
@@ -75,7 +84,7 @@ I decided on 2 Github stats apps, but you can add anything you want!
 
 ![Allison\'s GitHub stats](https://github-readme-stats.vercel.app/api?username=allisonbday&show_icons=true)![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=allisonbday&layout=compact)
 
-I also included the icons of my favorite languages and tools using [Simple Icons](https://simpleicons.dev/), and some HTML to center it
+I also included the icons of my favorite languages and tools using [Skill Icons](https://skillicons.dev), and some HTML to center it
 
 ```HTML
 <p align="center">

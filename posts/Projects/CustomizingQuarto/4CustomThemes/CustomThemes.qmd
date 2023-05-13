@@ -1,0 +1,52 @@
+---
+title: "🎨 Colors and Fonts and Themes OH MY!"
+# subtitle: "Make your website spark joy 🌟"
+description: "Make your website spark joy 🌟"
+author: "Allison Day"
+date: "5/7/2023"
+categories: [Quarto]
+# image: timp.jpg
+draft: true
+
+# Series info - used in `index.qmd`
+custom-blank: "---"
+custom-series: "***[Customizing Quarto Series](posts/Projects/CustomizingQuarto/CustomizingQuarto_project.qmd)***"
+custom-num: "*Part 4*"
+
+# Outline
+format: 
+  html: 
+    toc: true 
+    toc-location: left 
+    toc-title: "**On this page**" 
+---
+
+*Inspired by [this post](https://albert-rapp.de/posts/13_quarto_blog_writing_guide/13_quarto_blog_writing_guide.html#style-your-blog) by Albert Rapp*
+
+# Quarto Themes
+
+There are over 25 default themes in Quarto. You can see them all [here](https://quarto.org/docs/output-formats/html-themes.html).
+
+To change the theme, simply go into your `_quarto.yml` file and change the `theme` parameter. You can also add a dark mode to your website!
+
+```yaml
+format:
+  html:
+    theme: 
+      light: pulse
+      dark: darkly
+```
+
+Of the default themes, My favorites were pulse and slate.
+
+# SCSS
+
+## Fonts
+
+## Colors
+
+::: {.callout-tip appearance="simple"}
+color viewer?
+:::
+
+<!-- generate a ton of text -->

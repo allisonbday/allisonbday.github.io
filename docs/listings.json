@@ -2,6 +2,8 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/Projects/CustomizingQuarto/CustomizingQuarto_project.html",
+      "/posts/Projects/CustomizingQuarto/3MakingSeries/MakingSeries.html",
       "/posts/Projects/CustomizingQuarto/1AboutPage/AboutPage.html",
       "/posts/Public/fav_vs_extentions/fav_extensions_post.html",
       "/posts/Public/groupby_snippets/groupby_snippets.html",
@@ -30,7 +32,8 @@
   {
     "listing": "/posts/Projects/CustomizingQuarto/CustomizingQuarto_project.html",
     "items": [
-      "/posts/Projects/CustomizingQuarto/1AboutPage/AboutPage.html"
+      "/posts/Projects/CustomizingQuarto/1AboutPage/AboutPage.html",
+      "/posts/Projects/CustomizingQuarto/3MakingSeries/MakingSeries.html"
     ]
   },
   {
@@ -54,5 +57,11 @@
   {
     "listing": "/posts/Projects/TemperatureBlanket/TemperatureBlanket_project.html",
     "items": []
+  },
+  {
+    "listing": "/posts/Projects/all_projects.html",
+    "items": [
+      "/posts/Projects/CustomizingQuarto/CustomizingQuarto_project.html"
+    ]
   }
 ]
