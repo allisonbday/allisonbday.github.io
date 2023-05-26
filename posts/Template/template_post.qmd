@@ -1,9 +1,22 @@
 ---
 title: "Title Here"
-# description: "Post description"
+# subtitle: "Customizing the Quarto about page with text, embeds, and more!"
+description: "Post description"
 author: "Allison Day"
-date: "11/6/2022"
+date: "5/4/2023"
 categories: [Python, Jupyter Notebooks, Code Snippets, Pandas, APIs, JSON, VS Code, Github, Quarto]
 # image: timp.jpg
 draft: true
+
+# # Series info - used in `index.qmd`
+# custom-blank: "---"
+# custom-series: "***[Customizing Quarto Series](posts/Projects/CustomizingQuarto/CustomizingQuarto_project.qmd)***"
+# custom-num: "*Part 1*"
+
+# Outline
+format: 
+  html: 
+    toc: true 
+    toc-location: left 
+    toc-title: "**On this page**" 
 ---

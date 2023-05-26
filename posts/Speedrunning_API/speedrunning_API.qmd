@@ -1,0 +1,30 @@
+---
+title: "🏆 Python speedrun.com API"
+# description: "Post description"
+author: "Allison Day"
+date: "5/15/2023"
+categories: [Python, APIs, JSON]
+# image: timp.jpg
+draft: false
+
+# Outline
+format: 
+  html: 
+    toc: true 
+    toc-location: left 
+    toc-title: "**On this page**" 
+---
+
+
+# What is speedrunning?
+
+
+# The API
+
+https://github.com/speedruncomorg/api
+https://github.com/blha303/srcomapi
+
+# The code
+
+
+# The results
