@@ -1,5 +1,6 @@
 ---
-title: "Notion API: Querying and Updating Databases with Python"
+title: "Notion API"
+subtitle: Querying and Updating Databases with Python
 description: Learn how to connect to the Notion API, query and update databases with Python.
 author: "Allison Day"
 date: "5/29/2023"
