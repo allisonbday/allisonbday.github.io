@@ -1,9 +1,11 @@
 import requests
 import json
 
-SECRET = secret_key
+SECRET = secret
 DATABASE_ID = database_id
+from datetime import datetime, timezone
 
+# %%
 headers = {
     "Authorization": "Bearer " + SECRET,
     "Content-Type": "application/json",
@@ -39,12 +41,7 @@ def get_database():
     return results
 
 
-attempt = get_database()
-
-
 from datetime import datetime, timezone
-
-PAGE_ID = page_id
 
 
 def patch_page():
@@ -69,4 +66,4 @@ def patch_page():
     return response.json()
 
 
-patch_page()
+# %%

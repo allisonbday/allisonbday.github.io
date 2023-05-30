@@ -219,6 +219,7 @@ background-size: cover;
   <ul class="collapse">
   <li><a href="#properties" id="toc-properties" class="nav-link" data-scroll-target="#properties">Properties</a></li>
   </ul></li>
+  <li><a href="#all-together" id="toc-all-together" class="nav-link" data-scroll-target="#all-together">All Together</a></li>
   </ul>
 </nav>
 </nav>
@@ -345,11 +346,11 @@ update pages in database https://developers.notion.com/reference/patch-page
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-1" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-1" data-code-annotation="1" data-code-lines="12">if query is broken, it will break here because there will be no <code>results</code></span>
+<span data-code-annotation="1" data-code-cell="annotated-cell-1" data-code-lines="12">if query is broken, it will break here because there will be no <code>results</code></span>
 </dd>
 <dt data-target-cell="annotated-cell-1" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-1" data-code-annotation="2" data-code-lines="19">Returns a <code>JSON</code> of all pages in database</span>
+<span data-code-annotation="2" data-code-cell="annotated-cell-1" data-code-lines="19">Returns a <code>JSON</code> of all pages in database</span>
 </dd>
 </dl>
 </div>
@@ -584,6 +585,7 @@ update pages in database https://developers.notion.com/reference/patch-page
 <p>If successful, it will return a <code>JSON</code> of the updated page.</p>
 <section id="properties" class="level2">
 <h2 class="anchored" data-anchor-id="properties">Properties</h2>
+<p><sub><a href="https://developers.notion.com/reference/property-object#status">Property&nbsp;docs</a></sub></p>
 <p>These can be a bit finicky to get working. These are the types that I’ve got working so far. They go inside the <code>properties: {}</code> dictionary in the payload.</p>
 <table class="table">
 <colgroup>
@@ -601,7 +603,7 @@ update pages in database https://developers.notion.com/reference/patch-page
 <tbody>
 <tr class="odd">
 <td>checkbox</td>
-<td><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a> <span class="co">"p_name"</span>: {<span class="st">"checkbox"</span>: true}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a> <span class="co">"p_name"</span>: {<span class="st">"checkbox"</span>: <span class="bu">bool</span>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
 <td>accepts a bool (True/False)</td>
 </tr>
 <tr class="even">
@@ -646,10 +648,72 @@ update pages in database https://developers.notion.com/reference/patch-page
 </tr>
 </tbody>
 </table>
-<p><sub><a href="https://developers.notion.com/reference/property-object#status">Property&nbsp;docs</a></sub></p>
-
-
 </section>
+</section>
+<section id="all-together" class="level1">
+<h1>All Together</h1>
+<p>Putting them both together, you can iterate through all the pages in a database and edit the pages.</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datetime <span class="im">import</span> datetime, timezone</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>SECRET <span class="op">=</span> secret</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>DATABASE_ID <span class="op">=</span> database_id</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>headers <span class="op">=</span> {</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Authorization"</span>: <span class="st">"Bearer "</span> <span class="op">+</span> SECRET,</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Content-Type"</span>: <span class="st">"application/json"</span>,</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Notion-Version"</span>: <span class="st">"2022-06-28"</span>,</span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a><span class="co"># get database</span></span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>base_url <span class="op">=</span> <span class="ss">f"https://api.notion.com/v1/databases/</span><span class="sc">{</span>DATABASE_ID<span class="sc">}</span><span class="ss">/query"</span></span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a>page_size <span class="op">=</span> <span class="dv">100</span></span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a>payload <span class="op">=</span> {</span>
+<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a>    <span class="st">"page_size"</span>: page_size,</span>
+<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a>    <span class="st">"filter"</span>: {</span>
+<span id="cb13-21"><a href="#cb13-21" aria-hidden="true" tabindex="-1"></a>        <span class="st">"or"</span>: [</span>
+<span id="cb13-22"><a href="#cb13-22" aria-hidden="true" tabindex="-1"></a>            {<span class="st">"property"</span>: <span class="st">"Status"</span>, <span class="st">"status"</span>: {<span class="st">"does_not_equal"</span>: <span class="st">"Done"</span>}},</span>
+<span id="cb13-23"><a href="#cb13-23" aria-hidden="true" tabindex="-1"></a>            {<span class="st">"property"</span>: <span class="st">"Tags"</span>, <span class="st">"multi_select"</span>: {<span class="st">"contains"</span>: <span class="st">"Improvement"</span>}},</span>
+<span id="cb13-24"><a href="#cb13-24" aria-hidden="true" tabindex="-1"></a>        ]</span>
+<span id="cb13-25"><a href="#cb13-25" aria-hidden="true" tabindex="-1"></a>    },</span>
+<span id="cb13-26"><a href="#cb13-26" aria-hidden="true" tabindex="-1"></a>    <span class="st">"sorts"</span>: [{<span class="st">"property"</span>: <span class="st">"Due"</span>, <span class="st">"direction"</span>: <span class="st">"ascending"</span>}],</span>
+<span id="cb13-27"><a href="#cb13-27" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb13-28"><a href="#cb13-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-29"><a href="#cb13-29" aria-hidden="true" tabindex="-1"></a>response <span class="op">=</span> requests.post(base_url, json<span class="op">=</span>payload, headers<span class="op">=</span>headers)</span>
+<span id="cb13-30"><a href="#cb13-30" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> response.json()</span>
+<span id="cb13-31"><a href="#cb13-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-32"><a href="#cb13-32" aria-hidden="true" tabindex="-1"></a>results <span class="op">=</span> data[<span class="st">"results"</span>]</span>
+<span id="cb13-33"><a href="#cb13-33" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> data[<span class="st">"has_more"</span>]:</span>
+<span id="cb13-34"><a href="#cb13-34" aria-hidden="true" tabindex="-1"></a>    payload <span class="op">=</span> {<span class="st">"page_size"</span>: page_size, <span class="st">"start_cursor"</span>: data[<span class="st">"next_cursor"</span>]}</span>
+<span id="cb13-35"><a href="#cb13-35" aria-hidden="true" tabindex="-1"></a>    response <span class="op">=</span> requests.post(base_url, json<span class="op">=</span>payload, headers<span class="op">=</span>headers)</span>
+<span id="cb13-36"><a href="#cb13-36" aria-hidden="true" tabindex="-1"></a>    data <span class="op">=</span> response.json()</span>
+<span id="cb13-37"><a href="#cb13-37" aria-hidden="true" tabindex="-1"></a>    results.extend(data[<span class="st">"results"</span>])</span>
+<span id="cb13-38"><a href="#cb13-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-39"><a href="#cb13-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-40"><a href="#cb13-40" aria-hidden="true" tabindex="-1"></a><span class="co"># ittorate through the database</span></span>
+<span id="cb13-41"><a href="#cb13-41" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> page <span class="kw">in</span> results:</span>
+<span id="cb13-42"><a href="#cb13-42" aria-hidden="true" tabindex="-1"></a>    PAGE_ID <span class="op">=</span> page[<span class="st">"id"</span>]</span>
+<span id="cb13-43"><a href="#cb13-43" aria-hidden="true" tabindex="-1"></a>    page_url <span class="op">=</span> <span class="ss">f"https://api.notion.com/v1/pages/</span><span class="sc">{</span>PAGE_ID<span class="sc">}</span><span class="ss">"</span></span>
+<span id="cb13-44"><a href="#cb13-44" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb13-45"><a href="#cb13-45" aria-hidden="true" tabindex="-1"></a>    payload <span class="op">=</span> {</span>
+<span id="cb13-46"><a href="#cb13-46" aria-hidden="true" tabindex="-1"></a>        <span class="st">"properties"</span>: {</span>
+<span id="cb13-47"><a href="#cb13-47" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Status"</span>: {<span class="st">"status"</span>: {<span class="st">"name"</span>: <span class="st">"Done"</span>}},</span>
+<span id="cb13-48"><a href="#cb13-48" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Tags"</span>: {<span class="st">"multi_select"</span>: [{<span class="st">"name"</span>: <span class="st">"Improvement"</span>}]},</span>
+<span id="cb13-49"><a href="#cb13-49" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Due"</span>: {</span>
+<span id="cb13-50"><a href="#cb13-50" aria-hidden="true" tabindex="-1"></a>                <span class="st">"date"</span>: {</span>
+<span id="cb13-51"><a href="#cb13-51" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"start"</span>: datetime(<span class="dv">2023</span>, <span class="dv">1</span>, <span class="dv">15</span>).isoformat(),</span>
+<span id="cb13-52"><a href="#cb13-52" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"end"</span>: <span class="va">None</span>,</span>
+<span id="cb13-53"><a href="#cb13-53" aria-hidden="true" tabindex="-1"></a>                }</span>
+<span id="cb13-54"><a href="#cb13-54" aria-hidden="true" tabindex="-1"></a>            },</span>
+<span id="cb13-55"><a href="#cb13-55" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Priority"</span>: {<span class="st">"select"</span>: {<span class="st">"name"</span>: <span class="st">"Not"</span>}},</span>
+<span id="cb13-56"><a href="#cb13-56" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb13-57"><a href="#cb13-57" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb13-58"><a href="#cb13-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-59"><a href="#cb13-59" aria-hidden="true" tabindex="-1"></a>    response <span class="op">=</span> requests.patch(page_url, json<span class="op">=</span>payload, headers<span class="op">=</span>headers)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+
 </section>
 
 
