@@ -105,4 +105,13 @@ This is a list of things to do
 :::
 ```
 
-<!-- generate a ton of text -->
+# Illustration
+
+I get all my illustrations from [streamlinehq.com/illustrations/illustrations-brooklyn](https://www.streamlinehq.com/illustrations/illustrations-brooklyn). 
+
+Primary color: #B4B4B4
+Secondary color: #606C38
+
+my main color pallete is https://coolors.co/palette/606c38-283618-fefae0-dda15e-bc6c25
+
+my second favorite color palette is https://coolors.co/palette/264653-2a9d8f-e9c46a-f4a261-e76f51
