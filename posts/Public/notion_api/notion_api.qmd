@@ -4,7 +4,9 @@ description: Learn how to connect to the Notion API, query and update databases 
 author: "Allison Day"
 date: "5/29/2023"
 categories: [Python, APIs, JSON, Notion]
-image: be-productive.png
+image: images/be-productive_banner.png
+title-block-banner: images/be-productive.png
+title-block-banner-color: white
 code-annotations: hover
 
 # Outline
