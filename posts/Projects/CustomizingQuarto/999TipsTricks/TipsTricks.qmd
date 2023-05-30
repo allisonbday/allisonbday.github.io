@@ -80,4 +80,29 @@ https://quarto.org/docs/reference/projects/websites.html
 
 favicon - needs to be `.ico`. Doesn't seem to work on the Brave browser (the browser I use 😞).
 
+
+# columns
+
+you can create custom layouts 
+
+https://getbootstrap.com/docs/5.1/layout/css-grid/
+
+```yaml
+::: {.grid}
+
+:::{.g-col-6}
+This is a list of things to do
+
+1. Do this
+2. Do that
+3. Do this and that
+:::
+
+::: {.g-col-6}
+![an image](images/image.png){fig-align="left"}
+:::
+
+:::
+```
+
 <!-- generate a ton of text -->
