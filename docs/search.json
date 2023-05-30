@@ -831,5 +831,40 @@
     "title": "Notion API: Querying and Updating Databases with Python",
     "section": "Properties",
     "text": "Properties\nThese can be a bit finicky to get working. These are the types that I’ve got working so far. They go inside the properties: {} dictionary in the payload.\n\n\n\n\n\n\n\n\nType\nCode\nNote\n\n\n\n\ncheckbox\n \"p_name\": {\"checkbox\": true}\naccepts a bool (True/False)\n\n\ndate\n\"p_name\": {\n    \"date\": {\n        \"start\": datetime(2023, 5, 29).isoformat(),\n        \"end\": None,\n    }\n}\nrequires from datetime import datetime, timezone\n\n\nmulti-select\n\"p_name\": {\"multi_select\": [{\"name\": val}]}\naccepts a list of named vals to select. If val doesn’t exist it will be created.\n\n\nnumber\n\"p_name\": {\"number\": num}\n\n\n\nrelation\n\"p_name\": {\"relation\": [{\"id\": page_id, \"name\": page_name}]}\nrequires relation database to have integration and get the related page’s id\n\n\nrich_text\n\"p_name\": {\"rich_text\": [{\"text\": {\"content\": text}}]}\n\n\n\nselect\n\"p_name\": {\"select\": {\"name\": val}}\nlike multiselect, if val doesn’t exist it will be created\n\n\nstatus\n\"p_name\": {\"status\": {\"name\": val}}\nlike multiselect but value must exist\n\n\n\nProperty docs"
+  },
+  {
+    "objectID": "posts/Public/notion_api/notion_api.html",
+    "href": "posts/Public/notion_api/notion_api.html",
+    "title": "Notion API: Querying and Updating Databases with Python",
+    "section": "",
+    "text": "“Notion is a single space where you can think, write, and plan. Capture thoughts, manage projects, or even run an entire company — and do it exactly the way you want.” 1 I have personally been using Notion for the past 3 years. I used notion to keep track of my work hours, my to-do list, and all of my classes in the back half of college.\nYou keep track of everything through databases of pages, and you can join databases together and create different views to really unlock Notion’s full potential.\n\n\nI use notion to store all of my recipies, and I’m constantly updating my recipe database. But putting in all 10 properties for every new entry is my least favorite part. So I wanted to create a web scrapper that would take the recipe link, scrape all the info, and automatically upload it to Notion.\nLuckily, Notion has an API that lets you query databases, create new pages and update existing pages. Unluckily, all of the examples are written in JavaScript and Shell, and all of the python packages I could find were unintuitive. So here is a very basic tutorial from my adventure using the Notion API."
+  },
+  {
+    "objectID": "posts/Public/notion_api/notion_api.html#why-use-the-notion-api",
+    "href": "posts/Public/notion_api/notion_api.html#why-use-the-notion-api",
+    "title": "Notion API: Querying and Updating Databases with Python",
+    "section": "",
+    "text": "I use notion to store all of my recipies, and I’m constantly updating my recipe database. But putting in all 10 properties for every new entry is my least favorite part. So I wanted to create a web scrapper that would take the recipe link, scrape all the info, and automatically upload it to Notion.\nLuckily, Notion has an API that lets you query databases, create new pages and update existing pages. Unluckily, all of the examples are written in JavaScript and Shell, and all of the python packages I could find were unintuitive. So here is a very basic tutorial from my adventure using the Notion API."
+  },
+  {
+    "objectID": "posts/Public/notion_api/notion_api.html#filter-sorts",
+    "href": "posts/Public/notion_api/notion_api.html#filter-sorts",
+    "title": "Notion API: Querying and Updating Databases with Python",
+    "section": "Filter & Sorts",
+    "text": "Filter & Sorts\nFiltering docs\nYou can also include a filter in your payload. These differ from property type to property type, and may take some trial and error. Sorting can also be added to return everything in\npayload = {\n    \"page_size\": page_size,\n    \"filter\": {\n        \"or\": [\n            {\"property\": \"Status\", \"status\": {\"does_not_equal\": \"Done\"}},\n            {\"property\": \"Tags\", \"multi_select\": {\"contains\": \"Improvement\"}},\n        ]\n    },\n    \"sorts\": [{\"property\": \"Due\", \"direction\": \"ascending\"}],\n}"
+  },
+  {
+    "objectID": "posts/Public/notion_api/notion_api.html#properties",
+    "href": "posts/Public/notion_api/notion_api.html#properties",
+    "title": "Notion API: Querying and Updating Databases with Python",
+    "section": "Properties",
+    "text": "Properties\nThese can be a bit finicky to get working. These are the types that I’ve got working so far. They go inside the properties: {} dictionary in the payload.\n\n\n\n\n\n\n\n\nType\nCode\nNote\n\n\n\n\ncheckbox\n \"p_name\": {\"checkbox\": true}\naccepts a bool (True/False)\n\n\ndate\n\"p_name\": {\n    \"date\": {\n        \"start\": datetime(2023, 5, 29).isoformat(),\n        \"end\": None,\n    }\n}\nrequires from datetime import datetime, timezone\n\n\nmulti-select\n\"p_name\": {\"multi_select\": [{\"name\": val}]}\naccepts a list of named vals to select. If val doesn’t exist it will be created.\n\n\nnumber\n\"p_name\": {\"number\": num}\n\n\n\nrelation\n\"p_name\": {\"relation\": [{\"id\": page_id, \"name\": page_name}]}\nrequires relation database to have integration and get the related page’s id\n\n\nrich_text\n\"p_name\": {\"rich_text\": [{\"text\": {\"content\": text}}]}\n\n\n\nselect\n\"p_name\": {\"select\": {\"name\": val}}\nlike multiselect, if val doesn’t exist it will be created\n\n\nstatus\n\"p_name\": {\"status\": {\"name\": val}}\nlike multiselect but value must exist\n\n\n\nProperty docs"
+  },
+  {
+    "objectID": "posts/Public/notion_api/notion_api.html#footnotes",
+    "href": "posts/Public/notion_api/notion_api.html#footnotes",
+    "title": "Notion API: Querying and Updating Databases with Python",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nhttps://www.notion.so/help/guides/what-is-notion↩︎"
   }
 ]
