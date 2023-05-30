@@ -1,5 +1,5 @@
 ---
-title: "🛠️ Making a Series"
+title: "Making a Series"
 # subtitle: "Part 3 in the [Customizing Quarto](../CustomizingQuarto_project.qmd) series"
 description: " How to completely redo your Quarto Posts directory to enable series! (*Inspired by [this post](https://albert-rapp.de/posts/13_quarto_blog_writing_guide/13_quarto_blog_writing_guide.html#create-your-own-series) by Albert Rapp*)"
 author: "Allison Day"
