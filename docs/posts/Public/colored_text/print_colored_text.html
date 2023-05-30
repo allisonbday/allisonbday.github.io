@@ -96,6 +96,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-submit-button-title": "Submit"
   }
 }</script>
+<style>
+
+      .quarto-title-block .quarto-title-banner h1,
+      .quarto-title-block .quarto-title-banner h2,
+      .quarto-title-block .quarto-title-banner h3,
+      .quarto-title-block .quarto-title-banner h4,
+      .quarto-title-block .quarto-title-banner h5,
+      .quarto-title-block .quarto-title-banner h6
+      {
+        color: white;
+      }
+
+      .quarto-title-block .quarto-title-banner {
+        color: white;
+background-image: url(images/designer-color-palette-2_banner.png);
+background-size: cover;
+      }
+</style>
 
 
 <link rel="stylesheet" href="../../../style/styles.css">
@@ -140,51 +158,53 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">ANSI Colored Text in Terminal/Outputs</h1>
+                  <div>
+        <div class="description">
+          Credit goes to this <a href="https://stackoverflow.com/questions/4842424/list-of-ansi-color-escape-sequences">StackOverflow thread</a>
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">Python</div>
+                <div class="quarto-category">Jupyter Notebooks</div>
+                <div class="quarto-category">Code Snippets</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Allison Day </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">February 28, 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">ANSI Colored Text in Terminal/Outputs</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">Python</div>
-    <div class="quarto-category">Jupyter Notebooks</div>
-    <div class="quarto-category">Code Snippets</div>
-  </div>
-  </div>
-
-<div>
-  <div class="description">
-    Credit goes to this <a href="https://stackoverflow.com/questions/4842424/list-of-ansi-color-escape-sequences">StackOverflow thread</a>
-  </div>
-</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
-<div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Allison Day </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">February 28, 2023</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
-
-</header>
 
 <section id="the-basics" class="level1">
 <h1>The Basics</h1>
@@ -258,7 +278,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><img src="images\colors_256.png" class="img-fluid"> * <em>Note: only change the last number</em></p>
 <p><strong>Text</strong></p>
 <div class="cell" data-execution_count="6">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># text 1st number is 38 (because that's the 'custom color' number); </span></span>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># text 1st number is 38 (because that's the 'custom color' number);</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\033</span><span class="st">[38;5;141m purple text 141, </span><span class="ch">\033</span><span class="st">[0m"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><strong>Background</strong></p>
@@ -288,15 +308,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="use-case" class="level1">
 <h1>Use Case</h1>
 <p>I work a lot in jupyter notebooks and running checks with colored text is so much funner!</p>
-<div class="cell" data-execution_count="10">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> print_warning(string: <span class="bu">str</span>):</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\033</span><span class="ss">[30;41m </span><span class="sc">{</span>string<span class="sc">}</span><span class="ss"> </span><span class="ch">\033</span><span class="ss">[0m"</span>) <span class="co"># white text on red background</span></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>check_list <span class="op">=</span> [<span class="st">"one"</span>, <span class="st">"two"</span>, <span class="st">"four"</span>]</span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="st">"four"</span> <span class="kw">in</span> check_list:</span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>    print_warning(<span class="st">"FOUR FOUND IN LIST! EXTERMINATE!!!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+<p>` ``{python}</p>
+<p>def print_warning(string: str): print(f”\033[30;41m {string} \033[0m”) # white text on red background</p>
+<p>check_list = [“one”, “two”, “four”]</p>
+<p>if “four” in check_list: print_warning(“FOUR FOUND IN LIST! EXTERMINATE!!!”)</p>
+<p>```</p>
 
 
 </section>

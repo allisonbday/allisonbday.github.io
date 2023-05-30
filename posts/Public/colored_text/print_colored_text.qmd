@@ -4,7 +4,9 @@ description: "Credit goes to this [StackOverflow thread](https://stackoverflow.c
 author: "Allison Day"
 date: "2/28/2023"
 categories: [Python, Jupyter Notebooks, Code Snippets]
-# image: timp.jpg
+image: images\designer-color-palette-2.png
+title-block-banner: images/designer-color-palette-2_banner.png
+title-block-banner-color: white
 draft: false
 
 execute:
@@ -91,7 +93,7 @@ for bg in range(40, 48):
 **Text**
 ```{python}
 
-# text 1st number is 38 (because that's the 'custom color' number); 
+# text 1st number is 38 (because that's the 'custom color' number);
 print("\033[38;5;141m purple text 141, \033[0m")
 ```
 
@@ -126,10 +128,12 @@ print("\033[48;2;229;242;147m CUSTOM! light yellow/green background \033[0m")
 
 I work a lot in jupyter notebooks and running checks with colored text is so much funner!
 
-```{python}
+`
+``{python}
 
 def print_warning(string: str):
-    print(f"\033[30;41m {string} \033[0m") # white text on red background
+    print(f"\033[30;41m {string} \033[0m")  # white text on red background
+
 
 check_list = ["one", "two", "four"]
 

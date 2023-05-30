@@ -5,9 +5,9 @@ description: " How to completely redo your Quarto Posts directory to enable seri
 author: "Allison Day"
 date: "5/5/2023"
 categories: [Quarto]
-code-annotations: hover
-# image: timp.jpg
-draft: false
+image: images/designing-a-website-1.png
+title-block-banner: images/designing-a-website-1_banner.png
+title-block-banner-color: white
 
 # Series info - used in `index.qmd`
 custom-blank: "---"
@@ -20,6 +20,8 @@ format:
     toc: true 
     toc-location: left 
     toc-title: "**On this page**" 
+
+draft: false
 ---
 
 # Why Make a Series?

@@ -96,12 +96,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-submit-button-title": "Submit"
   }
 }</script>
+<style>
+
+      .quarto-title-block .quarto-title-banner h1,
+      .quarto-title-block .quarto-title-banner h2,
+      .quarto-title-block .quarto-title-banner h3,
+      .quarto-title-block .quarto-title-banner h4,
+      .quarto-title-block .quarto-title-banner h5,
+      .quarto-title-block .quarto-title-banner h6
+      {
+        color: white;
+      }
+
+      .quarto-title-block .quarto-title-banner {
+        color: white;
+background-image: url(images/coding-4_banner.png);
+background-size: cover;
+      }
+</style>
 
 
 <link rel="stylesheet" href="../../../style/styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -140,49 +158,97 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
-<!-- sidebar -->
-<!-- margin-sidebar -->
-    
-<!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">VS Code Extensions Everyone Should Have</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">VS Code</div>
-  </div>
-  </div>
-
-<div>
-  <div class="description">
-    VS Extensions that I need to survive
-  </div>
-</div>
-
-
-<div class="quarto-title-meta">
-
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Allison Day </p>
-          </div>
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">VS Code Extensions Everyone Should Have</h1>
+                  <div>
+        <div class="description">
+          VS Extensions that I need to survive
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">VS Code</div>
+              </div>
+                  </div>
   </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">May 2, 2023</p>
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Allison Day </p>
+            </div>
     </div>
-  </div>
-  
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">May 2, 2023</p>
+      </div>
+    </div>
     
-  </div>
+      
+    </div>
+    
   
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title"><strong>On this page</strong></h2>
+   
+  <ul>
+  <li><a href="#why-vs-code" id="toc-why-vs-code" class="nav-link active" data-scroll-target="#why-vs-code">Why VS Code?</a></li>
+  <li><a href="#my-extensions" id="toc-my-extensions" class="nav-link" data-scroll-target="#my-extensions">My Extensions</a>
+  <ul class="collapse">
+  <li><a href="#general-quality-of-life" id="toc-general-quality-of-life" class="nav-link" data-scroll-target="#general-quality-of-life">General Quality of Life</a>
+  <ul class="collapse">
+  <li><a href="#better-comments" id="toc-better-comments" class="nav-link" data-scroll-target="#better-comments">Better Comments</a></li>
+  <li><a href="#bookmarks" id="toc-bookmarks" class="nav-link" data-scroll-target="#bookmarks">Bookmarks</a></li>
+  <li><a href="#live-share" id="toc-live-share" class="nav-link" data-scroll-target="#live-share">Live Share</a></li>
+  <li><a href="#tabout" id="toc-tabout" class="nav-link" data-scroll-target="#tabout">TabOut</a></li>
+  </ul></li>
+  <li><a href="#themes" id="toc-themes" class="nav-link" data-scroll-target="#themes">Themes</a>
+  <ul class="collapse">
+  <li><a href="#color-themes" id="toc-color-themes" class="nav-link" data-scroll-target="#color-themes">Color Themes</a></li>
+  <li><a href="#material-icon-theme-material-product-icons" id="toc-material-icon-theme-material-product-icons" class="nav-link" data-scroll-target="#material-icon-theme-material-product-icons">Material Icon Theme &amp; Material Product Icons</a></li>
+  </ul></li>
+  <li><a href="#git-github" id="toc-git-github" class="nav-link" data-scroll-target="#git-github">Git &amp; GitHub</a>
+  <ul class="collapse">
+  <li><a href="#github-pull-requests-and-issues" id="toc-github-pull-requests-and-issues" class="nav-link" data-scroll-target="#github-pull-requests-and-issues">GitHub Pull Requests and Issues</a></li>
+  <li><a href="#github-copilot-subscription" id="toc-github-copilot-subscription" class="nav-link" data-scroll-target="#github-copilot-subscription">GitHub Copilot <em>(*subscription)</em></a></li>
+  </ul></li>
+  <li><a href="#coding" id="toc-coding" class="nav-link" data-scroll-target="#coding">Coding</a>
+  <ul class="collapse">
+  <li><a href="#python-indent" id="toc-python-indent" class="nav-link" data-scroll-target="#python-indent">Python Indent</a></li>
+  <li><a href="#documentation-python-type-hint-autodocstring" id="toc-documentation-python-type-hint-autodocstring" class="nav-link" data-scroll-target="#documentation-python-type-hint-autodocstring">Documentation: Python Type Hint &amp; autoDocstring</a></li>
+  <li><a href="#pylint" id="toc-pylint" class="nav-link" data-scroll-target="#pylint">Pylint</a></li>
+  <li><a href="#formatters-black-python-jupyter-prettier" id="toc-formatters-black-python-jupyter-prettier" class="nav-link" data-scroll-target="#formatters-black-python-jupyter-prettier">Formatters: Black <em>(python &amp; jupyter) &amp;</em> Prettier</a></li>
+  <li><a href="#markdown-markdown-all-in-one-markdown-checkbox-markdownlint" id="toc-markdown-markdown-all-in-one-markdown-checkbox-markdownlint" class="nav-link" data-scroll-target="#markdown-markdown-all-in-one-markdown-checkbox-markdownlint">Markdown: Markdown All in One, Markdown Checkbox, &amp; markdownlint</a></li>
+  </ul></li>
+  <li><a href="#data-science" id="toc-data-science" class="nav-link" data-scroll-target="#data-science">Data Science</a>
+  <ul class="collapse">
+  <li><a href="#excel-viewer" id="toc-excel-viewer" class="nav-link" data-scroll-target="#excel-viewer">Excel Viewer</a></li>
+  <li><a href="#sanddance-for-vscode" id="toc-sanddance-for-vscode" class="nav-link" data-scroll-target="#sanddance-for-vscode">SandDance for VSCode</a></li>
+  <li><a href="#quarto" id="toc-quarto" class="nav-link" data-scroll-target="#quarto">Quarto</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#discover-more-extensions" id="toc-discover-more-extensions" class="nav-link" data-scroll-target="#discover-more-extensions">Discover More Extensions</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
-</header>
+
+
 
 <section id="why-vs-code" class="level1">
 <h1>Why VS Code?</h1>

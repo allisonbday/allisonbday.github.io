@@ -6,7 +6,7 @@ author: "Allison Day"
 date: "5/5/2023"
 categories: [Quarto]
 code-annotations: hover
-# image: timp.jpg
+#4image: timp.jpg
 draft: true
 
 # Series info - used in `index.qmd`

@@ -28,7 +28,7 @@ listing:
     sort-ui: true
     filter-ui: true
     categories: unnumbered
-    fields: [title, description, date, custom-blank,  custom-series, custom-num, reading-time, categories]
+    fields: [title, description, date, custom-blank,  custom-series, custom-num, reading-time, categories, image]
 
 page-layout: full
 

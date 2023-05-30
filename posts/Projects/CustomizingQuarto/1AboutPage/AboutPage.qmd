@@ -5,7 +5,9 @@ description: "Customizing the Quarto about page with text, embeds, and more!"
 author: "Allison Day"
 date: "5/4/2023"
 categories: [Quarto]
-# image: timp.jpg
+image: images\add-profile-picture-2.png
+title-block-banner: images/add-profile-picture-2_banner.png
+title-block-banner-color: white
 draft: false
 
 # Series info - used in `index.qmd`

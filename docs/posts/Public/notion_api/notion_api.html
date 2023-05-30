@@ -110,7 +110,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
       .quarto-title-block .quarto-title-banner {
         color: white;
-background-image: url(images/be-productive.png);
+background-image: url(../../../style/images/be-productive_banner.png);
 background-size: cover;
       }
 </style>
@@ -170,7 +170,6 @@ background-size: cover;
                           <div class="quarto-categories">
                 <div class="quarto-category">Python</div>
                 <div class="quarto-category">APIs</div>
-                <div class="quarto-category">JSON</div>
                 <div class="quarto-category">Notion</div>
               </div>
                   </div>
@@ -208,7 +207,7 @@ background-size: cover;
   <ul class="collapse">
   <li><a href="#why-use-the-notion-api" id="toc-why-use-the-notion-api" class="nav-link" data-scroll-target="#why-use-the-notion-api">Why use the Notion API?</a></li>
   </ul></li>
-  <li><a href="#notion-integrations-secret-tokenpi" id="toc-notion-integrations-secret-tokenpi" class="nav-link" data-scroll-target="#notion-integrations-secret-tokenpi">Notion Integrations &amp; Secret Tokenpi</a></li>
+  <li><a href="#notion-integrations-secret-token" id="toc-notion-integrations-secret-token" class="nav-link" data-scroll-target="#notion-integrations-secret-token">Notion Integrations &amp; Secret Token</a></li>
   <li><a href="#set-up" id="toc-set-up" class="nav-link" data-scroll-target="#set-up">Set Up</a></li>
   <li><a href="#headers" id="toc-headers" class="nav-link" data-scroll-target="#headers">Headers</a></li>
   <li><a href="#querying-databases-docs" id="toc-querying-databases-docs" class="nav-link" data-scroll-target="#querying-databases-docs">Querying Databases <em>(docs)</em></a>
@@ -258,8 +257,8 @@ update pages in database https://developers.notion.com/reference/patch-page
 <p>Luckily, Notion has an API that lets you query databases, create new pages and update existing pages. Unluckily, all of the examples are written in JavaScript and Shell, and all of the python packages I could find were unintuitive. So here is a very basic tutorial from my adventure using the Notion API.</p>
 </section>
 </section>
-<section id="notion-integrations-secret-tokenpi" class="level1">
-<h1>Notion Integrations &amp; Secret Tokenpi</h1>
+<section id="notion-integrations-secret-token" class="level1">
+<h1>Notion Integrations &amp; Secret Token</h1>
 <div class="grid">
 <div class="g-col-6">
 <div class="quarto-figure quarto-figure-right">
@@ -345,11 +344,11 @@ update pages in database https://developers.notion.com/reference/patch-page
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-1" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-lines="12" data-code-cell="annotated-cell-1" data-code-annotation="1">if query is broken, it will break here because there will be no <code>results</code></span>
+<span data-code-cell="annotated-cell-1" data-code-lines="12" data-code-annotation="1">if query is broken, it will break here because there will be no <code>results</code></span>
 </dd>
 <dt data-target-cell="annotated-cell-1" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-lines="19" data-code-cell="annotated-cell-1" data-code-annotation="2">Returns a <code>JSON</code> of all pages in database</span>
+<span data-code-cell="annotated-cell-1" data-code-lines="19" data-code-annotation="2">Returns a <code>JSON</code> of all pages in database</span>
 </dd>
 </dl>
 </div>

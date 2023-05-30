@@ -4,9 +4,9 @@ title: "Title Here"
 author: "Allison Day"
 date: "11/6/2022"
 categories: [Python, Jupyter Notebooks, Code Snippets, Pandas, APIs, JSON, VS Code, Github, Quarto, Notion]
-# image: timp.jpg
-# title-block-banner: images/be-productive.png
-# title-block-banner-color: "#ffffff"
+image: ../../../style/images/be-productive.png
+title-block-banner: ../../../style/images/be-productive_banner.png
+title-block-banner-color: white
 code-annotations: hover
 
 # Outline
@@ -16,5 +16,5 @@ format:
     toc-location: left 
     toc-title: "**On this page**" 
     
-draft: false
+draft: true
 ---

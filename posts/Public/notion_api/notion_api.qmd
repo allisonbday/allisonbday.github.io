@@ -3,9 +3,9 @@ title: "Notion API: Querying and Updating Databases with Python"
 description: Learn how to connect to the Notion API, query and update databases with Python.
 author: "Allison Day"
 date: "5/29/2023"
-categories: [Python, APIs, JSON, Notion]
-image: images/be-productive_banner.png
-title-block-banner: images/be-productive.png
+categories: [Python, APIs, Notion]
+image: ../../../style/images/be-productive.png
+title-block-banner: ../../../style/images/be-productive_banner.png
 title-block-banner-color: white
 code-annotations: hover
 
@@ -51,7 +51,7 @@ I use notion to store all of my recipies, and I'm constantly updating my recipe 
 
 Luckily, Notion has an API that lets you query databases, create new pages and update existing pages. Unluckily, all of the examples are written in JavaScript and Shell, and all of the python packages I could find were unintuitive. So here is a very basic tutorial from my adventure using the Notion API.
 
-# Notion Integrations & Secret Tokenpi
+# Notion Integrations & Secret Token
 
 ::: grid
 ::: g-col-6

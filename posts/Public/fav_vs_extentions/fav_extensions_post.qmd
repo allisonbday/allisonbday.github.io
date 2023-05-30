@@ -4,6 +4,16 @@ description: VS Extensions that I need to survive
 author: "Allison Day"
 date: "5/2/2023"
 categories: [VS Code]
+image: images\coding-4.png
+title-block-banner: images/coding-4_banner.png
+title-block-banner-color: white
+
+# Outline
+format: 
+  html: 
+    toc: true 
+    toc-location: left 
+    toc-title: "**On this page**" 
 
 draft: false
 ---
