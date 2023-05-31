@@ -4,13 +4,15 @@ title: "Working with Nested JSONs"
 author: "Allison Day"
 date: "11/6/2022"
 categories: [APIs, JSON]
-# image: timp.jpg
+image: images/nested_josn.png
+title-block-banner: images/nested_json_banner.png
+title-block-banner-color: white
 draft: false
 ---
 
 ```{python}
-#| code-fold: true
-#| code-summary: "Imports"
+# | code-fold: true
+# | code-summary: "Imports"
 
 # this is code-fold
 import pandas as pd
@@ -55,10 +57,10 @@ Lets say pulled an API and it gave you this json:
 # Basic
 ```{python}
 df = pd.json_normalize(
-    json_example, 
+    json_example,
     record_path=["Products"],
     errors="ignore",
-    )
+)
 
 print(df.to_markdown())
 ```
@@ -86,7 +88,7 @@ df = pd.json_normalize(
         ["Products", "ID"],
         ["Products", "SKU"],
         ["Products", "Name"],
-        ["Products", "PriceTiers"], 
+        ["Products", "PriceTiers"],
     ],
     errors="ignore",
 )
@@ -103,8 +105,8 @@ df = pd.json_normalize(
         ["Products", "ID"],
         ["Products", "SKU"],
         ["Products", "Name"],
-        ["Products", "PriceTiers", "Public Retail Price"], 
-        ["Products", "PriceTiers", "Employee Price"]
+        ["Products", "PriceTiers", "Public Retail Price"],
+        ["Products", "PriceTiers", "Employee Price"],
     ],
     errors="ignore",
 )
