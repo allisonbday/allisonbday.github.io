@@ -1,0 +1,33 @@
+---
+title: "Webscrapping for Dummies"
+subtitle: "A guide to Beautiful Soup, for beginners, by a beginner"
+description: "Learn how to scrape the web for data using Python and BeautifulSoup"
+author: "Allison Day"
+date: "6/3/2023"
+categories: [Python, Code Snippets, Web Scraping]
+image: images/webscrapping_green.png
+title-block-banner: images/webscrapping_gray.png
+title-block-banner-color: white
+code-annotations: hover
+
+# Outline
+format: 
+  html: 
+    toc: true 
+    toc-location: left 
+    toc-title: "**On this page**" 
+    
+draft: True
+---
+
+# Introduction
+
+## What is web scraping?
+
+Webscraping is simply extracting data from a site. Sometimes websites provide an API that lets you query for data directly. But most websites require you to go into the code to extract the data. While it sounds easy, every website on the internet is unique and so requires a unique webscrapper. Websites are also constantly updating and changing, any of which can break your program.
+
+::: callout-caution
+Webscrapping can be kind of a gray zone legally. To oversimplify something I don't really understand - i's not that webscrapping is "legal", more that it's not illegal. However, scrapping data that isn't publicly available is a crime. So if you have to log in to access the data, or if you have to pay for access, then you can't scrape it.
+:::
+
+# Start
