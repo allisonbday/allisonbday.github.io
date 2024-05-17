@@ -1,0 +1,32 @@
+---
+title: "Open Metro API"
+# description: "Post description"
+author: "Allison Day"
+date: "08-30-2023"
+categories: [Python, Pandas, APIs]
+image: ../../../style/images/be-productive.png
+title-block-banner: ../../../style/images/be-productive_banner.png
+title-block-banner-color: white
+code-annotations: hover
+
+# Series info - used in `index.qmd`
+custom-blank: "---"
+custom-series: "***[Customizing Quarto Series](posts/Projects/tempearture_blanket/TemperatureBlanket_project.qmd)***"
+custom-num: "*Part 1*"
+
+# Outline
+format: 
+  html: 
+    toc: true 
+    toc-location: left 
+    toc-title: "**On this page**" 
+    
+draft: false
+---
+
+# Introduction
+
+The [Open Metro API](https://open-meteo.com/) is a free API that provides weather data for anywhere around the world. The API provides current weather data, as well as historical data. The API is free to use for non commercial use.
+
+# Getting Started
+

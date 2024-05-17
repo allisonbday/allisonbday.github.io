@@ -72,7 +72,8 @@ ul.task-list li input[type="checkbox"] {
 
     const options = {
       valueNames: ['listing-title','listing-subtitle','listing-description','listing-date','listing-categories','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
+      page: 1,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
       searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
 
@@ -169,7 +170,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-unnumbered"><div class="category" data-category="APIs">APIs</div><div class="category" data-category="Code Snippets">Code Snippets</div><div class="category" data-category="JSON">JSON</div><div class="category" data-category="Jupyter Notebooks">Jupyter Notebooks</div><div class="category" data-category="Notion">Notion</div><div class="category" data-category="Pandas">Pandas</div><div class="category" data-category="Python">Python</div><div class="category" data-category="Quarto">Quarto</div><div class="category" data-category="VS Code">VS Code</div><div class="category" data-category="Web Scraping">Web Scraping</div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-unnumbered"><div class="category" data-category="APIs">APIs</div><div class="category" data-category="Code Snippets">Code Snippets</div><div class="category" data-category="JSON">JSON</div><div class="category" data-category="Jupyter Notebooks">Jupyter Notebooks</div><div class="category" data-category="Notion">Notion</div><div class="category" data-category="Pandas">Pandas</div><div class="category" data-category="Python">Python</div><div class="category" data-category="Quarto">Quarto</div><div class="category" data-category="Streamlit">Streamlit</div><div class="category" data-category="VS Code">VS Code</div><div class="category" data-category="knitting">knitting</div><div class="category" data-category="pixel-art">pixel-art</div><div class="category" data-category="python">python</div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -179,14 +180,83 @@ ul.task-list li input[type="checkbox"] {
 <h1>Projects</h1>
 <div id="listing-projects" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-1">
-<div class="g-col-1" data-index="0" data-categories="Quarto" data-listing-date-sort="1683266400000" data-listing-file-modified-sort="1685488872331" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./posts/Projects/CustomizingQuarto/CustomizingQuarto_project.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-categories="knitting,pixel-art,python" data-listing-date-sort="1715925600000" data-listing-file-modified-sort="1715971763724" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./posts/Projects/fair_isle_knitting/fair_isle_knitting_project.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left borderless">
 <p class="card-img-top">
 <img src="style/images/placeholder_1.gif" class="thumbnail-image card-img" style="height: 250px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title" data-anchor-id="projects">
+Fair Isle Knitting Series
+</h5>
+<div class="card-subtitle listing-subtitle">
+A series on how to knit Fair Isle patterns using pixel art and python
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('knitting'); return false;">
+knitting
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('pixel-art'); return false;">
+pixel-art
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('python'); return false;">
+python
+</div>
+</div>
+<div class="card-text listing-description">
+A series on how to knit Fair Isle patterns using pixel art and python
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+May 17, 2024
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="Quarto,Streamlit" data-listing-date-sort="1693202400000" data-listing-file-modified-sort="1693256597043" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./posts/Projects/temperature_blanket/TemperatureBlanket_project.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left borderless">
+<p class="card-img-top">
+<img data-src="style/images/placeholder_1.gif" class="thumbnail-image card-img" style="height: 250px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Temperature Blanket Generator
+</h5>
+<div class="card-subtitle listing-subtitle">
+A series about generating a temperature blanket pattern 🧶
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Quarto'); return false;">
+Quarto
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Streamlit'); return false;">
+Streamlit
+</div>
+</div>
+<div class="card-text listing-description">
+A series about generating a temperature blanket pattern 🧶
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Aug 28, 2023
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="Quarto" data-listing-date-sort="1683266400000" data-listing-file-modified-sort="1685488872331" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./posts/Projects/CustomizingQuarto/CustomizingQuarto_project.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left borderless">
+<p class="card-img-top">
+<img data-src="style/images/placeholder_1.gif" class="thumbnail-image card-img" style="height: 250px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
 Customizing Your Quarto Blog
 </h5>
 <div class="card-subtitle listing-subtitle">
@@ -213,6 +283,9 @@ May 5, 2023
 <div class="listing-no-matching d-none">
 No matching items
 </div>
+<nav id="projects-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
 </div>
 <p><sub><a href="./posts/Projects/all_projects.html"><em>All Projects</em></a></sub></p>
 </section>
@@ -242,17 +315,17 @@ No matching items
     </div>
 </div>
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Python,Code Snippets,Web Scraping" data-listing-date-sort="1685772000000" data-listing-file-modified-sort="1686778863248" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="0" data-categories="Python,Code Snippets,Pandas" data-listing-date-sort="1715925600000" data-listing-file-modified-sort="1715971653336" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9">
 <div class="thumbnail">
-<p><a href="./posts/webscrapping/webscrapping_basics.html"> <img src="./posts/webscrapping/images/Wombat_PI.png" class="thumbnail-image"> </a></p>
+<p><a href="./posts/Projects/fair_isle_knitting/fair_isle_matplotlib/fair_isle_matplotlib.html"> <img src="./posts/style/images/be-productive.png" class="thumbnail-image"> </a></p>
 </div>
 <div class="body">
-<a href="./posts/webscrapping/webscrapping_basics.html">
+<a href="./posts/Projects/fair_isle_knitting/fair_isle_matplotlib/fair_isle_matplotlib.html">
 <h3 class="no-anchor listing-title" data-anchor-id="all-posts">
-Webscrapping for Dummies
+Knitting with Code: Designing Repeating Pixel Art for Fair Isle Patterns Using Matplotlib and Numpy
 </h3>
 <div class="listing-subtitle">
-A guide to Beautiful Soup, for beginners, by a beginner
+
 </div>
 </a>
 <div class="listing-categories">
@@ -262,28 +335,78 @@ Python
 <div class="listing-category" onclick="window.quartoListingCategory('Code Snippets'); return false;">
 Code Snippets
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('Web Scraping'); return false;">
-Web Scraping
+<div class="listing-category" onclick="window.quartoListingCategory('Pandas'); return false;">
+Pandas
 </div>
 </div>
-<a href="./posts/webscrapping/webscrapping_basics.html">
+<a href="./posts/Projects/fair_isle_knitting/fair_isle_matplotlib/fair_isle_matplotlib.html">
 <div class="listing-description">
-<p>Learn how to scrape the web for data using Python and BeautifulSoup</p>
+<p>Harness the power of Python to create repeating pixel art for Fair Isle patterns using Matplotlib and Numpy.</p>
 </div>
 </a>
 </div>
 <div class="metadata">
-<a href="./posts/webscrapping/webscrapping_basics.html">
+<a href="./posts/Projects/fair_isle_knitting/fair_isle_matplotlib/fair_isle_matplotlib.html">
 <div class="listing-date">
-Jun 3, 2023
+May 17, 2024
 </div>
 <div class="listing-reading-time">
-1 min
+9 min
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="Python,APIs,Notion" data-listing-date-sort="1685340000000" data-listing-file-modified-sort="1685490603250" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="43">
+<div class="quarto-post image-right" data-index="1" data-categories="Python,Pandas,APIs" data-listing-date-sort="1693375200000" data-listing-file-modified-sort="1693326937798" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="./posts/Projects/temperature_blanket/1WeatherAPI/WeatherAPI.html"> <img src="./posts/style/images/be-productive.png" class="thumbnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./posts/Projects/temperature_blanket/1WeatherAPI/WeatherAPI.html">
+<h3 class="no-anchor listing-title">
+Open Metro API
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Python'); return false;">
+Python
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Pandas'); return false;">
+Pandas
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('APIs'); return false;">
+APIs
+</div>
+</div>
+<a href="./posts/Projects/temperature_blanket/1WeatherAPI/WeatherAPI.html">
+<div class="listing-description">
+The Open Metro API is a free API that…
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./posts/Projects/temperature_blanket/1WeatherAPI/WeatherAPI.html">
+<div class="listing-date">
+Aug 30, 2023
+</div>
+<div class="listing-reading-time">
+1 min
+</div>
+<div class="metadata-value listing-custom-blank">
+—
+</div>
+</a><div class="metadata-value listing-custom-series"><a href="./posts/Projects/temperature_blanket/1WeatherAPI/WeatherAPI.html">
+<strong><em></em></strong></a><strong><em><a href="posts/Projects/tempearture_blanket/TemperatureBlanket_project.qmd">Customizing Quarto Series</a></em></strong>
+</div>
+<div class="metadata-value listing-custom-num">
+<em>Part 1</em>
+</div>
+
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="Python,APIs,Notion" data-listing-date-sort="1685340000000" data-listing-file-modified-sort="1685490603250" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="43">
 <div class="thumbnail">
 <p><a href="./posts/Public/notion_api/notion_api.html"> <img src="./style/images/be-productive.png" class="thumbnail-image"> </a></p>
 </div>
@@ -324,7 +447,7 @@ May 29, 2023
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="Quarto" data-listing-date-sort="1683266400000" data-listing-file-modified-sort="1685487657690" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
+<div class="quarto-post image-right" data-index="3" data-categories="Quarto" data-listing-date-sort="1683266400000" data-listing-file-modified-sort="1685487657690" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
 <div class="thumbnail">
 <p><a href="./posts/Projects/CustomizingQuarto/3MakingSeries/MakingSeries.html"> <img src="./posts/Projects/CustomizingQuarto/3MakingSeries/images/designing-a-website-1.png" class="thumbnail-image"> </a></p>
 </div>
@@ -368,7 +491,7 @@ May 5, 2023
 
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="Quarto" data-listing-date-sort="1683180000000" data-listing-file-modified-sort="1685573688948" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="4" data-categories="Quarto" data-listing-date-sort="1683180000000" data-listing-file-modified-sort="1685573688948" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
 <div class="thumbnail">
 <p><a href="./posts/Projects/CustomizingQuarto/1AboutPage/AboutPage.html"> <img src="./posts/Projects/CustomizingQuarto/1AboutPage/images/wombat_profile.png" class="thumbnail-image"> </a></p>
 </div>
@@ -412,7 +535,7 @@ May 4, 2023
 
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="VS Code" data-listing-date-sort="1683007200000" data-listing-file-modified-sort="1685469753822" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8">
+<div class="quarto-post image-right" data-index="5" data-categories="VS Code" data-listing-date-sort="1683007200000" data-listing-file-modified-sort="1685469753822" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8">
 <div class="thumbnail">
 <p><a href="./posts/Public/fav_vs_extentions/fav_extensions_post.html"> <img src="./posts/Public/fav_vs_extentions/images/coding-4.png" class="thumbnail-image"> </a></p>
 </div>
@@ -447,7 +570,7 @@ May 2, 2023
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="Python,Pandas,Code Snippets" data-listing-date-sort="1677913200000" data-listing-file-modified-sort="1685495415277" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
+<div class="quarto-post image-right" data-index="6" data-categories="Python,Pandas,Code Snippets" data-listing-date-sort="1677913200000" data-listing-file-modified-sort="1685495415277" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
 <div class="thumbnail">
 <p><a href="./posts/Public/groupby_snippets/groupby_snippets.html"> <img src="./posts/Public/groupby_snippets/images/pandas.png" class="thumbnail-image"> </a></p>
 </div>
@@ -488,7 +611,7 @@ Mar 4, 2023
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-categories="Python,Jupyter Notebooks,Code Snippets" data-listing-date-sort="1677567600000" data-listing-file-modified-sort="1685475766832" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="7" data-categories="Python,Jupyter Notebooks,Code Snippets" data-listing-date-sort="1677567600000" data-listing-file-modified-sort="1685475766832" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
 <div class="thumbnail">
 <p><a href="./posts/Public/colored_text/print_colored_text.html"> <img src="./posts/Public/colored_text/images/designer-color-palette-2.png" class="thumbnail-image"> </a></p>
 </div>
@@ -529,7 +652,7 @@ Feb 28, 2023
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-categories="APIs,JSON" data-listing-date-sort="1667714400000" data-listing-file-modified-sort="1685496687183" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="8" data-categories="APIs,JSON" data-listing-date-sort="1667714400000" data-listing-file-modified-sort="1685496687183" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
 <div class="thumbnail">
 <p><a href="./posts/Public/nested_jsons/Nested_JSONs.html"> <img src="./posts/Public/nested_jsons/images/nested_josn.png" class="thumbnail-image"> </a></p>
 </div>

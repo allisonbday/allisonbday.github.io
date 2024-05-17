@@ -1,0 +1,34 @@
+---
+# https://quarto.org/docs/websites/website-listings.html
+# https://quarto.org/docs/websites/website-listings-custom.html#metadata-file-listings
+title: Temperature Blanket Generator
+date: 08-28-2023
+subtitle: A series about generating a temperature blanket pattern 🧶
+description: A series about generating a temperature blanket pattern 🧶
+categories: [Quarto, Streamlit]
+# image: 
+
+listing: 
+    id: project-posts
+    contents: \*.qmd
+    fields: [date, title, reading-time, subtitle, description, categories, custom-blank, custom-num, image]
+    sort: custom-num
+    field-display-names: 
+        custom-num: "Series Number"
+        date: "Date"
+        title: "Title"
+        reading-time: "Reading Time"
+        subtitle: "Subtitle"
+        categories: "Categories"
+draft: false
+---
+
+
+
+
+
+
+# Posts
+
+::: {#project-posts}
+:::

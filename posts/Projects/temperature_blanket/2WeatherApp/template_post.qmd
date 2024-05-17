@@ -1,0 +1,20 @@
+---
+title: "Title Here"
+# description: "Post description"
+author: "Allison Day"
+date: "11/6/2022"
+categories: [Python, Jupyter Notebooks, Code Snippets, Pandas, APIs, JSON, VS Code, Github, Quarto, Notion, Web Scraping]
+image: ../../../style/images/be-productive.png
+title-block-banner: ../../../style/images/be-productive_banner.png
+title-block-banner-color: white
+code-annotations: hover
+
+# Outline
+format: 
+  html: 
+    toc: true 
+    toc-location: left 
+    toc-title: "**On this page**" 
+    
+draft: true
+---
