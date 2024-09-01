@@ -2,9 +2,12 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/Projects/F1Streamlit/PROJECT_PAGE_f1_streamlit.html",
       "/posts/Projects/fair_isle_knitting/fair_isle_knitting_project.html",
       "/posts/Projects/temperature_blanket/TemperatureBlanket_project.html",
       "/posts/Projects/CustomizingQuarto/CustomizingQuarto_project.html",
+      "/posts/Projects/F1Streamlit/1_f1_api/f1_code/f1_get_season_code.html",
+      "/posts/Projects/F1Streamlit/1_f1_api/f1_api.html",
       "/posts/Projects/fair_isle_knitting/fair_isle_matplotlib/fair_isle_matplotlib.html",
       "/posts/Projects/temperature_blanket/1WeatherAPI/WeatherAPI.html",
       "/posts/Public/notion_api/notion_api.html",
@@ -66,6 +69,7 @@
   {
     "listing": "/posts/Projects/all_projects.html",
     "items": [
+      "/posts/Projects/F1Streamlit/PROJECT_PAGE_f1_streamlit.html",
       "/posts/Projects/fair_isle_knitting/fair_isle_knitting_project.html",
       "/posts/Projects/temperature_blanket/TemperatureBlanket_project.html",
       "/posts/Projects/CustomizingQuarto/CustomizingQuarto_project.html"
@@ -81,6 +85,16 @@
     "listing": "/posts/Projects/fair_isle_knitting/fair_isle_knitting_project.html",
     "items": [
       "/posts/Projects/fair_isle_knitting/fair_isle_matplotlib/fair_isle_matplotlib.html"
+    ]
+  },
+  {
+    "listing": "/posts/Projects/F1Streamlit/f1_streamlit.html",
+    "items": []
+  },
+  {
+    "listing": "/posts/Projects/F1Streamlit/PROJECT_PAGE_f1_streamlit.html",
+    "items": [
+      "/posts/Projects/F1Streamlit/1_f1_api/f1_api.html"
     ]
   }
 ]

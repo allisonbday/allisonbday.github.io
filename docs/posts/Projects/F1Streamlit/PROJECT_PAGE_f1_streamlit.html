@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2024-08-31">
+<meta name="description" content="Combining my love of F1 and data using Streamlit">
 
-<title>allisonbday.github.io - All Projects</title>
+<title>allisonbday.github.io - F1 Streamlit App</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +25,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<link href="../../favicon.ico" rel="icon">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../favicon.ico" rel="icon">
+<script src="../../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -64,20 +66,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-all_projects .list');
+    const listingTargetEl = window.document.querySelector('#listing-project-posts .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-title','listing-subtitle','listing-description','listing-date','listing-categories','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-reading-time','listing-subtitle','listing-description','listing-categories','listing-custom-blank','listing-custom-num','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-all_projects'] = new List('listing-all_projects', options);
+    window['quarto-listings']['listing-project-posts'] = new List('listing-project-posts', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -94,17 +96,17 @@ ul.task-list li input[type="checkbox"] {
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="../../style/styles.css">
+<link rel="stylesheet" href="../../../style/styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">allisonbday.github.io</span>
     </a>
   </div>
@@ -115,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html" rel="" target="">
+    <a class="nav-link" href="../../../about.html" rel="" target="">
  <span class="menu-text">Allison Day</span></a>
   </li>  
   <li class="nav-item compact">
@@ -136,25 +138,39 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-unnumbered"><div class="category" data-category="Quarto">Quarto</div><div class="category" data-category="Streamlit">Streamlit</div><div class="category" data-category="knitting">knitting</div><div class="category" data-category="pixel-art">pixel-art</div><div class="category" data-category="python">python</div><div class="category" data-category="streamlit">streamlit</div></div></div>
+    
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">All Projects</h1>
-</div>
+<h1 class="title">F1 Streamlit App</h1>
+<p class="subtitle lead">Combining my love of F1 and data using Streamlit</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">python</div>
+    <div class="quarto-category">streamlit</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    Combining my love of F1 and data using Streamlit
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 31, 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -162,171 +178,86 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-
-
-
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-all_projects">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-all_projects-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-all_projects'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-       <option value="" disabled="" selected="" hidden="">Order By</option>
-       <option value="index" data-direction="asc">Default</option>
-         <option value="listing-title" data-direction="asc">
-          Title
-        </option>
-         <option value="listing-date-sort" data-direction="asc">
-          Date - Oldest
-        </option>
-         <option value="listing-date-sort" data-direction="desc">
-          Date - Newest
-        </option>
-     </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
+<!--
+-   [ ] About Page
+    -  Templates
+    -  Apps
+-   [ ] Themes
+    -   Pre-made Themes
+    -   [ ] Making a theme (SCSS)
+-   [ ] Customizing the Listing/Index
+    -   How to customize the index
+        -   grid, default, list
+        -   filters & such
+-   [ ] Making Series
+    -   edit & create listing pages
+-   [ ] Adding a favicon??? (I think this is a bit more complicated than I thought)
+-->
+<section id="posts" class="level1">
+<h1>Posts</h1>
+<div id="listing-project-posts" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Python,Jupyter Notebooks,Code Snippets,Pandas,APIs,JSON" data-listing-date-sort="1725084000000" data-listing-file-modified-sort="1725154188056" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
+<div class="thumbnail">
+<p><a href="../../../posts/Projects/F1Streamlit/1_f1_api/f1_api.html"> <img src="../../../posts/style/images/be-productive.png" class="thumbnail-image"> </a></p>
 </div>
-<div class="list grid quarto-listing-cols-1">
-<div class="g-col-1" data-index="0" data-categories="python,streamlit" data-listing-date-sort="1725084000000" data-listing-file-modified-sort="1725150290564" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="../../posts/Projects/F1Streamlit/PROJECT_PAGE_f1_streamlit.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left borderless">
-<p class="card-img-top">
-<img src="../../style/images/placeholder_1.gif" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-F1 Streamlit App
-</h5>
-<div class="card-subtitle listing-subtitle">
-Combining my love of F1 and data using Streamlit
+<div class="body">
+<a href="../../../posts/Projects/F1Streamlit/1_f1_api/f1_api.html">
+<h3 class="no-anchor listing-title" data-anchor-id="posts">
+F1 API - Season Data
+</h3>
+<div class="listing-subtitle">
+
 </div>
+</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('python'); return false;">
-python
+<div class="listing-category" onclick="window.quartoListingCategory('Python'); return false;">
+Python
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('streamlit'); return false;">
-streamlit
+<div class="listing-category" onclick="window.quartoListingCategory('Jupyter Notebooks'); return false;">
+Jupyter Notebooks
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Code Snippets'); return false;">
+Code Snippets
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Pandas'); return false;">
+Pandas
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('APIs'); return false;">
+APIs
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('JSON'); return false;">
+JSON
 </div>
 </div>
-<div class="card-text listing-description">
-Combining my love of F1 and data using Streamlit
+<a href="../../../posts/Projects/F1Streamlit/1_f1_api/f1_api.html">
+<div class="listing-description">
+T here are a few different F1 APIs available, but I found the one from Ergast to be the most comprehensive. The Ergast API provides a lot of data, including information on drivers, constructors…
 </div>
-<div class="card-attribution card-text-small end">
+</a>
+</div>
+<div class="metadata">
+<a href="../../../posts/Projects/F1Streamlit/1_f1_api/f1_api.html">
 <div class="listing-date">
 Aug 31, 2024
 </div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="knitting,pixel-art,python" data-listing-date-sort="1715925600000" data-listing-file-modified-sort="1715971801987" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="../../posts/Projects/fair_isle_knitting/fair_isle_knitting_project.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left borderless">
-<p class="card-img-top">
-<img src="../../style/images/placeholder_1.gif" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Fair Isle Knitting Series
-</h5>
-<div class="card-subtitle listing-subtitle">
-A series on how to knit Fair Isle patterns using pixel art and python
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('knitting'); return false;">
-knitting
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('pixel-art'); return false;">
-pixel-art
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('python'); return false;">
-python
-</div>
-</div>
-<div class="card-text listing-description">
-A series on how to knit Fair Isle patterns using pixel art and python
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-May 17, 2024
-</div>
-</div>
-</div>
+<div class="listing-reading-time">
+4 min
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="Quarto,Streamlit" data-listing-date-sort="1693202400000" data-listing-file-modified-sort="1693256597043" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="../../posts/Projects/temperature_blanket/TemperatureBlanket_project.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left borderless">
-<p class="card-img-top">
-<img src="../../style/images/placeholder_1.gif" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Temperature Blanket Generator
-</h5>
-<div class="card-subtitle listing-subtitle">
-A series about generating a temperature blanket pattern 🧶
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Quarto'); return false;">
-Quarto
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Streamlit'); return false;">
-Streamlit
-</div>
-</div>
-<div class="card-text listing-description">
-A series about generating a temperature blanket pattern 🧶
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Aug 28, 2023
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="Quarto" data-listing-date-sort="1683266400000" data-listing-file-modified-sort="1685488872331" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="../../posts/Projects/CustomizingQuarto/CustomizingQuarto_project.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left borderless">
-<p class="card-img-top">
-<img src="../../style/images/placeholder_1.gif" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Customizing Your Quarto Blog
-</h5>
-<div class="card-subtitle listing-subtitle">
-Adding some ✨ pizzazz ✨ to your Quarto blog
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Quarto'); return false;">
-Quarto
-</div>
-</div>
-<div class="card-text listing-description">
-A series covering how to customize your Quarto blog.
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-May 5, 2023
-</div>
-</div>
-</div>
-</div>
-</a>
 </div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-</div></main> <!-- /main -->
+</div>
+
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

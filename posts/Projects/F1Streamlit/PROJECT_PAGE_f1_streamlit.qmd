@@ -1,0 +1,49 @@
+---
+title: F1 Streamlit App
+date: 08-31-2024
+subtitle: Combining my love of F1 and data using Streamlit
+description: Combining my love of F1 and data using Streamlit
+categories: [python, streamlit]
+# image: 
+
+listing: 
+    id: project-posts
+    contents: \*.qmd
+    fields: [date, title, reading-time, subtitle, description, categories, custom-blank, custom-num, image]
+    sort: custom-num
+    field-display-names: 
+        custom-num: "Series Number"
+        date: "Date"
+        title: "Title"
+        reading-time: "Reading Time"
+        subtitle: "Subtitle"
+        categories: "Categories"
+draft: false
+---
+
+
+<!--
+-   [ ] About Page
+    -  Templates
+    -  Apps
+-   [ ] Themes
+    -   Pre-made Themes
+    -   [ ] Making a theme (SCSS)
+-   [ ] Customizing the Listing/Index
+    -   How to customize the index
+        -   grid, default, list
+        -   filters & such
+-   [ ] Making Series
+    -   edit & create listing pages
+-   [ ] Adding a favicon??? (I think this is a bit more complicated than I thought)
+-->
+
+
+
+
+
+
+# Posts
+
+::: {#project-posts}
+:::

@@ -1,0 +1,160 @@
+---
+title: "F1 API - Season Data"
+# description: "Post description"
+author: "Allison Day"
+date: "08/31/2024"
+categories: [Python, Jupyter Notebooks, Code Snippets, Pandas, APIs, JSON]
+image: ../../../style/images/be-productive.png
+title-block-banner: ../../../style/images/be-productive_banner.png
+title-block-banner-color: white
+code-annotations: hover
+
+# Outline
+format: 
+  html: 
+    toc: true 
+    toc-location: left 
+    toc-title: "**On this page**" 
+    
+draft: false
+---
+
+There are a few different F1 APIs available, but I found the one from [Ergast](http://ergast.com/mrd/) to be the most comprehensive. The Ergast API provides a lot of data, including information on drivers, constructors, circuits, ect. In this post, I will show you how to use the Ergast API to get data on the 2021 F1 season.
+
+## Getting Started
+
+To get started, you will need to install the `fastf1` library. You can do this by running the following command in your terminal:
+
+```bash
+pip install fastf1
+```
+
+## Importing Libraries
+
+First, we need to import the libraries we will be using. In this case, we will be using the `fastf1` library to get the data from the Ergast API and the `pandas` library to work with the data.
+
+
+```{python}
+import fastf1
+from fastf1.ergast import Ergast
+
+import pandas as pd
+```
+
+## Getting the Data
+
+There are a few different tables we need to pull from to get the data we want. The main tables we will be using are the race schedule, the sessions, and the drivers. We will start by getting the race schedule data.
+
+
+### Race Schedule
+
+The first table we will pull from is the Race Schedule. This table contains information on all the races that took place during the 2021 season, including the date, name, and location of each race.
+
+In order to collect this data, we need to use the Ergast API. To see the documentation, you can go here [Ergast API](https://docs.fastf1.dev/ergast.html).
+
+First, we need to initialize Ergast to get the data from the API. We can do this by running the following code:
+
+There are a lot of parameters you can pass to the API, but for now, we will just pass the year 2021 to get the data for that season.
+
+```python
+ergast = Ergast()
+
+races = ergast.get_race_schedule(2021)
+```
+
+
+```{python}
+
+races = pd.read_csv("data/races.csv")
+races
+
+```
+
+
+### Race Results
+
+The next table we want to pull from is the sessions. This table contains information on all the sessions that took place during the 2021 season, including the session type, date, and location of each session.
+
+We are going to use the `fastf1` library to get the data from the API. Here is the documentation for the `fastf1` library [fastf1](https://docs.fastf1.dev/core.html#api-reference).
+
+In order to get the session data, we need to pass the year 2021, the race name, and the session type to the API.
+
+```python
+session = fastf1.get_session(2021, 'Bahrain', "R")
+session.load()
+
+session_results = session.results
+session_results
+```
+
+```{python}
+
+session_results = pd.read_csv("data/session_results.csv")
+session_results
+
+```
+
+You can see that the data is returned in a pandas DataFrame. This makes it easy to work with the data and analyze it further.
+You also have to do the same for the other sessions, like Qualifying "Q" and Practice  "P".
+
+
+### Drivers Results
+
+This is actually a continuation of the previous section. We use the same session to get all the drivers' laps data for that session. 
+
+```python
+drivers_results = session.laps.pick_drivers("VER")
+drivers_results
+```
+
+You can actually get the data for all the drivers by passing the driver's name to the `pick_drivers` method.
+
+```python
+drivers_results = session.laps.pick_drivers(['VER', 'HAM'])
+drivers_results
+```
+
+```{python, echo: False}
+
+drivers_results = pd.read_csv("data/drivers_results.csv")
+drivers_results
+
+```
+
+
+### Putting it all together
+
+Now that we have all the data we need, we can put it all together to get a complete view of the 2021 F1 season.
+
+This code only gets the final results of each driver through the season, but you can get more data by changing the session type to "Q" or "P" and passing the driver's name to the `pick_drivers` method.
+
+```python
+
+results = []
+
+races = ergast.get_race_schedule(2021)
+
+for rnd, race in races["raceName"].items():
+    
+    session = fastf1.get_session(2021, race, "R")
+    session.load()
+    
+    session_results = session.results
+    session_results["round"] = rnd + 1
+    session_results["race"] = race.removesuffix(" Grand Prix")
+    session_results["sprint"] = "False"
+    session_results["season"] = 2021
+    results.append(session_results)
+        
+
+all_results = pd.concat(results)
+all_results
+
+```
+*NOTE: The code above will take a while to run because it is pulling a lot of data from the API. It took me about 17 minutes to run on my machine.*
+
+```{python, echo: False}
+
+all_results = pd.read_csv("data/all_results.csv")
+all_results
+```
