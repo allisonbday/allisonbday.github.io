@@ -19,7 +19,33 @@ format:
 draft: false
 ---
 
-There are a few different F1 APIs available, but I found the one from [Ergast](http://ergast.com/mrd/) to be the most comprehensive. The Ergast API provides a lot of data, including information on drivers, constructors, circuits, ect. In this post, I will show you how to use the Ergast API to get data on the 2021 F1 season.
+There are a few different F1 APIs available, but I found the one from [Ergast](http://ergast.com/mrd/) to be the most comprehensive. The Ergast API provides a lot of data, including information on drivers, constructors, circuits, ect. In this post, I will show yo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+u how to use the Ergast API to get data on the 2021 F1 season.
 
 ## Getting Started
 

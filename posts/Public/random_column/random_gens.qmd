@@ -1,0 +1,232 @@
+---
+title: "Random Column"
+# description: "Post description"
+author: "Allison Day"
+date: "1/15/2025"
+categories: [Python, Jupyter Notebooks, Code Snippets, Pandas]
+image: ../../../style/images/be-productive.png
+title-block-banner: ../../../style/images/be-productive_banner.png
+title-block-banner-color: white
+code-annotations: hover
+
+# Outline
+format: 
+  html: 
+    toc: true 
+    toc-location: left 
+    toc-title: "**On this page**" 
+    
+draft: false
+---
+
+If you need to fill a column with a random value, here's how you do it
+
+```{python}
+import numpy as np
+import pandas as pd
+import random
+
+random.seed(42)
+
+data = {
+    "column1": ["A", "B", "C", "D", "E"] * 100,
+}
+
+df = pd.DataFrame(data)
+
+
+```
+
+There's 100 of each value in column1. 
+
+
+# Generating Random Values in a Column
+
+## Level 1: List
+
+Let's start with this simple scenario. You have one column with a value, and you want to fill another column with a random value from a list.
+
+
+```{python}
+
+
+df["random"] = df["column1"].apply(
+    lambda x: random.choice(["Apple", "Banana", "Carrot", "Dog", "Elephant"])
+)
+
+
+df["random"].value_counts()
+
+```
+
+
+
+## Level 2: Dictionary
+
+Now let's say you want the two columns to speak to each other. You want to fill column2 with a random value based on the value in column1.
+
+```{python}
+
+df_dict = {
+    "A": ["Apple", "Ant", "Aardvark"],
+    "B": ["Banana", "Bee", "Bear"],
+    "C": ["Carrot", "Cat", "Cheetah"],
+    "D": ["Dog", "Dolphin", "Duck"],
+    "E": ["Elephant", "Eagle", "Eel"],
+}
+
+df["random_dict"] = df["column1"].apply(lambda x: random.choice(df_dict[x]))
+
+
+df.groupby("column1")["random_dict"].value_counts()
+
+```
+
+## Level 3: Weights
+
+Now let's say you want to fill column2 with a random value, but you want to control the ratio of the random values.
+
+The weights need to add up to 1. 
+
+```{python}
+
+
+df["random_weights"] = df["column1"].apply(
+    lambda x: random.choices(
+        ["Apple", "Banana", "Carrot", "Dog", "Elephant"],
+        weights=[0.4, 0.3, 0.1, 0.1, 0.1],
+    )[0]
+)
+
+
+df["random_weights"].value_counts()
+
+
+```
+
+
+## Level 4: Custom Weights
+
+But what if you want to control the ratio of the random values on a per-condition basis?
+
+```{python}
+
+df_dict = {
+    "A": {"values": ["Apple", "Ant", "Aardvark"], "weights": [0.7, 0.2, 0.1]},
+    "B": {"values": ["Banana", "Bee", "Bear"], "weights": [0.6, 0.3, 0.1]},
+    "C": {"values": ["Carrot", "Cat", "Cheetah"], "weights": [0.5, 0.3, 0.2]},
+    "D": {"values": ["Dog", "Dolphin", "Duck"], "weights": [0.6, 0.2, 0.2]},
+    "E": {"values": ["Elephant", "Eagle", "Eel"], "weights": [0.8, 0.1, 0.1]},
+}
+
+df["random_custom_weights"] = df["column1"].apply(
+    lambda x: random.choices(df_dict[x]["values"], weights=df_dict[x]["weights"])[0]
+)
+
+df.groupby("column1")["random_custom_weights"].value_counts()
+
+```
+
+
+# Reverse Engineering Random
+
+But what if you want to reverse engineer the weights? Maybe you need to add more of a certain value to balance out the distribution, or add more lines to a database that match the distribution of the original data.
+
+
+## Reverse Engineering Weights
+
+Let's reverse engineer the weights for the `random_weights` column.
+
+```{python}
+
+new_weights = df["random_weights"].value_counts().reset_index()
+
+new_weights["weight"] = (new_weights["count"] / new_weights["count"].sum()).round(1)
+
+values = new_weights["random_weights"].tolist()
+weights = new_weights["weight"].tolist()
+
+print(values)
+print(weights)
+
+```
+
+## Reverse Engineering Custom Weights
+
+Let's reverse engineer the weights for the `random_custom_weights` column.
+
+```{python}
+
+new_weights = (
+    df.groupby("column1")["random_custom_weights"].value_counts()
+    # .unstack()
+    .reset_index()
+)
+
+new_weights["sum"] = new_weights.groupby("column1")["count"].transform("sum")
+new_weights["weight"] = (new_weights["count"] / new_weights["sum"]).round(1)
+new_weights.drop(columns=["sum"], inplace=True)
+
+
+new_dict = (
+    new_weights.groupby("column1")[["random_custom_weights", "weight"]]
+    .apply(lambda x: x.to_dict(orient="records"))
+    .to_dict()
+)
+
+
+new_df_dict = {}
+
+for key, value in new_dict.items():
+    values = []
+    weights = []
+
+    for item in value:
+        values.append(item["random_custom_weights"])
+        weights.append(item["weight"])
+
+    new_df_dict[key] = {"values": values, "weights": weights}
+
+new_df_dict
+
+
+```
+
+Using this new dictionary, we can generate results that match the origional distribution.
+
+```{python}
+
+df["random_reversed_weights"] = df["column1"].apply(
+    lambda x: random.choices(
+        new_df_dict[x]["values"], weights=new_df_dict[x]["weights"]
+    )[0]
+)
+
+df.groupby("column1")["random_reversed_weights"].value_counts()
+```
+
+<!--
+```{python}
+print(
+    df.groupby("column1")["random_custom_weights"]
+    .value_counts()
+    .reset_index()
+    .rename(columns={"count": "original_count", "random_custom_weights": "values"})
+    .merge(
+        df.groupby("column1")["random_reversed_weights"]
+        .value_counts()
+        .reset_index()
+        .rename(
+            columns={"count": "reversed_count", "random_reversed_weights": "values"}
+        ),
+        on=["column1", "values"],
+    )
+)
+
+```
+-->
+
+
+# Conclusion
+
+Randomness is a powerful tool in Python, pandas, and data science. 

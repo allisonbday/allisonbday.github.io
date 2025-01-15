@@ -6,7 +6,7 @@ website:
   title: "allisonbday.github.io"
   favicon: "favicon.ico"
   # reader-mode: true
-  page-footer: "© 2023 Allison Day"
+  page-footer: "© 2025 Allison Day"
   navbar:
     right:
       - about.qmd
