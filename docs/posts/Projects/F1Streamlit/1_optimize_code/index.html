@@ -274,7 +274,7 @@ background: ../../../style/images/be-productive_banner.png;
 <p>2.35 seconds sounds ok, but when done over all 1162 sessions it takes over 45 minutes! Luckily, I only need to do it once but I still think improving it is worth while.</p>
 <section id="pulling-from-fastf1" class="level2">
 <h2 class="anchored" data-anchor-id="pulling-from-fastf1">Pulling from fastf1</h2>
-<div id="ad3508b3" class="cell" data-execution_count="1">
+<div id="44117f4b" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span>timeit</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>session <span class="op">=</span> fastf1.get_session(<span class="dv">2023</span>, <span class="st">'Singapore'</span>, <span class="st">'Race'</span>)</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>session.load()</span>
@@ -282,7 +282,7 @@ background: ../../../style/images/be-productive_banner.png;
 </div>
 <p><code>2.35 s ± 10 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)</code></p>
 <p>Obviously, the pulling from the database is what probably takes the most time. But we don’t actually need all of the data its sending us. It’s sending us telemetry data, weather, etc. when all we want are the final drivers results and who had the fastest lap.</p>
-<div id="3aa0a649" class="cell" data-execution_count="2">
+<div id="23e57aac" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span>timeit</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>session <span class="op">=</span> fastf1.get_session(<span class="dv">2023</span>, <span class="st">'Singapore'</span>, <span class="st">'Race'</span>)</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>session.load(telemetry<span class="op">=</span><span class="va">False</span>, weather<span class="op">=</span><span class="va">False</span>, messages<span class="op">=</span><span class="va">False</span>)</span>
@@ -291,7 +291,7 @@ background: ../../../style/images/be-productive_banner.png;
 <p><code>851 ms ± 5.51 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)</code></p>
 <p>That alone made puling the data 2.76x faster!</p>
 <p>Another test I conducted was seeing inputing location vs.&nbsp;round number has an effect.</p>
-<div id="47a1479e" class="cell" data-execution_count="3">
+<div id="1b2aa599" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span>timeit</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>session <span class="op">=</span> fastf1.get_session(<span class="dv">2023</span>, <span class="st">'Singapore'</span>, <span class="st">'Race'</span>)</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>session.load(telemetry<span class="op">=</span><span class="va">False</span>, weather<span class="op">=</span><span class="va">False</span>, messages<span class="op">=</span><span class="va">False</span>)</span>
@@ -303,7 +303,7 @@ background: ../../../style/images/be-productive_banner.png;
 <section id="adding-columns" class="level2">
 <h2 class="anchored" data-anchor-id="adding-columns">Adding Columns</h2>
 <p>Admittedly, Location already comes with the data pulls but Season and SessionType would need to be added anyway. Plus this way its easy to know exactly what was used to pull the session.</p>
-<div id="4b412778" class="cell" data-execution_count="4">
+<div id="82e97fb5" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span>timeit</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>session_results[<span class="st">"Season"</span>] <span class="op">=</span> <span class="dv">2023</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>session_results[<span class="st">"Location"</span>] <span class="op">=</span> <span class="st">'Singapore'</span></span>
@@ -315,7 +315,7 @@ background: ../../../style/images/be-productive_banner.png;
 <ol type="1">
 <li>Direct Assignment</li>
 </ol>
-<div id="d506fd4d" class="cell" data-execution_count="5">
+<div id="d3d6997c" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span>timeit</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>session <span class="op">=</span> fastf1.get_session(<span class="dv">2023</span>, <span class="st">'Singapore'</span>, <span class="st">'Race'</span>)</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>session.load(telemetry<span class="op">=</span><span class="va">False</span>, weather<span class="op">=</span><span class="va">False</span>, messages<span class="op">=</span><span class="va">False</span>)</span>
@@ -329,7 +329,7 @@ background: ../../../style/images/be-productive_banner.png;
 <ol start="2" type="1">
 <li>Creating Multiple Columns</li>
 </ol>
-<div id="c0d731cb" class="cell" data-execution_count="6">
+<div id="8fa53186" class="cell" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span>timeit</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>session <span class="op">=</span> fastf1.get_session(<span class="dv">2023</span>, <span class="st">'Singapore'</span>, <span class="st">'Race'</span>)</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>session.load(telemetry<span class="op">=</span><span class="va">False</span>, weather<span class="op">=</span><span class="va">False</span>, messages<span class="op">=</span><span class="va">False</span>)</span>
@@ -341,7 +341,7 @@ background: ../../../style/images/be-productive_banner.png;
 <ol start="3" type="1">
 <li>Using <code>assign()</code> (this returns a new dataframe, not ideal)</li>
 </ol>
-<div id="5ac5ee0e" class="cell" data-execution_count="7">
+<div id="7e55a5a7" class="cell" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span>timeit</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>session <span class="op">=</span> fastf1.get_session(<span class="dv">2023</span>, <span class="st">'Singapore'</span>, <span class="st">'Race'</span>)</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>session.load(telemetry<span class="op">=</span><span class="va">False</span>, weather<span class="op">=</span><span class="va">False</span>, messages<span class="op">=</span><span class="va">False</span>)</span>
@@ -355,7 +355,7 @@ background: ../../../style/images/be-productive_banner.png;
 <ol start="4" type="1">
 <li>Using <code>insert()</code> (use this for column order)</li>
 </ol>
-<div id="3840a102" class="cell" data-execution_count="8">
+<div id="d3b65c10" class="cell" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span>timeit</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>session <span class="op">=</span> fastf1.get_session(<span class="dv">2023</span>, <span class="st">'Singapore'</span>, <span class="st">'Race'</span>)</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>session.load(telemetry<span class="op">=</span><span class="va">False</span>, weather<span class="op">=</span><span class="va">False</span>, messages<span class="op">=</span><span class="va">False</span>)</span>
@@ -375,12 +375,12 @@ background: ../../../style/images/be-productive_banner.png;
 </section>
 <section id="fastest-lap" class="level2">
 <h2 class="anchored" data-anchor-id="fastest-lap">Fastest Lap</h2>
-<div id="590a058e" class="cell" data-execution_count="9">
+<div id="93d0e884" class="cell" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>fastest_lap <span class="op">=</span> session.laps.pick_fastest()</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>fastest_lap</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>For my custom points system, I only need to know WHO did the fastest lap. So whoever got the fastest lap is <code>True</code> and the rest are marked <code>False</code>. Unfortunatly, only the most recent seasons have this data and it will error if its unavailable, so we set those to <code>NA</code>. But for these timed test we’ll just do the ‘try’ section.</p>
-<div id="58bc139d" class="cell" data-execution_count="10">
+<div id="875f65e7" class="cell" data-execution_count="10">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span>timeit</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>session <span class="op">=</span> fastf1.get_session(<span class="dv">2023</span>, <span class="st">'Singapore'</span>, <span class="st">'Race'</span>)</span>
@@ -399,7 +399,7 @@ background: ../../../style/images/be-productive_banner.png;
 </div>
 <p><code>949 ms ± 29.8 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)</code></p>
 <p>This code eliminates the fastest_lap dataframe and only saves what we truly need which is who set the fastest lap. In this case, “HAM” aka Lewis Hamilton.</p>
-<div id="5259ccab" class="cell" data-execution_count="11">
+<div id="f9224834" class="cell" data-execution_count="11">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span>timeit</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>session <span class="op">=</span> fastf1.get_session(<span class="dv">2023</span>, <span class="st">"Singapore"</span>, <span class="st">"Race"</span>)</span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>session.load(telemetry<span class="op">=</span><span class="va">False</span>, weather<span class="op">=</span><span class="va">False</span>, messages<span class="op">=</span><span class="va">False</span>)</span>
@@ -414,7 +414,7 @@ background: ../../../style/images/be-productive_banner.png;
 </section>
 <section id="final-code" class="level2">
 <h2 class="anchored" data-anchor-id="final-code">Final Code</h2>
-<div id="532bc89b" class="cell" data-execution_count="12">
+<div id="116eb886" class="cell" data-execution_count="12">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span>timeit</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>session <span class="op">=</span> fastf1.get_session(<span class="dv">2023</span>, <span class="st">"Singapore"</span>, <span class="st">"Race"</span>)</span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -442,7 +442,7 @@ background: ../../../style/images/be-productive_banner.png;
 <section id="application-etl" class="level1">
 <h1>Application &amp; ETL</h1>
 <p>Now the bit I’ve been ignoring this whole time - FastF1 is rate limited, meaning you can only pull so much so fast anyway. But this is a good exercise to practice optimizing my code and seeing where the holes are. For my ETL class I’ve made a function called <code>pull_session_results</code> that will be used to continually update the database as races happen.</p>
-<div id="0f6396c3" class="cell" data-execution_count="13">
+<div id="5f6507a5" class="cell" data-execution_count="13">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> pull_session_results(season, location, session_type): <span class="co"># in class 'self' is first arg ;)</span></span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Pull the results for a specific season, location, and session type</span></span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="co">    Args:</span></span>
@@ -474,7 +474,7 @@ background: ../../../style/images/be-productive_banner.png;
 <span id="cb14-29"><a href="#cb14-29" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> session_results</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>To pull all 28 sprints and races from the 2023 season only took 22.23 seconds, or roughly 0.8s/800ms each, even faster than expected.</p>
-<div id="1175f85e" class="cell" data-execution_count="14">
+<div id="02508d9a" class="cell" data-execution_count="14">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -571,7 +571,7 @@ background: ../../../style/images/be-productive_banner.png;
 <span id="cb15-92"><a href="#cb15-92" aria-hidden="true" tabindex="-1"></a>    margin<span class="op">=</span><span class="bu">dict</span>(l<span class="op">=</span><span class="dv">40</span>, r<span class="op">=</span><span class="dv">40</span>, t<span class="op">=</span><span class="dv">80</span>, b<span class="op">=</span><span class="dv">40</span>)</span>
 <span id="cb15-93"><a href="#cb15-93" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb15-94"><a href="#cb15-94" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-95"><a href="#cb15-95" aria-hidden="true" tabindex="-1"></a>fig.update_layout(height<span class="op">=</span><span class="dv">800</span>)</span>
+<span id="cb15-95"><a href="#cb15-95" aria-hidden="true" tabindex="-1"></a>fig.update_layout(height<span class="op">=</span><span class="dv">1600</span>, width <span class="op">=</span> <span class="dv">1600</span>)</span>
 <span id="cb15-96"><a href="#cb15-96" aria-hidden="true" tabindex="-1"></a>fig.show(renderer<span class="op">=</span><span class="st">"png"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-display">
